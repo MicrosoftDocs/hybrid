@@ -28,10 +28,10 @@ In this solution, you'll build a sample environment to:
 > - Learn to monitor and track your deployments.
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/azure-stack-solution-cloud-burst/hybrid-pillars.png)  
+> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack is an extension of Azure. Azure Stack brings the agility and innovation of cloud computing to your on-premises environment, enabling the only hybrid cloud that allows you to build and deploy hybrid apps anywhere.  
 > 
-> The article [Design Considerations for Hybrid Applications](azure-stack-edge-pattern-overview.md) reviews pillars of software quality (placement, scalability, availability, resiliency, manageability, and security) for designing, deploying, and operating hybrid applications. The design considerations assist in optimizing hybrid app design, minimizing challenges in production environments.
+> The article [Design Considerations for Hybrid Applications](overview-app-design-considerations.md) reviews pillars of software quality (placement, scalability, availability, resiliency, manageability, and security) for designing, deploying, and operating hybrid applications. The design considerations assist in optimizing hybrid app design, minimizing challenges in production environments.
 
 ## Prerequisites
 
@@ -97,17 +97,17 @@ Azure Repos
 
     Hybrid CI/CD can apply to both app code and infrastructure code. Use [Azure Resource Manager templates](https://azure.microsoft.com/resources/templates/) for both private and hosted cloud development.
 
-    ![Connect to a project on Azure Repos](media/azure-stack-solution-cloud-burst/image1.JPG)
+    ![Connect to a project on Azure Repos](media/solution-deployment-guide-cross-cloud-scaling/image1.JPG)
 
 2. **Clone the repository** by creating and opening the default web app.
 
-    ![Clone repo in Azure web app](media/azure-stack-solution-cloud-burst/image2.png)
+    ![Clone repo in Azure web app](media/solution-deployment-guide-cross-cloud-scaling/image2.png)
 
 ### Create self-contained web app deployment for App Services in both clouds
 
 1.  Edit the **WebApplication.csproj** file. Select `Runtimeidentifier` and add `win10-x64`. (See [Self-contained Deployment](https://docs.microsoft.com/dotnet/core/deploying/#self-contained-deployments-scd) documentation.) 
 
-    ![Edit web app project file](media/azure-stack-solution-cloud-burst/image3.png)
+    ![Edit web app project file](media/solution-deployment-guide-cross-cloud-scaling/image3.png)
 
 2.  Check in the code to Azure Repos using Team Explorer.
 
@@ -119,7 +119,7 @@ Azure Repos
 
 2. Add **-r win10-x64** code. This addition is necessary to trigger a self-contained deployment with .NET Core.
 
-    ![Add code to the web app](media/azure-stack-solution-cloud-burst/image4.png)
+    ![Add code to the web app](media/solution-deployment-guide-cross-cloud-scaling/image4.png)
 
 3. Run the build. The [self-contained deployment build](https://docs.microsoft.com/dotnet/core/deploying/#self-contained-deployments-scd) process will publish artifacts that run on Azure and Azure Stack.
 
@@ -135,88 +135,88 @@ Azure Pipelines and Azure DevOps Server provide a highly configurable and manage
 
 1.  Select the **plus** button to add a new release under the **Releases** tab in the **Build and Release** section of VSO.
 
-    ![Create a release definition](media/azure-stack-solution-cloud-burst/image5.png)
+    ![Create a release definition](media/solution-deployment-guide-cross-cloud-scaling/image5.png)
 
 2. Apply the Azure App Service Deployment template.
 
-   ![Apply Azure App Service Deployment template](meDia/azure-stack-solution-cloud-burst/image6.png)
+   ![Apply Azure App Service Deployment template](meDia/solution-deployment-guide-cross-cloud-scaling/image6.png)
 
 3. Under **Add artifact**, add the artifact for the Azure Cloud build app.
 
-   ![Add artifact to Azure Cloud build](media/azure-stack-solution-cloud-burst/image7.png)
+   ![Add artifact to Azure Cloud build](media/solution-deployment-guide-cross-cloud-scaling/image7.png)
 
 4. Under Pipeline tab, select the **Phase, Task** link of the environment and set the Azure cloud environment values.
 
-   ![Set Azure cloud environment values](media/azure-stack-solution-cloud-burst/image8.png)
+   ![Set Azure cloud environment values](media/solution-deployment-guide-cross-cloud-scaling/image8.png)
 
 5. Set the **environment name** and select the **Azure subscription** for the Azure Cloud endpoint.
 
-      ![Select Azure subscription for Azure Cloud endpoint](media/azure-stack-solution-cloud-burst/image9.png)
+      ![Select Azure subscription for Azure Cloud endpoint](media/solution-deployment-guide-cross-cloud-scaling/image9.png)
 
 6. Under **App service name**, set the required Azure app service name.
 
-      ![Set Azure app service name](media/azure-stack-solution-cloud-burst/image10.png)
+      ![Set Azure app service name](media/solution-deployment-guide-cross-cloud-scaling/image10.png)
 
 7. Enter "Hosted VS2017" under **Agent queue** for Azure cloud hosted environment.
 
-      ![Set Agent queue for Azure cloud hosted environment](media/azure-stack-solution-cloud-burst/image11.png)
+      ![Set Agent queue for Azure cloud hosted environment](media/solution-deployment-guide-cross-cloud-scaling/image11.png)
 
 8. In Deploy Azure App Service menu, select the valid **Package or Folder** for the environment. Select **OK** to **folder location**.
   
-      ![Select package or folder for Azure App Service environment](media/azure-stack-solution-cloud-burst/image12.png)
+      ![Select package or folder for Azure App Service environment](media/solution-deployment-guide-cross-cloud-scaling/image12.png)
 
-      ![Select package or folder for Azure App Service environment](media/azure-stack-solution-cloud-burst/image13.png)
+      ![Select package or folder for Azure App Service environment](media/solution-deployment-guide-cross-cloud-scaling/image13.png)
 
 9. Save all changes and go back to **release pipeline**.
 
-    ![Save changes in release pipeline](media/azure-stack-solution-cloud-burst/image14.png)
+    ![Save changes in release pipeline](media/solution-deployment-guide-cross-cloud-scaling/image14.png)
 
 10. Add a new artifact selecting the build for the Azure Stack app.
     
-    ![Add new artifact for Azure Stack app](media/azure-stack-solution-cloud-burst/image15.png)
+    ![Add new artifact for Azure Stack app](media/solution-deployment-guide-cross-cloud-scaling/image15.png)
 
 
 11. Add one more environment by applying the Azure App Service Deployment.
     
-    ![Add environment to Azure App Service Deployment](media/azure-stack-solution-cloud-burst/image16.png)
+    ![Add environment to Azure App Service Deployment](media/solution-deployment-guide-cross-cloud-scaling/image16.png)
 
 12. Name the new environment Azure Stack.
     
-    ![Name environment in Azure App Service Deployment](media/azure-stack-solution-cloud-burst/image17.png)
+    ![Name environment in Azure App Service Deployment](media/solution-deployment-guide-cross-cloud-scaling/image17.png)
 
 13. Find the Azure Stack environment under **Task** tab.
     
-    ![Azure Stack environment](media/azure-stack-solution-cloud-burst/image18.png)
+    ![Azure Stack environment](media/solution-deployment-guide-cross-cloud-scaling/image18.png)
 
 14. Select the subscription for the Azure Stack endpoint.
     
-    ![Select the subscription for the Azure Stack endpoint](media/azure-stack-solution-cloud-burst/image19.png)
+    ![Select the subscription for the Azure Stack endpoint](media/solution-deployment-guide-cross-cloud-scaling/image19.png)
 
 15. Set the Azure Stack web app name as the App service name.
 
-    ![Set Azure Stack web app name](media/azure-stack-solution-cloud-burst/image20.png)
+    ![Set Azure Stack web app name](media/solution-deployment-guide-cross-cloud-scaling/image20.png)
 
 16. Select the Azure Stack agent.
     
-    ![Select the Azure Stack agent](media/azure-stack-solution-cloud-burst/image21.png)
+    ![Select the Azure Stack agent](media/solution-deployment-guide-cross-cloud-scaling/image21.png)
 
 17. Under the Deploy Azure App Service section, select the valid **Package or Folder** for the environment. Select **OK** to folder location.
 
-    ![Select folder for Azure App Service Deployment](media/azure-stack-solution-cloud-burst/image22.png)
+    ![Select folder for Azure App Service Deployment](media/solution-deployment-guide-cross-cloud-scaling/image22.png)
 
-    ![Select folder for Azure App Service Deployment](media/azure-stack-solution-cloud-burst/image23.png)
+    ![Select folder for Azure App Service Deployment](media/solution-deployment-guide-cross-cloud-scaling/image23.png)
 
 18. Under Variable tab add a variable named `VSTS\_ARM\_REST\_IGNORE\_SSL\_ERRORS`, set its value as **true**, and scope to Azure Stack.
     
-    ![Add variable to Azure App Deployment](media/azure-stack-solution-cloud-burst/image24.png)
+    ![Add variable to Azure App Deployment](media/solution-deployment-guide-cross-cloud-scaling/image24.png)
 
 19. Select the **Continuous** deployment trigger icon in both artifacts and enable the **Continues** deployment trigger.
     
-    ![Select continuous deployment trigger](media/azure-stack-solution-cloud-burst/image25.png)
+    ![Select continuous deployment trigger](media/solution-deployment-guide-cross-cloud-scaling/image25.png)
 
 20. Select the **Pre-deployment** conditions icon in the Azure Stack environment and set the trigger to **After release.**
     
-    ![Select pre-deployment conditions](media/azure-stack-solution-cloud-burst/image26.png)
+    ![Select pre-deployment conditions](media/solution-deployment-guide-cross-cloud-scaling/image26.png)
 
 21. Save all changes.
 

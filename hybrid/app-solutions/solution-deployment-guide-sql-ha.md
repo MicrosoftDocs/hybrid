@@ -22,14 +22,14 @@ In this solution, you will build a sample environment to:
 > - Deploy a basic highly available SQL Server 2016 Enterprise cluster with a disaster recovery site
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/azure-stack-solution-cloud-burst/hybrid-pillars.png)  
+> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack is an extension of Azure. Azure Stack brings the agility and innovation of cloud computing to your on-premises environment, enabling the only hybrid cloud that allows you to build and deploy hybrid apps anywhere.  
 > 
-> The article [Design Considerations for Hybrid Applications](azure-stack-edge-pattern-overview.md) reviews pillars of software quality (placement, scalability, availability, resiliency, manageability, and security) for designing, deploying, and operating hybrid applications. The design considerations assist in optimizing hybrid app design, minimizing challenges in production environments.
+> The article [Design Considerations for Hybrid Applications](overview-app-design-considerations.md) reviews pillars of software quality (placement, scalability, availability, resiliency, manageability, and security) for designing, deploying, and operating hybrid applications. The design considerations assist in optimizing hybrid app design, minimizing challenges in production environments.
 
 ## Architecture for SQL Server 2016
 
-![SQL Server 2016 SQL HA Azure Stack](media/azure-stack-solution-sql-ha/image1.png)
+![SQL Server 2016 SQL HA Azure Stack](media/solution-deployment-guide-sql-ha/image1.png)
 
 ## Prerequisites for SQL Server 2016
 
@@ -98,7 +98,7 @@ different versions of Azure PowerShell.
 
 7.  Inspect the deployment by viewing the resources in each Azure Stack's portal. Connect to one of the SQL instances on the HA environment and inspecting the Availability Group through SQL Server Management Studio (SSMS).
 
-![SQL Server 2016 SQL HA](media/azure-stack-solution-sql-ha/image2.png)
+![SQL Server 2016 SQL HA](media/solution-deployment-guide-sql-ha/image2.png)
 
 ## Next steps
 

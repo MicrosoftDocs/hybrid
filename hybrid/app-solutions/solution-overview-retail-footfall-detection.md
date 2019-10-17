@@ -24,7 +24,7 @@ Contoso would like to find an unobtrusive, privacy-friendly way to determine the
 
 This retail analytics solution uses a tiered approach to inferencing at the edge. By using the Custom Vision AI Dev Kit, only images with human faces are sent for analysis to a private Azure Stack that runs Azure Cognitive Services. Anonymized, aggregated data is sent to Azure for aggregation across all stores and visualization in Power BI. Combining the edge and public cloud allows Contoso to take advantage of modern AI technology. While at the same time, remain in compliance with their corporate policies and respect their customers' privacy.
 
-[![Footfall detection pattern](media/hybrid-solution-retail-footfall-detection/solution-architecture.png)](media/hybrid-solution-retail-footfall-detection/solution-architecture.png)
+[![Footfall detection pattern](media/solution-overview-retail-footfall-detection/solution-architecture.png)](media/solution-overview-retail-footfall-detection/solution-architecture.png)
 
 Here's a summary of how the solution works: 
 
@@ -80,6 +80,6 @@ This solution captures customer images, making security a paramount consideratio
 
 ## Next steps
 
-- To learn more about related patterns used by this solution, see the [Tiered Data pattern](azure-stack-solution-staged-data.md). 
+- To learn more about related patterns used by this solution, see the [Tiered Data pattern](solution-deployment-guide-tiered-data.md). 
 - To learn more about using custom vision, see the [Custom Vision AI Dev Kit](https://azure.github.io/Vision-AI-DevKit-Pages/). 
 - Download and deploy a [sample implementation of the footfall solution](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/tree/master/footfall-analysis). You learn how to generate insights from real world actions, using Azure, Azure Stack, and the Custom Vision AI Dev Kit.   

@@ -1,6 +1,6 @@
 ---
-title: Deploy a staged data analytics solution to Azure Stack | Microsoft Docs
-description: Learn how to deploy a staged data analytics solution to Azure Stack
+title: Deploy a tiered data solution to Azure Stack | Microsoft Docs
+description: Learn how to deploy a tiered data solution to Azure Stack
 author: BryanLa
 ms.service: azure-stack
 ms.topic: article
@@ -10,7 +10,7 @@ ms.reviewer: anajod
 ms.lastreviewed: 10/31/2019
 ---
 
-# Deploy a staged data analytics solution to Azure Stack
+# Deploy a tiered data solution to Azure Stack
 
 This article will show you how to deploy a solution for collecting data that requires analysis at the point of collection so that quick
 decisions can be made. Often this data collection occurs with no Internet access. When connectivity is established, you may need to do a
@@ -27,16 +27,16 @@ In this solution, you'll create a sample environment to:
 > - Test the queue triggered function.
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/azure-stack-solution-cloud-burst/hybrid-pillars.png)  
+> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack is an extension of Azure. Azure Stack brings the agility and innovation of cloud computing to your on-premises environment, enabling the only hybrid cloud that allows you to build and deploy hybrid apps anywhere.  
 > 
-> The article [Design Considerations for Hybrid Applications](azure-stack-edge-pattern-overview.md) reviews pillars of software quality (placement, scalability, availability, resiliency, manageability, and security) for designing, deploying, and operating hybrid applications. The design considerations assist in optimizing hybrid app design, minimizing challenges in production environments.
+> The article [Design Considerations for Hybrid Applications](overview-app-design-considerations.md) reviews pillars of software quality (placement, scalability, availability, resiliency, manageability, and security) for designing, deploying, and operating hybrid applications. The design considerations assist in optimizing hybrid app design, minimizing challenges in production environments.
 
-## Architecture for staged data analytics
+## Architecture
 
-![staged data analytics](media/azure-stack-solution-staged-data/image1.png)
+![tiered data](media/solution-deployment-guide-tiered-data/image1.png)
 
-## Prerequisites for staged data analytics
+## Prerequisites
 
   - An Azure subscription.
   - An Azure Active Directory (Azure AD) service principal that has permissions to the tenant subscription on Azure and Azure Stack. You may need to create two service principals if the Azure Stack is using a different AAD tenant than your Azure subscription. To learn how to create a service principal for Azure Stack, go [Create service principals to give applications access to Azure Stack resources](https://docs.microsoft.com/azure-stack/user/azure-stack-create-service-principals).
@@ -98,11 +98,11 @@ Docker images for each deployment eliminate dependency issues between different 
 
 ### Azure Web App
  
-![staged data analytics solution](media/azure-stack-solution-staged-data/image2.png)
+![tiered data solution](media/solution-deployment-guide-tiered-data/image2.png)
  
 ### Azure Stack Web App
  
-![staged data analytics solution for Azure Stack](media/azure-stack-solution-staged-data/image3.png)
+![tiered data solution for Azure Stack](media/solution-deployment-guide-tiered-data/image3.png)
 
 ## Next steps
 

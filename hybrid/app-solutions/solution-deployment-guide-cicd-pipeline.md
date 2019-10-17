@@ -42,8 +42,8 @@ App deployment continuity, security, and reliability are critical elements for y
 - Apps and services deployed in Azure or Azure Stack are interchangeable, and the same code can run in either location. You can take advantage of on-premises and public cloud features and capabilities.
 
 > [!TIP]
-> ![hybrid-pillars.png](./media/azure-stack-solution-pipeline/hybrid-pillars.png)  
-> The article [Hybrid cloud design patterns for Azure Stack](azure-stack-edge-pattern-overview.md) reviews software quality pillars for designing, deploying, and operating hybrid applications. The quality criteria include placement, scalability, availability, resiliency, manageability, and security. These design considerations assist in optimizing hybrid app design, minimizing challenges in production environments.
+> ![hybrid-pillars.png](./media/solution-deployment-guide-cicd-pipeline/hybrid-pillars.png)  
+> The article [Hybrid cloud design patterns for Azure Stack](overview-app-design-considerations.md) reviews software quality pillars for designing, deploying, and operating hybrid applications. The quality criteria include placement, scalability, availability, resiliency, manageability, and security. These design considerations assist in optimizing hybrid app design, minimizing challenges in production environments.
 
 ## Prerequisites
 
@@ -125,7 +125,7 @@ You can also [use a PowerShell script](https://github.com/Microsoft/vsts-rm-exte
    1. Under **Redirect URI**, select **Web** for the type of application you want to create, and enter your web app's URI. 
    1. Select **Register**.
       
-      ![Register your application](./media/azure-stack-solution-pipeline/create-app.png) 
+      ![Register your application](./media/solution-deployment-guide-cicd-pipeline/create-app.png) 
 
 ### Assign the app to a role
 
@@ -139,7 +139,7 @@ To assign your application to the **Contributor** role:
 
 1. In the Azure portal, navigate to the level of scope you want. For example, to assign a role at the subscription scope, select **All services** and **Subscriptions**.
    
-   ![Assign a role at the subscription scope](./media/azure-stack-solution-pipeline/select-subscription.png)
+   ![Assign a role at the subscription scope](./media/solution-deployment-guide-cicd-pipeline/select-subscription.png)
    
 1. Select the subscription to assign the application to.
    
@@ -149,7 +149,7 @@ To assign your application to the **Contributor** role:
    
 1. In the **Add role assignment** dialog, select the **Contributor** role. By default, Azure AD applications aren't displayed in the available options. To find your application, search for the name and select it.
    
-   ![Select the role and the application](./media/azure-stack-solution-pipeline/select-role.png)
+   ![Select the role and the application](./media/solution-deployment-guide-cicd-pipeline/select-role.png)
    
 1. Select **Save** to finish assigning the role. You can see your application in the list of users assigned to a role for that scope.
 
@@ -165,7 +165,7 @@ When creating endpoints for Azure Pipelines, you need to enter the tenant ID and
    
 1. Copy and save the **Directory (tenant) ID** and the **Application (client) ID** to use for creating endpoints.
    
-   ![Copy the directory (tenant ID) and application (client) ID](./media/azure-stack-solution-pipeline/copy-app-id.png)
+   ![Copy the directory (tenant ID) and application (client) ID](./media/solution-deployment-guide-cicd-pipeline/copy-app-id.png)
 
 ### Create a new application secret
 
@@ -187,7 +187,7 @@ Or, to create a new application secret:
    
 1. Copy the **VALUE** of the new secret. You need to provide the value to sign in as the app. It's important to save this value now, because it won't be displayed again after you leave this page.
    
-   ![Copy the secret value because you can't retrieve it later](./media/azure-stack-solution-pipeline/copy-secret.png)
+   ![Copy the secret value because you can't retrieve it later](./media/solution-deployment-guide-cicd-pipeline/copy-secret.png)
 
 ## Create endpoints
 
@@ -209,7 +209,7 @@ After setting endpoint creation permissions, you can create endpoints for Azure 
    
 1. In **Add users and groups**, select user names from the list, including yourself, and then select **Save changes**.
    
-   ![Add a member](./media/azure-stack-solution-pipeline/endpoint-permissions.png)
+   ![Add a member](./media/solution-deployment-guide-cicd-pipeline/endpoint-permissions.png)
    
 1. In the **Azure DevOps Groups** list, select **Endpoint Creators**, and repeat the previous steps to add users to the **Endpoint Creators** group. 
 
@@ -263,19 +263,19 @@ In Azure DevOps, create a personal access token (PAT) to use for Azure Stack. Th
    
 1. On your profile page, expand the dropdown next to your Azure Stack organization name, and select **Manage security**. 
    
-   ![Manage security](media/azure-stack-solution-pipeline/managesecurity.png)
+   ![Manage security](media/solution-deployment-guide-cicd-pipeline/managesecurity.png)
    
 1. On the **Personal Access Tokens** page, select **New Token**.
    
-   ![Personal access tokens](media/azure-stack-solution-pipeline/pats.png)
+   ![Personal access tokens](media/solution-deployment-guide-cicd-pipeline/pats.png)
    
 1. On the **Create a new personal access token** page, fill out the token information and select **Create**. 
    
-   ![Create a PAT](media/azure-stack-solution-pipeline/createpat.png)
+   ![Create a PAT](media/solution-deployment-guide-cicd-pipeline/createpat.png)
    
 1. Copy and save the token. It won't be shown again after you leave the web page.
    
-   ![PAT warning](media/azure-stack-solution-pipeline/patwarning.png)
+   ![PAT warning](media/solution-deployment-guide-cicd-pipeline/patwarning.png)
    
 ### Install and configure the agent on the build server
 
@@ -287,7 +287,7 @@ In Azure DevOps, create a personal access token (PAT) to use for Azure Stack. Th
    
 1. Navigate to the folder for the extracted build agent, and run the *config.cmd* file. The *config.cmd* updates the build agent folder with additional files.
    
-   ![Install and configure the build agent](media/azure-stack-solution-pipeline/buildagent.png)
+   ![Install and configure the build agent](media/solution-deployment-guide-cicd-pipeline/buildagent.png)
 
 Now that you created the endpoint and installed the Azure Pipelines build agent on the build server, the Azure Pipelines to Azure Stack connection is ready to use. The build agent in Azure Stack gets instructions from Azure Pipelines, and then the agent conveys endpoint information for communication with Azure Stack.
 
@@ -311,17 +311,17 @@ Hybrid CI/CD can apply to both app code and infrastructure code. You can use [Az
    
 1. Select **Manage Connections** > **Connect to a project**. 
    
-   ![Connect to a project from Team Explorer](media/azure-stack-solution-pipeline/connecttoprojectteamexp.png)
+   ![Connect to a project from Team Explorer](media/solution-deployment-guide-cicd-pipeline/connecttoprojectteamexp.png)
 
 1. In the **Connect to a Project** dialog, select your web app project, set a local path, and then select **Clone** to clone the repository locally.
    
-   ![Clone repository in Connect to a Project](media/azure-stack-solution-pipeline/cloneproject.png)
+   ![Clone repository in Connect to a Project](media/solution-deployment-guide-cicd-pipeline/cloneproject.png)
 
 ### Create a self-contained web app deployment for App Services in both clouds
 
 1. In Visual Studio **Solution Explorer**, open your *WebApplication.csproj* file and add `<RuntimeIdentifier>win10-x64</RuntimeIdentifier>`. For more information about this step, see [Self-contained deployment](/dotnet/core/deploying/#self-contained-deployments-scd).
    
-   ![Configure RuntimeIdentifier](media/azure-stack-solution-pipeline/runtimeidentifier.png)
+   ![Configure RuntimeIdentifier](media/solution-deployment-guide-cicd-pipeline/runtimeidentifier.png)
    
 1. Save your work, and use **Team Explorer** to check the code into your project.
 
@@ -337,7 +337,7 @@ Hybrid CI/CD can apply to both app code and infrastructure code. You can use [Az
    
 1. In the right pane, under **Arguments**, add `-r win10-x64` to the configuration. 
    
-   ![Add build pipeline argument](media/azure-stack-solution-pipeline/buildargument.png)
+   ![Add build pipeline argument](media/solution-deployment-guide-cicd-pipeline/buildargument.png)
    
 1. Select **Save & queue** at the top of the page.
    
@@ -353,35 +353,35 @@ Creating a release pipeline is the final step in your hybrid CI/CD configuration
    
 1. On the **Select a template** page, select **Azure App Service Deployment**, and then select **Apply**.
    
-   ![Select the release template](media/azure-stack-solution-pipeline/releasetemplate.png)
+   ![Select the release template](media/solution-deployment-guide-cicd-pipeline/releasetemplate.png)
    
 1. On the **Pipeline** tab, select **Add an artifact** in the left pane. In the right pane, select the web app build you just created from the **Source (build pipeline)** drop-down menu, and select **Add**.
    
-   ![Add a build artifact](media/azure-stack-solution-pipeline/addartifact.png)
+   ![Add a build artifact](media/solution-deployment-guide-cicd-pipeline/addartifact.png)
    
 1. On the **Pipeline** tab, under **Stages**, select the hyperlink in **Stage 1** to **View stage tasks**.
    
-   ![View stage tasks](media/azure-stack-solution-pipeline/viewstagetasks.png)
+   ![View stage tasks](media/solution-deployment-guide-cicd-pipeline/viewstagetasks.png)
    
 1. On the **Tasks** tab, enter *Azure* as the **Stage name**. 
    
 1. Under **Parameters**, select your subscription from the **Azure subscription** drop-down list, and enter your **App service name**.
    
-   ![Select subscription and enter App Service name](media/azure-stack-solution-pipeline/stage1.png)
+   ![Select subscription and enter App Service name](media/solution-deployment-guide-cicd-pipeline/stage1.png)
    
 1. In the left pane, select **Run on agent**. In the right pane, select **Hosted VS2017** from the **Agent pool** drop-down list if it's not already selected.
    
-   ![Select hosted agent](media/azure-stack-solution-pipeline/agentjob.png)
+   ![Select hosted agent](media/solution-deployment-guide-cicd-pipeline/agentjob.png)
    
 1. In the left pane, select **Deploy Azure App Service**, and in the right pane, browse to the **Package or folder** for your Azure web app build.
    
-   ![Select package or folder](media/azure-stack-solution-pipeline/packageorfolder.png)
+   ![Select package or folder](media/solution-deployment-guide-cicd-pipeline/packageorfolder.png)
    
 1. On the **Select a file or folder** dialog, select **OK**.
    
 1. Select **Save** at the upper right on the **New release pipeline** page.
    
-   ![Save changes](media/azure-stack-solution-pipeline/save-devops-icon.png)
+   ![Save changes](media/solution-deployment-guide-cicd-pipeline/save-devops-icon.png)
    
 1. On the **Pipeline** tab, select **Add an artifact**. Select your project, and select your Azure Stack build from the **Source (build pipeline)** drop-down menu. Select **Add**. 
    
@@ -389,7 +389,7 @@ Creating a release pipeline is the final step in your hybrid CI/CD configuration
    
 1. In the new stage, select the hyperlink to **View stage tasks**. Enter *Azure Stack* as the stage name. 
    
-   ![View new stage](media/azure-stack-solution-pipeline/newstage.png)
+   ![View new stage](media/solution-deployment-guide-cicd-pipeline/newstage.png)
    
 1. Under **Parameters**, select your Azure Stack endpoint, and enter your Azure Stack web app name as the **App service name**.
    
@@ -399,15 +399,15 @@ Creating a release pipeline is the final step in your hybrid CI/CD configuration
    
 1. On the **Variables** tab, find the variable named **VSTS_ARM_REST_IGNORE_SSL_ERRORS**. Set the variable value to **true**, and set its scope to **Azure Stack**.
    
-   ![Configure variable](media/azure-stack-solution-pipeline/setvariable.png)
+   ![Configure variable](media/solution-deployment-guide-cicd-pipeline/setvariable.png)
    
 1. On the **Pipeline** tab, select the **Continuous deployment trigger** icon for each artifact, and set it to **Enabled**.  
    
-   ![Set continuous deployment trigger](media/azure-stack-solution-pipeline/contindeploymentenabled.png)
+   ![Set continuous deployment trigger](media/solution-deployment-guide-cicd-pipeline/contindeploymentenabled.png)
    
 1. Select the **Pre-deployment conditions** icon on the Azure Stack stage, and set the trigger to **After release**.
    
-   ![Set pre-deployment conditions trigger](media/azure-stack-solution-pipeline/predeployafterrelease.png)
+   ![Set pre-deployment conditions trigger](media/solution-deployment-guide-cicd-pipeline/predeployafterrelease.png)
    
 1. Select **Save** at the upper right on the **New release pipeline** page to save the release pipeline.
 
@@ -424,7 +424,7 @@ To create and deploy a release:
 
 1. On your new release pipeline page, select **Create release** at upper right. 
    
-   ![Create a release ](media/azure-stack-solution-pipeline/createreleaseicon.png)
+   ![Create a release ](media/solution-deployment-guide-cicd-pipeline/createreleaseicon.png)
    
 1. On the **Create a new release** page:
    1. Under **Pipeline**, select the **Azure** stage to change its trigger from automated to manual. 
@@ -441,11 +441,11 @@ To create and deploy a release:
 
 You can select the hyperlinked status in a release stage to see more information about the deployment. 
 
-![Release summary page](media/azure-stack-solution-pipeline/releasesummary.png)
+![Release summary page](media/solution-deployment-guide-cicd-pipeline/releasesummary.png)
 
 It's easy for an administrator to track the overall progress of releases, and see which releases are waiting for approval.
 
-![Release summary page showing pending approval](media/azure-stack-solution-pipeline/releasepending.png)
+![Release summary page showing pending approval](media/solution-deployment-guide-cicd-pipeline/releasepending.png)
 
 You can see the release logs from all your deployments: 
 
@@ -461,7 +461,7 @@ You can see the release logs from all your deployments:
    
 Seeing logs for the individual steps makes it easier to trace and debug parts of the overall deployment. You can also **Download all logs** as a *.zip* file.
    
-![Release log](media/azure-stack-solution-pipeline/releaselog.png)
+![Release log](media/solution-deployment-guide-cicd-pipeline/releaselog.png)
 
 ## Next steps
 
