@@ -49,7 +49,7 @@ This solution uses the following components:
 | Azure | [Azure Event Hubs](/azure/event-hubs/) | Azure Event Hubs provides a scalable platform for ingesting anonymized data that integrates neatly with Azure Stream Analytics. |
 |  | [Azure Stream Analytics](/azure/stream-analytics/) | An Azure Stream Analytics job aggregates the anonymized data and groups it into 15-second windows for visualization. |
 |  | [Microsoft Power BI](https://powerbi.microsoft.com/) | Power BI provides an easy-to-use dashboard interface for viewing the output from Azure Stream Analytics. |
-| Azure Stack Hub | [App Service](../operator/azure-stack-app-service-overview.md) | The App Service resource provider (RP) provides a base for edge components, including hosting and management features for web apps/APIs and Functions. |
+| Azure Stack Hub | [App Service](/azure-stack/operator/azure-stack-app-service-overview.md) | The App Service resource provider (RP) provides a base for edge components, including hosting and management features for web apps/APIs and Functions. |
 | | Azure Kubernetes Service [(AKS) Engine](https://github.com/Azure/aks-engine) cluster | The AKS RP with AKS-Engine cluster deployed into Azure Stack Hub provides a scalable, resilient engine to run the Face API container. |
 | | Azure Cognitive Services [Face API containers](/azure/cognitive-services/face/face-how-to-install-containers)| The Azure Cognitive Services RP with Face API containers provides demographic, emotion, and unique visitor detection on Contoso's private network. |
 | | Blob Storage | Images captured from the AI Dev Kit are uploaded to Azure Stack Hub's blob storage. |

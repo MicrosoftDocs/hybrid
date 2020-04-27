@@ -46,9 +46,9 @@ An Azure OEM/hardware partner can deploy a production Azure Stack Hub, and all u
    >[!Note]
    >Deploying the ASDK can take up to 7 hours, so plan accordingly.
 
-- Deploy [App Service](../operator/azure-stack-app-service-deploy.md) PaaS services to Azure Stack Hub.
-- [Create plans and offers](../operator/service-plan-offer-subscription-overview.md) in the Azure Stack Hub environment.
-- [Create tenant subscription](../operator/azure-stack-subscribe-plan-provision-vm.md) within the Azure Stack Hub environment.
+- Deploy [App Service](/azure-stack/operator/azure-stack-app-service-deploy.md) PaaS services to Azure Stack Hub.
+- [Create plans and offers](/azure-stack/operator/service-plan-offer-subscription-overview.md) in the Azure Stack Hub environment.
+- [Create tenant subscription](/azure-stack/operator/azure-stack-subscribe-plan-provision-vm.md) within the Azure Stack Hub environment.
 
 ### Azure Stack Hub components
 
@@ -57,7 +57,7 @@ An Azure Stack Hub operator must deploy the App Service, create plans and offers
 This solution example assumes that you have some basic knowledge of Azure and Azure Stack Hub. To learn more before starting the solution, read the following articles:
 
 - [Introduction to Azure](https://azure.microsoft.com/overview/what-is-azure/)
-- [Azure Stack Hub Key Concepts](../operator/azure-stack-overview.md)
+- [Azure Stack Hub Key Concepts](/azure-stack/operator/azure-stack-overview.md)
 
 ### Before you begin
 

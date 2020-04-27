@@ -36,22 +36,22 @@ Before getting started with this deployment guide, make sure you:
 
 - Review the [Footfall detection pattern](pattern-retail-footfall-detection.md) topic.
 - Obtain user access to an Azure Stack Development Kit (ASDK) or Azure Stack Hub integrated system instance, with:
-  - The [Azure App Service on Azure Stack Hub resource provider](../operator/azure-stack-app-service-overview.md) installed. You need operator access to your Azure Stack Hub instance, or work with your administrator to install.
+  - The [Azure App Service on Azure Stack Hub resource provider](/azure-stack/operator/azure-stack-app-service-overview.md) installed. You need operator access to your Azure Stack Hub instance, or work with your administrator to install.
   - A subscription to an offer that provides App Service and Storage quota. You need operator access to create an offer.
 - Obtain access to an Azure subscription.
   - If you don't have an Azure subscription, sign up for a [free trial account](https://azure.microsoft.com/free/) before you begin.
 - Create two service principals in your directory:
   - One set up for use with Azure resources, with access at the Azure subscription scope.
   - One set up for use with Azure Stack Hub resources, with access at the Azure Stack Hub subscription scope.
-  - To learn more about creating service principals and authorizing access, see [Use an app identity to access resources](../operator/azure-stack-create-service-principals.md). If you prefer to use Azure CLI, see [Create an Azure service principal with Azure CLI](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest).
+  - To learn more about creating service principals and authorizing access, see [Use an app identity to access resources](/azure-stack/operator/azure-stack-create-service-principals.md). If you prefer to use Azure CLI, see [Create an Azure service principal with Azure CLI](https://docs.microsoft.com/cli/azure/create-an-azure-service-principal-azure-cli?view=azure-cli-latest).
 - Deploy Azure Cognitive Services in Azure or Azure Stack Hub.
   - First, [learn more about Cognitive Services](https://azure.microsoft.com/services/cognitive-services/).
-  - Then visit [Deploy Azure Cognitive Services to Azure Stack Hub](../user/azure-stack-solution-template-cognitive-services.md) to deploy Cognitive Services on Azure Stack Hub. You first need to sign up for access to the preview.
+  - Then visit [Deploy Azure Cognitive Services to Azure Stack Hub](/azure-stack/user/azure-stack-solution-template-cognitive-services.md) to deploy Cognitive Services on Azure Stack Hub. You first need to sign up for access to the preview.
 - Clone or download an unconfigured Azure Custom Vision AI Dev Kit. For details, see the [Vision AI DevKit](https://azure.github.io/Vision-AI-DevKit-Pages/).
 - Sign up for a Power BI account.
 - An Azure Cognitive Services Face API subscription key and endpoint URL. You can get both with the [Try Cognitive Services](https://azure.microsoft.com/try/cognitive-services/?api=face-api) free trial. Or, follow the instructions in [Create a Cognitive Services account](/azure/cognitive-services/cognitive-services-apis-create-account).
 - Install the following development resources:
-  - [Azure CLI 2.0](../user/azure-stack-version-profiles-azurecli2.md)
+  - [Azure CLI 2.0](/azure-stack/user/azure-stack-version-profiles-azurecli2.md)
   - [Docker CE](https://hub.docker.com/search/?type=edition&offering=community)
   - [Porter](https://porter.sh/). You use Porter to deploy cloud apps using CNAB bundle manifests that are provided for you.
   - [Visual Studio Code](https://code.visualstudio.com/)

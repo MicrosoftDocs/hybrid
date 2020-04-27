@@ -46,7 +46,7 @@ This tutorial covers the following tasks:
 This tutorial assumes that you have a basic knowledge of global Azure and Azure Stack Hub. If you want to learn more before starting the tutorial, review these articles:
 
 - [Introduction to Azure](https://azure.microsoft.com/overview/what-is-azure/)
-- [Azure Stack Hub Key Concepts](../operator/azure-stack-overview.md)
+- [Azure Stack Hub Key Concepts](/azure-stack/operator/azure-stack-overview.md)
 
 This tutorial also assumes that you have an Azure subscription. If you don't have a subscription, [create a free account](https://azure.microsoft.com/free/) before you begin.
 
@@ -54,7 +54,7 @@ This tutorial also assumes that you have an Azure subscription. If you don't hav
 
 Before you start this solution, make sure you meet the following requirements:
 
-- An Azure Stack Development Kit (ASDK) or a subscription on an Azure Stack Hub Integrated System. To deploy the ASDK, follow the instructions in [Deploy the ASDK using the installer](../asdk/asdk-install.md).
+- An Azure Stack Development Kit (ASDK) or a subscription on an Azure Stack Hub Integrated System. To deploy the ASDK, follow the instructions in [Deploy the ASDK using the installer](/azure-stack/asdk/asdk-install.md).
 - Your Azure Stack Hub installation should have the following installed:
   - The Azure App Service. Work with your Azure Stack Hub Operator to deploy and configure the Azure App Service on your environment. This tutorial requires the App Service to have at least one (1) available dedicated worker role.
   - A Windows Server 2016 image.
@@ -138,7 +138,7 @@ The Azure App Service simplifies running and managing a web app. Because Azure S
 
 The App Service on Azure Stack Hub must be routable from the public internet to let users access your app. If your Azure Stack Hub is accessible from the internet, make a note of the public-facing IP address or URL for the Azure Stack Hub web app.
 
-If you're using an ASDK, you can [configure a static NAT mapping](../operator/azure-stack-create-vpn-connection-one-node.md#configure-the-nat-vm-on-each-asdk-for-gateway-traversal) to expose App Service outside the virtual environment.
+If you're using an ASDK, you can [configure a static NAT mapping](/azure-stack/operator/azure-stack-create-vpn-connection-one-node.md#configure-the-nat-vm-on-each-asdk-for-gateway-traversal) to expose App Service outside the virtual environment.
 
 ### Connect a web app in Azure to a hybrid network
 
