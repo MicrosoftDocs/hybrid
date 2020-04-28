@@ -69,30 +69,30 @@ conceptualContent:
           itemType: tutorial
           text: Geo-distributed app
 
-# conceptualContent section (optional)
-conceptualContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
-  title: Solution management
-  summary: Help with deploying and managing hybrid solutions
-  items:
-    # Card
-    - title: Deploy production hybrid solutions
-      links:
-        - url: /hybrid
-          itemType: overview
-          text: Hybrid deployment overview
-        - url: /hybrid
-          itemType: concept
-          text: Hybrid deployment considerations
-    # Card
-    - title: Manage hybrid solutions
-      links:
-        - url: /hybrid
-          itemType: overview
-          text: Hybrid management overview
-        - url: /hybrid
-          itemType: concept
-          text: Hybrid management considerations
+#   # conceptualContent section (optional)
+#   conceptualContent:
+#   # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+#     title: Solution management
+#     summary: Help with deploying and managing hybrid solutions
+#     items:
+#       # Card
+#       - title: Deploy production hybrid solutions
+#         links:
+#           - url: /hybrid
+#             itemType: overview
+#             text: Hybrid deployment overview
+#           - url: /hybrid
+#             itemType: concept
+#             text: Hybrid deployment considerations
+#       # Card
+#       - title: Manage hybrid solutions
+#         links:
+#           - url: /hybrid
+#             itemType: overview
+#             text: Hybrid management overview
+#           - url: /hybrid
+#             itemType: concept
+#             text: Hybrid management considerations
 
 
 # additionalContent section (optional)
