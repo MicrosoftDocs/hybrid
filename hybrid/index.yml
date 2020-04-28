@@ -28,11 +28,11 @@ metadata:
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
-  title: Patterns and solution examples
-  summary: Guidance and examples to explore and reuse, while building hybrid solutions based on Azure and Azure Stack.
+  title: Solution development
+  summary: Patterns and examples to explore and reuse, while designing and building Azure hybrid solutions.
   items:
     # Card
-    - title: Learn about hybrid
+    - title: Learn about patterns and solution examples
       links:
         - url: /hybrid/app-solutions/overview-patterns-solution-examples
           itemType: overview
@@ -68,6 +68,31 @@ conceptualContent:
         - url: /hybrid/app-solutions/solution-deployment-guide-geo-distributed
           itemType: tutorial
           text: Geo-distributed app
+
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+  title: Solution management
+  summary: Help with deploying and managing hybrid solutions
+  items:
+    # Card
+    - title: Deploy production hybrid solutions
+      links:
+        - url: /hybrid
+          itemType: overview
+          text: Hybrid deployment overview
+        - url: /hybrid
+          itemType: concept
+          text: Hybrid deployment considerations
+    # Card
+    - title: Manage hybrid solutions
+      links:
+        - url: /hybrid
+          itemType: overview
+          text: Hybrid management overview
+        - url: /hybrid
+          itemType: concept
+          text: Hybrid management considerations
 
 #productDirectory section (optional)
 productDirectory:
