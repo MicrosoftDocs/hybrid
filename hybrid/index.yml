@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: Azure hybrid documentation 
+title: Azure hybrid solution documentation 
 summary: Guidance for building, deploying, and managing hybrid solutions that span the cloud, datacenter, and edge.
 brand: azure
 
 metadata:
-  title: Azure hybrid documentation 
+  title: Azure hybrid solution documentation 
   description: Guidance for building, deploying, and managing hybrid solutions that span the cloud, datacenter, and edge.
   ms.service: multiple
   ms.topic: hub-page
@@ -28,8 +28,8 @@ metadata:
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
-  title: Hybrid app patterns and solution examples
-  summary: Patterns and solution examples to guide you through development of hybrid solutions that span Azure and Azure Stack.
+  title: Patterns and solution examples
+  summary: Guidance and examples to explore and reuse, while building hybrid solutions based on Azure and Azure Stack.
   items:
     # Card
     - title: Learn about hybrid
