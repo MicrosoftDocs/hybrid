@@ -24,7 +24,9 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.svg",
+          "**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
@@ -39,11 +41,30 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/hybrid",
+      "feedback_product_url": "https://feedback.azure.com/forums/34192--general-feedback",
       "breadcrumb_path": "/hybrid/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
-    },
-    "fileMetadata": {},
+      "uhfHeaderId": "azure",
+      "_op_documentIdPathDepotMapping": {
+        "./": {
+          "depot_name": "Azure.AzureStack",
+          "folder_relative_path_in_docset": "hybrid/"
+        }
+      },
+      "manager":"femila",
+      "ms.service": "multiple",          
+      "fileMetadata": {
+        "titleSuffix": {
+          "**/*.md": "Azure Hybrid Solutions",
+          "app-solutions/**/*.md": "Azure Hybrid App Solutions",
+          "ops-solutions/**/*.md": "Azure Hybrid Ops Solutions"
+        },
+        "searchScope": {
+          "**/*.md": ["Azure","Hybrid"]
+        }
+      },
     "template": [],
     "dest": "hybrid",
     "markdownEngineName": "markdig"
