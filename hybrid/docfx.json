@@ -54,7 +54,8 @@
         }
       },
       "manager":"femila",
-      "ms.service": "multiple",          
+      "ms.service": "multiple"
+    },
       "fileMetadata": {
         "titleSuffix": {
           "**/*.md": "Azure Hybrid Solutions",
