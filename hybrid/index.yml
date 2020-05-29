@@ -66,12 +66,12 @@ productDirectory:
     # Card
     - title: Azure
       imageSrc: media/index/logo_azure.svg
-      summary: Documentation for all Azure services.
+      summary: Azure services documentation.
       url: /Azure
     # Card
     - title: Azure Stack Hub
       imageSrc: media/index/azure-stack-hub.svg
-      summary: Documentation for the Azure Stack portfolio, including Azure Stack Hub, Edge, and HCI.
+      summary: Azure Stack portfolio documentation, including Azure Stack Hub, Edge, and HCI.
       url: /Azure-Stack
 
 # conceptualContent section (optional)
