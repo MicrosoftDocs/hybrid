@@ -48,7 +48,7 @@
       "extendBreadcrumb": true,
       "uhfHeaderId": "azure",
       "_op_documentIdPathDepotMapping": {
-        "./": {
+        "./azure-stack": {
           "depot_name": "Azure.AzureStack",
           "folder_relative_path_in_docset": "hybrid/"
         }
