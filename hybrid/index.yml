@@ -5,7 +5,7 @@ brand: azure
 
 metadata:
   title: Azure hybrid solutions documentation 
-  description: Guidance for building, deploying, and managing hybrid solutions that span the cloud, datacenter, and edge.
+  description: Guidance for building and operating hybrid solutions that span the cloud, datacenter, and edge.
   ms.service: multiple
   ms.topic: hub-page
   author: BryanLa
@@ -149,7 +149,7 @@ productDirectory:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: App Solutions for Architects and Developers
+    - title: App and Data Solutions for Architects and Developers
       items:
       # Cards
       - title: Learn about patterns and solution examples
@@ -178,7 +178,7 @@ additionalContent:
             text: Footfall detection (retail)
           - url: /hybrid/app-solutions/solution-deployment-guide-geo-distributed
             text: Geo-distributed app
-    - title: Ops Solutions for Adminstrators and ITPros
+    - title: Operations Solutions for Adminstrators and ITPros
       items:
       # Cards
       - title: Deploy production hybrid solutions
