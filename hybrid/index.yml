@@ -58,7 +58,7 @@ productDirectory:
   summary: Learn about hybrid-capable products and services used to build and operate hybrid solutions. # < 160 chars (optional)
   items:
     # Card
-    - title: Public/sovereign cloud in 60 regions worldwide.
+    - title: Public/sovereign cloud offerings in 60 regions worldwide.
       # imageSrc should be square in ratio with no whitespace
       imageSrc: media/index/logo_azure.svg
       links:
@@ -162,35 +162,10 @@ productDirectory:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Administrators and ITPros
+    - title: Build hybrid solutions
       items:
       # Cards
-      - title: Deploy
-        links:
-          - url: /hybrid
-            text: Hybrid deployment overview
-          - url: /hybrid
-            text: Hybrid deployment considerations
-      # Card
-      - title: Manage 
-        links:
-          - url: /azure/azure-arc/
-            text: Azure Arc for Servers (preview)
-          - url: /azure/azure-arc/kubernetes/
-            text: Azure Arc for Kubernetes (preview) - ISN'T RIGHT this can be used for deploy too
-          - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/#contact-us
-            text: Azure Arc for data services (private preview)                      
-      # Card
-      - title: Monitor
-        links:
-          - url: /hybrid
-            text: Hybrid management overview
-          - url: /hybrid
-            text: Hybrid management considerations            
-    - title: Architects and developers
-      items:
-      # Cards
-      - title: Hybrid patterns and solution examples
+      - title: Hybrid app patterns and solution examples
         links:
           - url: /hybrid/app-solutions/overview-patterns-solution-examples
             text: What are patterns and solution examples?
@@ -216,6 +191,31 @@ additionalContent:
             text: Footfall detection (retail)
           - url: /hybrid/app-solutions/solution-deployment-guide-geo-distributed
             text: Geo-distributed app
+    - title: Operate hybrid solutions
+      items:
+      # Cards
+      - title: Deploy
+        links:
+          - url: /hybrid
+            text: Hybrid deployment overview
+          - url: /hybrid
+            text: Hybrid deployment considerations
+      # Card
+      - title: Manage 
+        links:
+          - url: /azure/azure-arc/
+            text: Azure Arc for Servers (preview)
+          - url: /azure/azure-arc/kubernetes/
+            text: Azure Arc for Kubernetes (preview) - ISN'T RIGHT this can be used for deploy too
+          - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/#contact-us
+            text: Azure Arc for data services (private preview)                      
+      # Card
+      - title: Monitor
+        links:
+          - url: /hybrid
+            text: Hybrid management overview
+          - url: /hybrid
+            text: Hybrid management considerations                        
     - title: Other
       items:
       # Cards
