@@ -32,64 +32,64 @@ highlightedContent:
       url: /learn
       
 # productDirectory section (optional)
-productDirectory:
-  title: Azure hybrid platforms # < 60 chars (optional)
-  summary: Learn about hybrid-capable products and services used to build and operate hybrid solutions. # < 160 chars (optional)
-  items:
-    # Card
-    - title: Azure hybrid capabilities
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: media/index/logo_azure.svg
-      summary: Explore hybrid capabilities offered by [Azure](\azure) services and products
-      url: https://azure.microsoft.com/overview/azure-hybrid/
-    # Card
-    - title: Azure
-      imageSrc: media/index/logo_azure.svg
-      summary: Azure service documentation.
-      url: /Azure
-    # Card
-    - title: Azure Stack
-      imageSrc: media/index/azure-stack-hub.svg
-      summary: Azure Stack portfolio documentation, including Azure Stack Hub, Edge, and HCI.
-      url: /Azure-Stack
-
 # productDirectory:
 #   title: Azure hybrid platforms # < 60 chars (optional)
 #   summary: Learn about hybrid-capable products and services used to build and operate hybrid solutions. # < 160 chars (optional)
 #   items:
 #     # Card
-#     - title: Public cloud
-#       # imageSrc should be square in ratio with no whitespace
-#       imageSrc: media/index/logo_azure.svg
-#       links:
-#         - url: /azure
-#           text: Azure
-#     # Card
-#     - title: Private cloud 
-#       # imageSrc should be square in ratio with no whitespace
-#       imageSrc: media/index/azure-stack-hub.svg
-#       links:
-#         - url: /azure-stack/operator/azure-stack-overview
-#           text: Azure Stack Hub 
-#         - url: /azure-stack/hci
-#           text: Azure Stack HCI (on-prem)
-#     # Card
-#     - title: Intelligent Edge
-#       # imageSrc should be square in ratio with no whitespace
-#       imageSrc: media/index/azure-stack-hub.svg
-#       links:
-#         - url: /azure/iot-edge/
-#           text: Azure IoT Edge
-#         - url: /azure-sphere
-#           text: Azure Sphere
-#         - url: /windows/iot-core/
-#           text: Windows for IoT
-#     # Card
 #     - title: Azure hybrid capabilities
 #       # imageSrc should be square in ratio with no whitespace
 #       imageSrc: media/index/logo_azure.svg
-#       summary: Explore hybrid capabilities offered by Azure services and products. 
+#       summary: Explore hybrid capabilities offered by Azure services and products
 #       url: https://azure.microsoft.com/overview/azure-hybrid/
+#     # Card
+#     - title: Azure
+#       imageSrc: media/index/logo_azure.svg
+#       summary: Azure service documentation.
+#       url: /Azure
+#     # Card
+#     - title: Azure Stack
+#       imageSrc: media/index/azure-stack-hub.svg
+#       summary: Azure Stack portfolio documentation, including Azure Stack Hub, Edge, and HCI.
+#       url: /Azure-Stack
+
+productDirectory:
+  title: Azure hybrid platforms # < 60 chars (optional)
+  summary: Learn about hybrid-capable products and services used to build and operate hybrid solutions. # < 160 chars (optional)
+  items:
+    # Card
+    - title: Public cloud
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: media/index/logo_azure.svg
+      links:
+        - url: /azure
+          text: Azure
+    # Card
+    - title: Private cloud 
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: media/index/azure-stack-hub.svg
+      links:
+        - url: /azure-stack/operator/azure-stack-overview
+          text: Azure Stack Hub 
+        - url: /azure-stack/hci
+          text: Azure Stack HCI (on-prem)
+    # Card
+    - title: Intelligent Edge
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: media/index/azure-stack-hub.svg
+      links:
+        - url: /azure/iot-edge/
+          text: Azure IoT Edge
+        - url: /azure-sphere
+          text: Azure Sphere
+        - url: /windows/iot-core/
+          text: Windows for IoT
+    # Card
+    - title: Azure hybrid capabilities
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: media/index/logo_azure.svg
+      summary: Explore hybrid capabilities offered by Azure services and products. 
+      url: https://azure.microsoft.com/overview/azure-hybrid/
 
 
 # conceptualContent section (optional)
