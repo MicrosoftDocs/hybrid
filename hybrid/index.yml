@@ -58,23 +58,25 @@ productDirectory:
   summary: Learn about hybrid-capable products and services used to build and operate hybrid solutions. # < 160 chars (optional)
   items:
     # Card
-    - title: Public cloud
+    - title: Public/sovereign cloud in 60 regions worldwide.
       # imageSrc should be square in ratio with no whitespace
       imageSrc: media/index/logo_azure.svg
       links:
+        - url: https://azure.microsoft.com/overview/azure-hybrid/
+          text: Azure hybrid capabilities          
         - url: /azure
-          text: Azure
+          text: Azure services
     # Card
-    - title: Private cloud 
+    - title: Private cloud offerings for hosted, on-prem, and mobile datacenters.
       # imageSrc should be square in ratio with no whitespace
       imageSrc: media/index/azure-stack-hub.svg
       links:
         - url: /azure-stack/operator/azure-stack-overview
           text: Azure Stack Hub 
         - url: /azure-stack/hci
-          text: Azure Stack HCI (on-prem)
+          text: Azure Stack HCI
     # Card
-    - title: Intelligent Edge
+    - title: Intelligent edge platforms for devices.
       # imageSrc should be square in ratio with no whitespace
       imageSrc: media/index/azure-stack-hub.svg
       links:
@@ -84,13 +86,6 @@ productDirectory:
           text: Azure Sphere
         - url: /windows/iot-core/
           text: Windows for IoT
-    # Card
-    - title: Azure hybrid capabilities
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: media/index/logo_azure.svg
-      summary: Explore hybrid capabilities offered by Azure services and products. 
-      url: https://azure.microsoft.com/overview/azure-hybrid/
-
 
 # conceptualContent section (optional)
 #conceptualContent:
