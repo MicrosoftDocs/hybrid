@@ -1,16 +1,16 @@
 ### YamlMime:Hub
-title: Azure hybrid solution documentation 
-summary: Guidance for building, deploying, and managing hybrid solutions that span the cloud, datacenter, and edge.
+title: Azure hybrid resource documentation 
+summary: Resources for building, deploying, and managing hybrid solutions that span the cloud, datacenter, and edge.
 brand: azure
 
 metadata:
-  title: Azure hybrid solutions documentation 
-  description: Guidance for building and operating hybrid solutions that span the cloud, datacenter, and edge.
+  title: Azure hybrid resource documentation 
+  description: Resources for building and operating hybrid solutions that span the cloud, datacenter, and edge.
   ms.service: multiple
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 05/28/2020
+  ms.date: 06/08/2020
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -31,27 +31,6 @@ highlightedContent:
       itemType: learn
       url: /learn
       
-#productDirectory section (optional)
-# productDirectory:
-#   title: Hybrid products and services # < 60 chars (optional)
-#   summary: Learn about the hybrid-capable products and services, used to build and manage hybrid solutions. # < 160 chars (optional)
-#   items:
-#   - title: Azure 
-#     imageSrc: media/index/logo_azure.svg
-#     links:
-#       - url: /azure/
-#         text: Azure services  
-#   - title: Azure
-#     imageSrc: media/index/logo_azure.svg
-#     links:
-#       - url: /azure/
-#         text: Azure services
-#   - title: Azure Stack
-#     imageSrc: media/index/azure-stack-hub.svg
-#     links:
-#       - url: /azure-stack/
-#         text: Azure Stack family
-
 # productDirectory section (optional)
 productDirectory:
   title: Azure hybrid platforms # < 60 chars (optional)
@@ -61,7 +40,7 @@ productDirectory:
     - title: Azure hybrid capabilities
       # imageSrc should be square in ratio with no whitespace
       imageSrc: media/index/logo_azure.svg
-      summary: Explore hybrid capabilities offered by Azure products and services. 
+      summary: Explore hybrid capabilities offered by [Azure](\azure) services and products
       url: https://azure.microsoft.com/overview/azure-hybrid/
     # Card
     - title: Azure
@@ -74,26 +53,44 @@ productDirectory:
       summary: Azure Stack portfolio documentation, including Azure Stack Hub, Edge, and HCI.
       url: /Azure-Stack
 
-productDirectory:
-  title: Azure hybrid platforms # < 60 chars (optional)
-  summary: Learn about hybrid-capable products and services used to build and operate hybrid solutions. # < 160 chars (optional)
-  items:
-    # Card
-    - title: Azure hybrid capabilities
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: media/index/logo_azure.svg
-      summary: Explore hybrid capabilities offered by Azure products and services. 
-      url: https://azure.microsoft.com/overview/azure-hybrid/
-    # Card
-    - title: Azure
-      imageSrc: media/index/logo_azure.svg
-      summary: Azure service documentation.
-      url: /Azure
-    # Card
-    - title: Azure Stack
-      imageSrc: media/index/azure-stack-hub.svg
-      summary: Azure Stack portfolio documentation, including Azure Stack Hub, Edge, and HCI.
-      url: /Azure-Stack
+# productDirectory:
+#   title: Azure hybrid platforms # < 60 chars (optional)
+#   summary: Learn about hybrid-capable products and services used to build and operate hybrid solutions. # < 160 chars (optional)
+#   items:
+#     # Card
+#     - title: Public cloud
+#       # imageSrc should be square in ratio with no whitespace
+#       imageSrc: media/index/logo_azure.svg
+#       links:
+#         - url: /azure
+#           text: Azure
+#     # Card
+#     - title: Private cloud 
+#       # imageSrc should be square in ratio with no whitespace
+#       imageSrc: media/index/azure-stack-hub.svg
+#       links:
+#         - url: /azure-stack/operator/azure-stack-overview
+#           text: Azure Stack Hub 
+#         - url: /azure-stack/hci
+#           text: Azure Stack HCI (on-prem)
+#     # Card
+#     - title: Intelligent Edge
+#       # imageSrc should be square in ratio with no whitespace
+#       imageSrc: media/index/azure-stack-hub.svg
+#       links:
+#         - url: /azure/iot-edge/
+#           text: Azure IoT Edge
+#         - url: /azure-sphere
+#           text: Azure Sphere
+#         - url: /windows/iot-core/
+#           text: Windows for IoT
+#     # Card
+#     - title: Azure hybrid capabilities
+#       # imageSrc should be square in ratio with no whitespace
+#       imageSrc: media/index/logo_azure.svg
+#       summary: Explore hybrid capabilities offered by Azure services and products. 
+#       url: https://azure.microsoft.com/overview/azure-hybrid/
+
 
 # conceptualContent section (optional)
 #conceptualContent:
@@ -170,6 +167,31 @@ productDirectory:
 additionalContent:
   # Supports up to 3 sections
   sections:
+    - title: Administrators and ITPros
+      items:
+      # Cards
+      - title: Deploy
+        links:
+          - url: /hybrid
+            text: Hybrid deployment overview
+          - url: /hybrid
+            text: Hybrid deployment considerations
+      # Card
+      - title: Manage 
+        links:
+          - url: /azure/azure-arc/
+            text: Azure Arc for Servers (preview)
+          - url: /azure/azure-arc/kubernetes/
+            text: Azure Arc for Kubernetes (preview) - ISN'T RIGHT this can be used for deploy too
+          - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/#contact-us
+            text: Azure Arc for data services (private preview)                      
+      # Card
+      - title: Monitor
+        links:
+          - url: /hybrid
+            text: Hybrid management overview
+          - url: /hybrid
+            text: Hybrid management considerations            
     - title: Architects and developers
       items:
       # Cards
@@ -199,27 +221,18 @@ additionalContent:
             text: Footfall detection (retail)
           - url: /hybrid/app-solutions/solution-deployment-guide-geo-distributed
             text: Geo-distributed app
-    - title: Adminstrators and ITPros
+    - title: Other
       items:
       # Cards
-      - title: Deploy hybrid solutions
+      - title: Hybrid patterns and solution examples
         links:
-          - url: /hybrid
-            text: Hybrid deployment overview
-          - url: /hybrid
-            text: Hybrid deployment considerations
-      # Card
-      - title: Manage hybrid solutions
+          - url: /hybrid/app-solutions/overview-patterns-solution-examples
+            text: What are patterns and solution examples?
+          - url: /hybrid/app-solutions/overview-app-design-considerations
+            text: Hybrid app design considerations
+      - title: Hybrid patterns and solution examples
         links:
-          - url: /hybrid
-            text: Hybrid management overview
-          - url: /hybrid
-            text: Hybrid management considerations          
-      # Card
-      - title: Monitor hybrid solutions
-        links:
-          - url: /hybrid
-            text: Hybrid management overview
-          - url: /hybrid
-            text: Hybrid management considerations            
-
+          - url: /hybrid/app-solutions/overview-patterns-solution-examples
+            text: What are patterns and solution examples?
+          - url: /hybrid/app-solutions/overview-app-design-considerations
+            text: Hybrid app design considerations
