@@ -170,7 +170,7 @@ productDirectory:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Guidance for architects and developers
+    - title: Architects and developers
       items:
       # Cards
       - title: Hybrid patterns and solution examples
@@ -199,7 +199,7 @@ additionalContent:
             text: Footfall detection (retail)
           - url: /hybrid/app-solutions/solution-deployment-guide-geo-distributed
             text: Geo-distributed app
-    - title: Guidance for adminstrators and ITPros
+    - title: Adminstrators and ITPros
       items:
       # Cards
       - title: Deploy hybrid solutions
