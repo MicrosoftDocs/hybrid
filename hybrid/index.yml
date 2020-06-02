@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Azure hybrid resource documentation 
-summary: Resources for building, deploying, and managing hybrid solutions that span the cloud, datacenter, and edge.
+summary: Resources for building, deploying, and operating hybrid solutions that span the global cloud, datacenter, and edge.
 brand: azure
 
 metadata:
@@ -54,11 +54,11 @@ highlightedContent:
 #       url: /Azure-Stack
 
 productDirectory:
-  title: Azure hybrid platforms # < 60 chars (optional)
-  summary: Learn about hybrid-capable products and services used to build and operate hybrid solutions. # < 160 chars (optional)
+  title: Azure hybrid cloud # < 60 chars (optional)
+  summary: Learn about hybrid-capable platforms used to build and operate hybrid solutions. # < 160 chars (optional)
   items:
     # Card
-    - title: Public/sovereign cloud offerings in 60 regions worldwide.
+    - title: Azure global public/sovereign cloud platform spanning 60+ regions worldwide.
       # imageSrc should be square in ratio with no whitespace
       imageSrc: media/index/logo_azure.svg
       links:
@@ -67,11 +67,11 @@ productDirectory:
         - url: /azure
           text: Azure services
     # Card
-    - title: Private cloud offerings for hosted, on-prem, and mobile datacenters.
+    - title: Private cloud platforms for hosted, on-prem, and mobile datacenters.
       # imageSrc should be square in ratio with no whitespace
       imageSrc: media/index/azure-stack-hub.svg
       links:
-        - url: /azure-stack/operator/azure-stack-overview
+        - url: /azure-stack/operator
           text: Azure Stack Hub 
         - url: /azure-stack/hci
           text: Azure Stack HCI
