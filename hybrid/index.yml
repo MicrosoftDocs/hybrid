@@ -126,7 +126,7 @@ conceptualContent:
         text: Azure SQL Edge (preview)  
    - title: Identity & security
      links:
-      - url: /active-directory/hybrid/
+      - url: /azure/active-directory/hybrid/
         itemType: overview
         text: Azure AD hybrid identity  
       - url: /azure/security-center/
@@ -166,6 +166,15 @@ conceptualContent:
       - url: /azure/expressroute/
         itemType: overview
         text: Azure ExpressRoute
+      - url: /azure/load-balancer/
+        itemType: overview
+        text: Azure Load Balancer
+      - url: /azure/azure-relay/
+        itemType: overview
+        text: Azure Relay
+      - url: /azure/traffic-manager/
+        itemType: overview
+        text: Azure Traffic Manager
 
 # additionalContent section (optional)
 # Card with links style
