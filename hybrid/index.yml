@@ -58,7 +58,7 @@ highlightedContent:
 
 productDirectory:
   title: Azure hybrid cloud # < 60 chars (optional)
-  summary: Learn about the hybrid-capable platforms used to build and operate hybrid solutions. # < 160 chars (optional)
+  summary: The hybrid-capable platforms used to build and operate hybrid solutions. # < 160 chars (optional)
   items:
     # Card
     - title: Azure global public/sovereign cloud platform spanning 60+ regions worldwide.
@@ -92,14 +92,25 @@ productDirectory:
 conceptualContent:
 #itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
  title: Azure hybrid features
- summary: Services and products for building, deploying, and operating a hybrid solution.
+ summary: Services and products for building and operating a hybrid solution.
  items:
    # Card
    - title: Data
      links:
-      - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/#contact-us
+      - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
         itemType: overview      
         text: Azure Arc for data services (private preview) 
+   - title: Develop
+     links:
+      - url: /azure/devops
+        itemType: overview
+        text: Azure DevOps for CI/CD
+      - url: /dotnet/azure/
+        itemType: overview
+        text: .NET development for Azure        
+      - url: /visualstudio/azure/
+        itemType: overview
+        text: Visual Studio for Azure
    - title: Edge
      links:
       - url: /azure/databox-online/azure-stack-edge-overview
@@ -110,7 +121,7 @@ conceptualContent:
         text: Azure SQL Edge (preview)    
    - title: Manage
      links:
-      - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/#contact-us
+      - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
         itemType: overview      
         text: Azure Arc for data services (private preview) 
       - url: /azure/azure-arc/kubernetes/
@@ -124,7 +135,9 @@ conceptualContent:
       - url: /azure/networking/edge-zones-overview
         itemType: overview
         text: Azure Edge Zones
-
+      - url: /azure/expressroute/
+        itemType: overview
+        text: Azure ExpressRoute
 
 # additionalContent section (optional)
 # Card with links style
@@ -160,32 +173,7 @@ additionalContent:
             text: Footfall detection (retail)
           - url: /hybrid/app-solutions/solution-deployment-guide-geo-distributed
             text: Geo-distributed app
-    - title: Operate hybrid solutions
-      items:
-      # Cards
-      - title: Deploy
-        links:
-          - url: /hybrid
-            text: Hybrid deployment overview
-          - url: /hybrid
-            text: Hybrid deployment considerations
-      # Card
-      - title: Manage 
-        links:
-          - url: /azure/azure-arc/
-            text: Azure Arc for Servers (preview)
-          - url: /azure/azure-arc/kubernetes/
-            text: Azure Arc for Kubernetes (preview) - ISN'T RIGHT this can be used for deploy too
-          - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/#contact-us
-            text: Azure Arc for data services (private preview)                      
-      # Card
-      - title: Monitor
-        links:
-          - url: /hybrid
-            text: Hybrid management overview
-          - url: /hybrid
-            text: Hybrid management considerations                        
-    - title: Other
+    - title: Other resources
       items:
       # Cards
       - title: Hybrid patterns and solution examples
