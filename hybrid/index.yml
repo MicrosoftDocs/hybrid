@@ -86,7 +86,7 @@ productDirectory:
 conceptualContent:
 #itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
  title: Hybrid-enabled technologies
- summary: Services and products that enable building and operating hybrid solutions.
+ summary: Services and products for building and operating hybrid solutions.
  items:
    # Card
    - title: Backup & recovery
@@ -135,7 +135,7 @@ conceptualContent:
       - url: /azure/sentinel/
         itemType: overview
         text: Azure Sentinel
-   - title: Manage
+   - title: Manage & monitor
      links:
       - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
         itemType: overview      
@@ -155,11 +155,9 @@ conceptualContent:
       - url: /windows-server/manage/windows-admin-center/azure/
         itemType: overview
         text: Windows Admin Center Azure hybrid services
-   - title: Monitor
-     links:
       - url: /azure-monitor
         itemType: overview
-        text: Azure Monitor
+        text: Azure Monitor        
    - title: Network
      links:
       - url: /azure/networking/edge-zones-overview
