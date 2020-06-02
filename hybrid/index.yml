@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: Azure hybrid resource documentation 
+title: Azure hybrid documentation 
 summary: Resources for building, deploying, and operating hybrid solutions that span the global cloud, datacenter, and edge.
 brand: azure
 
 metadata:
-  title: Azure hybrid resource documentation 
+  title: Azure hybrid documentation 
   description: Resources for building and operating hybrid solutions that span the cloud, datacenter, and edge.
   ms.service: multiple
   ms.topic: hub-page
@@ -30,7 +30,10 @@ highlightedContent:
     - title: "Explore Microsoft Learn content"
       itemType: learn
       url: /learn
-      
+    - title: "Azure hybrid capabilities"
+      itemType: concept
+      url: https://azure.microsoft.com/overview/azure-hybrid/      
+            
 # productDirectory section (optional)
 # productDirectory:
 #   title: Azure hybrid platforms # < 60 chars (optional)
@@ -55,15 +58,13 @@ highlightedContent:
 
 productDirectory:
   title: Azure hybrid cloud # < 60 chars (optional)
-  summary: Learn about hybrid-capable platforms used to build and operate hybrid solutions. # < 160 chars (optional)
+  summary: Learn about the hybrid-capable platforms used to build and operate hybrid solutions. # < 160 chars (optional)
   items:
     # Card
     - title: Azure global public/sovereign cloud platform spanning 60+ regions worldwide.
       # imageSrc should be square in ratio with no whitespace
       imageSrc: media/index/logo_azure.svg
       links:
-        - url: https://azure.microsoft.com/overview/azure-hybrid/
-          text: Azure hybrid capabilities          
         - url: /azure
           text: Azure services
     # Card
@@ -88,73 +89,41 @@ productDirectory:
           text: Windows for IoT
 
 # conceptualContent section (optional)
-#conceptualContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
-# title: Solution development
-# summary: Patterns and examples to explore and reuse, while designing and building Azure hybrid solutions.
-# items:
-#   # Card
-#   - title: Learn about patterns and solution examples
-#     links:
-#       - url: /hybrid/app-solutions/overview-patterns-solution-examples
-#         itemType: overview
-#         text: What are patterns and solution examples?
-#       - url: /hybrid/app-solutions/overview-app-design-considerations
-#         itemType: concept
-#         text: Hybrid app design considerations
-#   - title: Explore hybrid patterns
-#     links:
-#       - url: /hybrid/app-solutions/pattern-cross-cloud-scale
-#         itemType: architecture
-#         text: Cross-cloud scaling
-#       - url: /hybrid/app-solutions/pattern-cicd-pipeline
-#         itemType: architecture
-#         text: DevOps hybrid CI/CD
-#       - url: /hybrid/app-solutions/pattern-retail-footfall-detection
-#         itemType: architecture
-#         text: Footfall detection (retail)
-#       - url: /hybrid/app-solutions/pattern-geo-distributed
-#         itemType: architecture
-#         text: Geo-distributed app
-#   - title: Deploy hybrid solution examples
-#     links:
-#       - url: /hybrid/app-solutions/solution-deployment-guide-cross-cloud-scaling
-#         itemType: tutorial
-#         text: Cross-cloud scaling
-#       - url: https://aka.ms/hybriddevopsdeploy 
-#         itemType: tutorial
-#         text: DevOps hybrid CI/CD
-#       - url: /hybrid/app-solutions/solution-deployment-guide-retail-footfall-detection
-#         itemType: tutorial
-#         text: Footfall detection (retail)
-#       - url: /hybrid/app-solutions/solution-deployment-guide-geo-distributed
-#         itemType: tutorial
-#         text: Geo-distributed app
-
-#   # conceptualContent section (optional)
-#   conceptualContent:
-#   # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
-#     title: Solution management
-#     summary: Help with deploying and managing hybrid solutions
-#     items:
-#       # Card
-#       - title: Deploy production hybrid solutions
-#         links:
-#           - url: /hybrid
-#             itemType: overview
-#             text: Hybrid deployment overview
-#           - url: /hybrid
-#             itemType: concept
-#             text: Hybrid deployment considerations
-#       # Card
-#       - title: Manage hybrid solutions
-#         links:
-#           - url: /hybrid
-#             itemType: overview
-#             text: Hybrid management overview
-#           - url: /hybrid
-#             itemType: concept
-#             text: Hybrid management considerations
+conceptualContent:
+#itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+ title: Azure hybrid features
+ summary: Services and products for building, deploying, and operating a hybrid solution.
+ items:
+   # Card
+   - title: Data
+     links:
+      - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/#contact-us
+        itemType: overview      
+        text: Azure Arc for data services (private preview) 
+   - title: Edge
+     links:
+      - url: /azure/databox-online/azure-stack-edge-overview
+        itemType: overview      
+        text: Azure Stack Edge     
+      - url: /azure/azure-sql-edge/overview
+        itemType: overview      
+        text: Azure SQL Edge (preview)    
+   - title: Manage
+     links:
+      - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/#contact-us
+        itemType: overview      
+        text: Azure Arc for data services (private preview) 
+      - url: /azure/azure-arc/kubernetes/
+        itemType: overview      
+        text: Azure Arc for Kubernetes (preview)
+      - url: /azure/azure-arc/
+        itemType: overview
+        text: Azure Arc for Servers (preview)
+   - title: Network
+     links:
+      - url: /azure/networking/edge-zones-overview
+        itemType: overview
+        text: Azure Edge Zones
 
 
 # additionalContent section (optional)
@@ -162,7 +131,7 @@ productDirectory:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Build hybrid solutions
+    - title: Hybrid solution examples
       items:
       # Cards
       - title: Hybrid app patterns and solution examples
