@@ -52,7 +52,7 @@ highlightedContent:
 
 productDirectory:
   title: Azure hybrid cloud # < 60 chars (optional)
-  summary: The hybrid-capable platforms used to build and operate hybrid solutions. # < 160 chars (optional)
+  summary: Hybrid-capable platforms used to build and operate hybrid solutions. # < 160 chars (optional)
   items:
     # Card
     - title: Azure global public/sovereign cloud platform spanning 60+ regions worldwide.
@@ -62,7 +62,7 @@ productDirectory:
         - url: /azure
           text: Azure services
     # Card
-    - title: Private cloud platforms for hosted, on-prem, and mobile datacenters.
+    - title: Private cloud platforms for hosted, on-prem, and mobile data centers.
       # imageSrc should be square in ratio with no whitespace
       imageSrc: media/index/azure-stack-hub.svg
       links:
@@ -85,15 +85,26 @@ productDirectory:
 # conceptualContent section (optional)
 conceptualContent:
 #itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
- title: Azure hybrid technologies
- summary: Services and products for building and operating a hybrid solution.
+ title: Hybrid-enabled technologies
+ summary: Services and products that enable building and operating hybrid solutions.
  items:
    # Card
+   - title: Backup & recovery
+     links:
+     - url: /azure/backup/
+       itemType: overview
+       text: Azure Backup
+     - url: /azure/site-recovery/
+       itemType: overview
+       text: Azure Site Recovery
    - title: Data
      links:
       - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
         itemType: overview      
         text: Azure Arc for data services (private preview) 
+      - url: /azure/azure-sql-edge/overview
+        itemType: overview      
+        text: Azure SQL Edge (preview)          
    - title: Develop
      links:
       - url: /azure/devops
@@ -113,11 +124,17 @@ conceptualContent:
       - url: /azure/azure-sql-edge/overview
         itemType: overview      
         text: Azure SQL Edge (preview)  
-   - title: Identity
+   - title: Identity & security
      links:
       - url: /active-directory/hybrid/
         itemType: overview
         text: Azure AD hybrid identity  
+      - url: /azure/security-center/
+        itemType: overview
+        text: Azure Security Center
+      - url: /azure/sentinel/
+        itemType: overview
+        text: Azure Sentinel
    - title: Manage
      links:
       - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
@@ -129,6 +146,20 @@ conceptualContent:
       - url: /azure/azure-arc/
         itemType: overview
         text: Azure Arc for Servers (preview)
+      - url: /azure/automation/
+        itemType: overview
+        text: Azure Automation
+      - url: /azure/storage/files/
+        itemType: overview
+        text: Azure Files
+      - url: /windows-server/manage/windows-admin-center/azure/
+        itemType: overview
+        text: Windows Admin Center Azure hybrid services
+   - title: Monitor
+     links:
+      - url: /azure-monitor
+        itemType: overview
+        text: Azure Monitor
    - title: Network
      links:
       - url: /azure/networking/edge-zones-overview
@@ -172,16 +203,16 @@ additionalContent:
             text: Footfall detection (retail)
           - url: /hybrid/app-solutions/solution-deployment-guide-geo-distributed
             text: Geo-distributed app
-    - title: Other resources
+    - title: Additional resources
       items:
       # Cards
       - title: Learning resources
         links:
-          - url: /learn
-            text: Explore Microsoft Learn content
           - url: https://azure.microsoft.com/overview/azure-hybrid/
             text: Azure Hybrid Capabilities
-      - title: Questions and support
+          - url: /learn
+            text: Explore Microsoft Learn            
+      - title: Support
         links:
           - url: /answers/products/
             text: Microsoft Q&A forums
