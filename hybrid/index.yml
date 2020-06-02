@@ -27,12 +27,6 @@ highlightedContent:
     - title: "Build 2020: Building an Edge AI Manufacturing Solution"
       itemType: video
       url: https://mybuild.microsoft.com/sessions/356a9c0b-4be4-4cee-8c47-e478e8776820
-    - title: "Explore Microsoft Learn content"
-      itemType: learn
-      url: /learn
-    - title: "Azure hybrid capabilities"
-      itemType: concept
-      url: https://azure.microsoft.com/overview/azure-hybrid/      
             
 # productDirectory section (optional)
 # productDirectory:
@@ -91,7 +85,7 @@ productDirectory:
 # conceptualContent section (optional)
 conceptualContent:
 #itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
- title: Azure hybrid features
+ title: Azure hybrid technologies
  summary: Services and products for building and operating a hybrid solution.
  items:
    # Card
@@ -118,7 +112,12 @@ conceptualContent:
         text: Azure Stack Edge     
       - url: /azure/azure-sql-edge/overview
         itemType: overview      
-        text: Azure SQL Edge (preview)    
+        text: Azure SQL Edge (preview)  
+   - title: Identity
+     links:
+      - url: /active-directory/hybrid/
+        itemType: overview
+        text: Azure AD hybrid identity  
    - title: Manage
      links:
       - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
@@ -176,15 +175,13 @@ additionalContent:
     - title: Other resources
       items:
       # Cards
-      - title: Hybrid patterns and solution examples
+      - title: Learning resources
         links:
-          - url: /hybrid/app-solutions/overview-patterns-solution-examples
-            text: What are patterns and solution examples?
-          - url: /hybrid/app-solutions/overview-app-design-considerations
-            text: Hybrid app design considerations
-      - title: Hybrid patterns and solution examples
+          - url: /learn
+            text: Explore Microsoft Learn content
+          - url: https://azure.microsoft.com/overview/azure-hybrid/
+            text: Azure Hybrid Capabilities
+      - title: Questions and support
         links:
-          - url: /hybrid/app-solutions/overview-patterns-solution-examples
-            text: What are patterns and solution examples?
-          - url: /hybrid/app-solutions/overview-app-design-considerations
-            text: Hybrid app design considerations
+          - url: /answers/products/
+            text: Microsoft Q&A forums
