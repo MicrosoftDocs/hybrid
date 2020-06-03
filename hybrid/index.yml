@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Azure hybrid documentation 
-summary: Resources for building, deploying, and operating hybrid solutions that span the global cloud, datacenter, and edge.
+summary: Resources for building and operating hybrid solutions that span the global cloud, datacenter, and edge.
 brand: azure
 
 metadata:
@@ -85,7 +85,7 @@ productDirectory:
 # conceptualContent section (optional)
 conceptualContent:
 #itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
- title: Hybrid-enabled technologies
+ title: Hybrid-enabling technologies
  summary: Services and products for building and operating hybrid solutions.
  items:
    # Card
@@ -132,7 +132,7 @@ conceptualContent:
      links:
       - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
         itemType: overview      
-        text: Azure Arc for data services (private preview) 
+        text: Azure Arc for data services (private preview sign-up) 
       - url: /azure/azure-sql-edge/overview
         itemType: overview      
         text: Azure SQL Edge (preview)          
@@ -162,11 +162,31 @@ conceptualContent:
       - url: /visualstudio/azure/
         itemType: overview
         text: Visual Studio Azure development
+   - title: Deploy, manage & monitor
+     links:
+      - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
+        itemType: overview      
+        text: Azure Arc for data services (private preview) 
+      - url: /azure/azure-arc/kubernetes/
+        itemType: overview      
+        text: Azure Arc for Kubernetes (preview)
+      - url: /azure/azure-arc/
+        itemType: overview
+        text: Azure Arc for servers (preview)
+      - url: /azure/automation/
+        itemType: overview
+        text: Azure Automation
+      - url: /azure/storage/files/
+        itemType: overview
+        text: Azure Files
+      - url: /azure-monitor
+        itemType: overview
+        text: Azure Monitor 
+      - url: /windows-server/manage/windows-admin-center/azure/
+        itemType: overview
+        text: Windows Admin Center Azure hybrid services   
    - title: Edge
      links:
-      - url: https://catalog.azureiotsolutions.com/alldevices
-        itemType: overview
-        text: Azure Certified for IoT device catalog
       - url: /azure/iot-edge/
         itemType: overview
         text: Azure IoT Edge
@@ -196,29 +216,6 @@ conceptualContent:
       - url: /azure/sentinel/
         itemType: overview
         text: Azure Sentinel
-   - title: Manage & monitor
-     links:
-      - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
-        itemType: overview      
-        text: Azure Arc for data services (private preview) 
-      - url: /azure/azure-arc/kubernetes/
-        itemType: overview      
-        text: Azure Arc for Kubernetes (preview)
-      - url: /azure/azure-arc/
-        itemType: overview
-        text: Azure Arc for servers (preview)
-      - url: /azure/automation/
-        itemType: overview
-        text: Azure Automation
-      - url: /azure/storage/files/
-        itemType: overview
-        text: Azure Files
-      - url: /azure-monitor
-        itemType: overview
-        text: Azure Monitor 
-      - url: /windows-server/manage/windows-admin-center/azure/
-        itemType: overview
-        text: Windows Admin Center Azure hybrid services      
    - title: Network
      links:
       - url: /azure/networking/edge-zones-overview
@@ -277,16 +274,18 @@ additionalContent:
     - title: Additional resources
       items:
       # Cards
-      - title: Learning resources
+      - title: Learning and reference
         links:
-          - url: https://azure.microsoft.com/overview/azure-hybrid/
-            text: Azure hybrid capabilities
-          - url: /learn
-            text: Explore hybrid content on Microsoft Learn
           - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
             text: Dynamically scale an app from Azure Stack Hub to Azure 
           - url: https://github.com/likamrat/azure_arc
-            text: Azure Arc jumpstart kit           
+            text: Azure Arc demo kit    
+          - url: https://catalog.azureiotsolutions.com/alldevices
+            text: Azure Certified for IoT device catalog  
+          - url: https://azure.microsoft.com/overview/azure-hybrid/
+            text: Azure hybrid capabilities            
+          - url: /learn
+            text: Microsoft Learn                             
       - title: Tools and SDKs
         links:
           - url: https://azure.github.io/Vision-AI-DevKit-Pages/
