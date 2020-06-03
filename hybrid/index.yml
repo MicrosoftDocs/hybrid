@@ -283,11 +283,13 @@ additionalContent:
       - title: Learning resources
         links:
           - url: https://azure.microsoft.com/overview/azure-hybrid/
-            text: Azure Hybrid Capabilities
+            text: Azure hybrid capabilities
           - url: /learn
-            text: Explore Microsoft Learn
+            text: Explore hybrid content on Microsoft Learn
           - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
-            text: Dynamically scale an app from Azure Stack Hub to Azure            
+            text: Dynamically scale an app from Azure Stack Hub to Azure 
+          - url: https://github.com/likamrat/azure_arc
+            text: Azure Arc jumpstart kit           
       - title: Support
         links:
           - url: /answers/products/
