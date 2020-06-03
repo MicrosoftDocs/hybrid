@@ -55,7 +55,7 @@ productDirectory:
   summary: Hybrid-capable platforms used to build and operate hybrid solutions. # < 160 chars (optional)
   items:
     # Card
-    - title: Azure global public/sovereign cloud platform spanning 60+ regions worldwide.
+    - title: Azure global public/sovereign cloud platform.
       # imageSrc should be square in ratio with no whitespace
       imageSrc: media/index/logo_azure.svg
       links:
@@ -288,7 +288,7 @@ additionalContent:
       - title: Build & operate
         links:
           - url: https://github.com/likamrat/azure_arc
-            text: Azure Arc demo kit 
+            text: Azure Arc jumpstart guides 
           - url: https://catalog.azureiotsolutions.com/alldevices
             text: Azure Certified for IoT device catalog  
           - url: /samples/browse/
