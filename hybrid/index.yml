@@ -103,9 +103,6 @@ conceptualContent:
      - url: /azure/machine-learning/
        itemType: overview
        text: Azure Machine Learning
-     - url: https://azure.github.io/Vision-AI-DevKit-Pages/
-       itemType: overview
-       text: Vision AI Developer Kit       
    - title: Backup & recovery
      links:
      - url: /azure/backup/
@@ -290,6 +287,10 @@ additionalContent:
             text: Dynamically scale an app from Azure Stack Hub to Azure 
           - url: https://github.com/likamrat/azure_arc
             text: Azure Arc jumpstart kit           
+      - title: Tools and SDKs
+        links:
+          - url: https://azure.github.io/Vision-AI-DevKit-Pages/
+            text: Vision AI Developer Kit    
       - title: Support
         links:
           - url: /answers/products/
