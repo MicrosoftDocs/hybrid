@@ -277,23 +277,7 @@ additionalContent:
     - title: Additional resources
       items:
       # Cards
-      - title: Learning and reference
-        links:
-          - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
-            text: Dynamically scale an app from Azure Stack Hub to Azure 
-          - url: https://github.com/likamrat/azure_arc
-            text: Azure Arc demo kit    
-          - url: https://catalog.azureiotsolutions.com/alldevices
-            text: Azure Certified for IoT device catalog  
-          - url: https://azure.microsoft.com/overview/azure-hybrid/
-            text: Azure hybrid capabilities            
-          - url: /learn
-            text: Microsoft Learn                             
-      - title: Tools and SDKs
-        links:
-          - url: https://azure.github.io/Vision-AI-DevKit-Pages/
-            text: Vision AI Developer Kit    
-      - title: General resources for getting started
+      - title: Learn and get started
         links:
           - url: https://azure.microsoft.com/overview/azure-hybrid/
             text: Azure hybrid capabilities            
@@ -301,19 +285,19 @@ additionalContent:
             text: Microsoft Learn interactive training
           - url: /learn/tv/
             text: Microsoft Learn TV  
-      - title: Development resources
+      - title: Build & operate
         links:
+          - url: https://github.com/likamrat/azure_arc
+            text: Azure Arc demo kit 
+          - url: https://catalog.azureiotsolutions.com/alldevices
+            text: Azure Certified for IoT device catalog  
           - url: /samples/browse/
             text: Code sample browser
           - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
             text: Dynamically scale from Azure Stack Hub to Azure 
           - url: https://azure.github.io/Vision-AI-DevKit-Pages/
             text: Vision AI Developer Kit   
-      - title: Operations resources
-        links:
-          - url: https://github.com/likamrat/azure_arc
-            text: Azure Arc demo kit                        
-      - title: Support
+      - title: Support & other
         links:
           - url: /answers/products/
             text: Microsoft Q&A forums
