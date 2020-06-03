@@ -103,6 +103,9 @@ conceptualContent:
      - url: /azure/machine-learning/
        itemType: overview
        text: Azure Machine Learning
+      - url: https://azure.github.io/Vision-AI-DevKit-Pages/
+        itemType: overview
+        text: Vision AI Developer Kit       
    - title: Backup & recovery
      links:
      - url: /azure/backup/
@@ -290,6 +293,26 @@ additionalContent:
         links:
           - url: https://azure.github.io/Vision-AI-DevKit-Pages/
             text: Vision AI Developer Kit    
+      - title: General resources for getting started
+        links:
+          - url: https://azure.microsoft.com/overview/azure-hybrid/
+            text: Azure hybrid capabilities            
+          - url: /learn
+            text: Microsoft Learn interactive training
+          - url: /learn/tv/
+            text: Microsoft Learn TV  
+      - title: Development resources
+        links:
+          - url: /samples/browse/
+            text: Code sample browser
+          - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
+            text: Dynamically scale from Azure Stack Hub to Azure 
+          - url: https://azure.github.io/Vision-AI-DevKit-Pages/
+            text: Vision AI Developer Kit   
+      - title: Operations resources
+        links:
+          - url: https://github.com/likamrat/azure_arc
+            text: Azure Arc demo kit                        
       - title: Support
         links:
           - url: /answers/products/
