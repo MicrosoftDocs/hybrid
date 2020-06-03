@@ -51,7 +51,7 @@ highlightedContent:
 #       url: /Azure-Stack
 
 productDirectory:
-  title: Azure hybrid cloud # < 60 chars (optional)
+  title: Azure hybrid cloud platform # < 60 chars (optional)
   summary: Hybrid-capable platforms used to build and operate hybrid solutions. # < 160 chars (optional)
   items:
     # Card
@@ -89,6 +89,23 @@ conceptualContent:
  summary: Services and products for building and operating hybrid solutions.
  items:
    # Card
+   - title: AI & ML 
+     links:
+     - url: /azure/bot-service
+       itemType: overview
+       text: Azure Bot Service
+     - url: /azure/search/
+       itemType: overview
+       text: Azure Cognitive Search
+     - url: /azure/cognitive-services/
+       itemType: overview
+       text: Azure Cognitive Services       
+     - url: /azure/machine-learning/
+       itemType: overview
+       text: Azure Machine Learning
+     - url: https://azure.github.io/Vision-AI-DevKit-Pages/
+       itemType: overview
+       text: Vision AI Developer Kit       
    - title: Backup & recovery
      links:
      - url: /azure/backup/
@@ -97,6 +114,23 @@ conceptualContent:
      - url: /azure/site-recovery/
        itemType: overview
        text: Azure Site Recovery
+   - title: Containers
+     links: 
+     - url: /azure/container-instances/
+       itemType: overview
+       text: Azure Container Instances        
+     - url: /azure/container-registry/
+       itemType: overview
+       text: Azure Container Registry   
+     - url: /azure/aks/
+       itemType: overview
+       text: Azure Kubernetes Services on Azure   
+     - url: /azure-stack/user/azure-stack-kubernetes-aks-engine-overview
+       itemType: overview
+       text: Azure Kubernetes Services on Azure Stack Hub
+     - url: /azure/docker/
+       itemType: overview
+       text: Docker on Azure
    - title: Data
      links:
       - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
@@ -105,25 +139,55 @@ conceptualContent:
       - url: /azure/azure-sql-edge/overview
         itemType: overview      
         text: Azure SQL Edge (preview)          
-   - title: Develop
+   - title: Develop & integrate
      links:
+      - url: /dotnet/azure/
+        itemType: overview
+        text: .NET development for Azure  
+      - url: /azure/app-service/app-service-hybrid-connections
+        itemType: overview
+        text: Azure App Service Hybrid Connections
       - url: /azure/devops
         itemType: overview
         text: Azure DevOps for CI/CD
-      - url: /dotnet/azure/
+      - url: /azure/azure-functions/
         itemType: overview
-        text: .NET development for Azure        
+        text: Azure Functions
+      - url: /azure/logic-apps/
+        itemType: overview
+        text: Azure Logic Apps
+      - url: /azure/azure-monitor/app/app-insights-overview
+        itemType: overview
+        text: Azure Monitor - Application Insights
+      - url: /azure/service-fabric/
+        itemType: overview
+        text: Azure Service Fabric            
       - url: /visualstudio/azure/
         itemType: overview
-        text: Visual Studio for Azure
+        text: Visual Studio Azure development
    - title: Edge
      links:
+      - url: https://catalog.azureiotsolutions.com/alldevices
+        itemType: overview
+        text: Azure Certified for IoT device catalog
+      - url: /azure/iot-edge/
+        itemType: overview
+        text: Azure IoT Edge
+      - url: /azure-sphere
+        itemType: overview
+        text: Azure Sphere
       - url: /azure/databox-online/azure-stack-edge-overview
         itemType: overview      
         text: Azure Stack Edge     
       - url: /azure/azure-sql-edge/overview
         itemType: overview      
         text: Azure SQL Edge (preview)  
+      - url: https://azure.github.io/Vision-AI-DevKit-Pages/
+        itemType: overview
+        text: Vision AI Developer Kit
+      - url: /windows/iot-core/
+        itemType: overview      
+        text: Windows for IoT
    - title: Identity & security
      links:
       - url: /azure/active-directory/hybrid/
@@ -145,19 +209,19 @@ conceptualContent:
         text: Azure Arc for Kubernetes (preview)
       - url: /azure/azure-arc/
         itemType: overview
-        text: Azure Arc for Servers (preview)
+        text: Azure Arc for servers (preview)
       - url: /azure/automation/
         itemType: overview
         text: Azure Automation
       - url: /azure/storage/files/
         itemType: overview
         text: Azure Files
-      - url: /windows-server/manage/windows-admin-center/azure/
-        itemType: overview
-        text: Windows Admin Center Azure hybrid services
       - url: /azure-monitor
         itemType: overview
-        text: Azure Monitor        
+        text: Azure Monitor 
+      - url: /windows-server/manage/windows-admin-center/azure/
+        itemType: overview
+        text: Windows Admin Center Azure hybrid services      
    - title: Network
      links:
       - url: /azure/networking/edge-zones-overview
@@ -175,6 +239,9 @@ conceptualContent:
       - url: /azure/traffic-manager/
         itemType: overview
         text: Azure Traffic Manager
+      - url: /azure/virtual-network/
+        itemType: overview
+        text: Azure Virtual Network
 
 # additionalContent section (optional)
 # Card with links style
@@ -218,7 +285,9 @@ additionalContent:
           - url: https://azure.microsoft.com/overview/azure-hybrid/
             text: Azure Hybrid Capabilities
           - url: /learn
-            text: Explore Microsoft Learn            
+            text: Explore Microsoft Learn
+          - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
+            text: Dynamically scale an app from Azure Stack Hub to Azure            
       - title: Support
         links:
           - url: /answers/products/
