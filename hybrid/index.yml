@@ -103,9 +103,9 @@ conceptualContent:
      - url: /azure/machine-learning/
        itemType: overview
        text: Azure Machine Learning
-      - url: https://azure.github.io/Vision-AI-DevKit-Pages/
-        itemType: overview
-        text: Vision AI Developer Kit       
+     - url: https://azure.github.io/Vision-AI-DevKit-Pages/
+       itemType: overview
+       text: Vision AI Developer Kit       
    - title: Backup & recovery
      links:
      - url: /azure/backup/
