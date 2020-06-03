@@ -18,15 +18,18 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
+    - title: "Azure Hybrid Virtual Event - June 24 2020"
+      itemType: video
+      url: https://info.microsoft.com/ww-registration-azure-hybrid-virtual-event.html     
     - title: "Build 2020: Hybrid sessions"
       itemType: video
       url: https://mybuild.microsoft.com/sessions?q=hybrid&g=%255B%2522on-demand%2522%255D 
     - title: "Build 2020: Azure Arc sessions"
       itemType: video
       url: https://mybuild.microsoft.com/sessions?q=%2522%2520Arc%2520%2522&g=%255B%2522on-demand%2522%255D
-    - title: "Build 2020: Building an Edge AI Manufacturing Solution"
+    - title: "Build 2020: Intelligent Edge sessions"
       itemType: video
-      url: https://mybuild.microsoft.com/sessions/356a9c0b-4be4-4cee-8c47-e478e8776820
+      url: https://mybuild.microsoft.com/sessions?q=%2522%2520intelligent%2520edge%2520%2522%2520%2522%2520sql%2520edge%2520%2522
             
 # productDirectory section (optional)
 # productDirectory:
@@ -115,7 +118,10 @@ conceptualContent:
        itemType: overview
        text: Azure Site Recovery
    - title: Containers
-     links: 
+     links:
+     - url: /azure/azure-arc/kubernetes/
+       itemType: overview      
+       text: Azure Arc for Kubernetes (preview)      
      - url: /azure/container-instances/
        itemType: overview
        text: Azure Container Instances        
@@ -141,9 +147,6 @@ conceptualContent:
         text: Azure SQL Edge (preview)          
    - title: Develop & integrate
      links:
-      - url: /dotnet/azure/
-        itemType: overview
-        text: .NET development for Azure  
       - url: /azure/app-service/app-service-hybrid-connections
         itemType: overview
         text: Azure App Service Hybrid Connections
@@ -162,14 +165,11 @@ conceptualContent:
       - url: /azure/service-fabric/
         itemType: overview
         text: Azure Service Fabric            
-      - url: /visualstudio/azure/
-        itemType: overview
-        text: Visual Studio Azure development
    - title: Deploy, manage & monitor
      links:
       - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
         itemType: overview      
-        text: Azure Arc for data services (private preview) 
+        text: Azure Arc for data services (private preview sign-up) 
       - url: /azure/azure-arc/kubernetes/
         itemType: overview      
         text: Azure Arc for Kubernetes (preview)
@@ -190,6 +190,9 @@ conceptualContent:
         text: Windows Admin Center Azure hybrid services   
    - title: Edge
      links:
+      - url: /azure/databox-online/data-box-gateway-overview
+        itemType: overview
+        text: Azure Databox Gateway
       - url: /azure/iot-edge/
         itemType: overview
         text: Azure IoT Edge
@@ -287,6 +290,8 @@ additionalContent:
             text: Microsoft Learn TV  
       - title: Build & operate
         links:
+          - url: /dotnet/azure/
+            text: .NET development for Azure         
           - url: https://github.com/likamrat/azure_arc
             text: Azure Arc jumpstart guides 
           - url: https://catalog.azureiotsolutions.com/alldevices
@@ -297,6 +302,8 @@ additionalContent:
             text: Dynamically scale from Azure Stack Hub to Azure 
           - url: https://azure.github.io/Vision-AI-DevKit-Pages/
             text: Vision AI Developer Kit   
+          - url: /visualstudio/azure/
+            text: Visual Studio Azure development            
       - title: Support & other
         links:
           - url: /answers/products/
