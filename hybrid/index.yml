@@ -280,7 +280,7 @@ additionalContent:
     - title: Additional resources
       items:
       # Cards
-      - title: Learn and get started
+      - title: General resources
         links:
           - url: https://azure.microsoft.com/blog/topics/hybrid/
             text: Azure hybrid blog 
