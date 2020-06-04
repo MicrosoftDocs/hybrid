@@ -4,8 +4,8 @@ summary: Resources for building and operating hybrid solutions that span the glo
 brand: azure
 
 metadata:
-  title: Azure hybrid documentation 
-  description: Resources for building and operating hybrid solutions that span the cloud, datacenter, and edge.
+  title: Azure hybrid cloud documentation 
+  description: Resources for building and operating hybrid solutions that span the global cloud, datacenter, and edge.
   ms.service: multiple
   ms.topic: hub-page
   author: BryanLa
@@ -92,7 +92,7 @@ conceptualContent:
  summary: Services and products for building and operating hybrid solutions.
  items:
    # Card
-   - title: AI & ML 
+   - title: AI & machine learning 
      links:
      - url: /azure/bot-service
        itemType: overview
@@ -106,9 +106,6 @@ conceptualContent:
      - url: /azure/machine-learning/
        itemType: overview
        text: Azure Machine Learning
-     - url: https://azure.github.io/Vision-AI-DevKit-Pages/
-       itemType: overview
-       text: Vision AI Developer Kit       
    - title: Backup & recovery
      links:
      - url: /azure/backup/
@@ -153,6 +150,9 @@ conceptualContent:
       - url: /azure/app-service/app-service-hybrid-connections
         itemType: overview
         text: Azure App Service Hybrid Connections
+      - url: /azure-stack/operator/azure-stack-app-service-overview
+        itemType: overview
+        text: Azure App Service on Azure Stack Hub        
       - url: /azure/devops
         itemType: overview
         text: Azure DevOps for CI/CD
@@ -167,7 +167,10 @@ conceptualContent:
         text: Azure Monitor - Application Insights
       - url: /azure/service-fabric/
         itemType: overview
-        text: Azure Service Fabric            
+        text: Azure Service Fabric     
+      - url: /azure-stack/operator/event-hubs-rp-overview
+        itemType: overview
+        text: Event Hubs on Azure Stack Hub       
    - title: Deploy, manage & monitor
      links:
       - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
@@ -188,6 +191,9 @@ conceptualContent:
       - url: /azure-monitor
         itemType: overview
         text: Azure Monitor 
+      - url: /azure-stack/hci/overview
+        itemType: overview
+        text: Azure Stack HCI hybrid capabilities
       - url: /windows-server/manage/windows-admin-center/azure/
         itemType: overview
         text: Windows Admin Center Azure hybrid services   
@@ -208,9 +214,9 @@ conceptualContent:
       - url: /azure/azure-sql-edge/overview
         itemType: overview      
         text: Azure SQL Edge (preview)  
-      - url: https://azure.github.io/Vision-AI-DevKit-Pages/
+      - url: /azure/iot-edge/how-to-install-iot-edge-kubernetes
         itemType: overview
-        text: Vision AI Developer Kit
+        text: IoT Edge on Kubernetes
       - url: /windows/iot-core/
         itemType: overview      
         text: Windows for IoT
@@ -245,6 +251,9 @@ conceptualContent:
       - url: /azure/virtual-network/
         itemType: overview
         text: Azure Virtual Network
+      - url: /azure/vpn-gateway/
+        itemType: overview
+        text: Azure VPN Gateway
 
 # additionalContent section (optional)
 # Card with links style
@@ -285,6 +294,8 @@ additionalContent:
       # Cards
       - title: General resources
         links:
+          - url: /azure-stack/operator/compare-azure-azure-stack
+            text: Azure global vs Azure Stack  
           - url: https://azure.microsoft.com/blog/topics/hybrid/
             text: Azure hybrid blog 
           - url: https://azure.microsoft.com/overview/azure-hybrid/
@@ -292,7 +303,7 @@ additionalContent:
           - url: /learn
             text: Microsoft Learn interactive training
           - url: /learn/tv/
-            text: Microsoft Learn TV  
+            text: Microsoft Learn TV 
       - title: Resources for building & operating
         links:
           - url: /dotnet/azure/
