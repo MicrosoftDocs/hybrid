@@ -121,7 +121,7 @@ conceptualContent:
      links:
      - url: /azure/azure-arc/kubernetes/
        itemType: overview      
-       text: Azure Arc for Kubernetes (preview)      
+       text: Azure Arc enabled Kubernetes (preview)      
      - url: /azure/container-instances/
        itemType: overview
        text: Azure Container Instances        
@@ -137,11 +137,14 @@ conceptualContent:
      - url: /azure/docker/
        itemType: overview
        text: Docker on Azure
+     - url: /azure/iot-edge/how-to-install-iot-edge-kubernetes
+       itemType: overview
+       text: IoT Edge on Kubernetes
    - title: Data
      links:
       - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
         itemType: overview      
-        text: Azure Arc for data services (private preview sign-up) 
+        text: Azure Arc enabled data services (private preview sign-up) 
       - url: /azure/azure-sql-edge/overview
         itemType: overview      
         text: Azure SQL Edge (preview)          
@@ -169,13 +172,13 @@ conceptualContent:
      links:
       - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
         itemType: overview      
-        text: Azure Arc for data services (private preview sign-up) 
+        text: Azure Arc enabled data services (private preview sign-up) 
       - url: /azure/azure-arc/kubernetes/
         itemType: overview      
-        text: Azure Arc for Kubernetes (preview)
+        text: Azure Arc enabled Kubernetes (preview)
       - url: /azure/azure-arc/
         itemType: overview
-        text: Azure Arc for servers (preview)
+        text: Azure Arc enabled servers (preview)
       - url: /azure/automation/
         itemType: overview
         text: Azure Automation
@@ -300,6 +303,8 @@ additionalContent:
             text: Code sample browser
           - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
             text: Dynamically scale from Azure Stack Hub to Azure 
+          - url: https://labs.iotedge.dev/
+            text: IoT Edge hands-on-labs
           - url: https://azure.github.io/Vision-AI-DevKit-Pages/
             text: Vision AI Developer Kit   
           - url: /visualstudio/azure/
