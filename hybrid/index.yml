@@ -92,7 +92,7 @@ conceptualContent:
  summary: Services and products for building and operating hybrid solutions.
  items:
    # Card
-   - title: AI & machine learning 
+   - title: AI + Machine Learning 
      links:
      - url: /azure/bot-service
        itemType: overview
@@ -106,14 +106,6 @@ conceptualContent:
      - url: /azure/machine-learning/
        itemType: overview
        text: Azure Machine Learning
-   - title: Backup & recovery
-     links:
-     - url: /azure/backup/
-       itemType: overview
-       text: Azure Backup
-     - url: /azure/site-recovery/
-       itemType: overview
-       text: Azure Site Recovery
    - title: Containers
      links:
      - url: /azure/azure-arc/kubernetes/
@@ -137,7 +129,7 @@ conceptualContent:
      - url: /azure/iot-edge/how-to-install-iot-edge-kubernetes
        itemType: overview
        text: IoT Edge on Kubernetes
-   - title: Data
+   - title: Database
      links:
       - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
         itemType: overview      
@@ -145,7 +137,7 @@ conceptualContent:
       - url: /azure/azure-sql-edge/overview
         itemType: overview      
         text: Azure SQL Edge (preview)          
-   - title: Develop & integrate
+   - title: Development and integration
      links:
       - url: /azure/app-service/app-service-hybrid-connections
         itemType: overview
@@ -171,32 +163,6 @@ conceptualContent:
       - url: /azure-stack/operator/event-hubs-rp-overview
         itemType: overview
         text: Event Hubs on Azure Stack Hub       
-   - title: Deploy, manage & monitor
-     links:
-      - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
-        itemType: overview      
-        text: Azure Arc enabled data services (private preview sign-up) 
-      - url: /azure/azure-arc/kubernetes/
-        itemType: overview      
-        text: Azure Arc enabled Kubernetes (preview)
-      - url: /azure/azure-arc/
-        itemType: overview
-        text: Azure Arc enabled servers (preview)
-      - url: /azure/automation/
-        itemType: overview
-        text: Azure Automation
-      - url: /azure/storage/files/
-        itemType: overview
-        text: Azure Files
-      - url: /azure-monitor
-        itemType: overview
-        text: Azure Monitor 
-      - url: /azure-stack/hci/overview
-        itemType: overview
-        text: Azure Stack HCI hybrid capabilities
-      - url: /windows-server/manage/windows-admin-center/azure/
-        itemType: overview
-        text: Windows Admin Center Azure hybrid services   
    - title: Edge
      links:
       - url: /azure/databox-online/data-box-gateway-overview
@@ -220,7 +186,7 @@ conceptualContent:
       - url: /windows/iot-core/
         itemType: overview      
         text: Windows for IoT
-   - title: Identity & security
+   - title: Identity and security
      links:
       - url: /azure/active-directory/hybrid/
         itemType: overview
@@ -231,7 +197,39 @@ conceptualContent:
       - url: /azure/sentinel/
         itemType: overview
         text: Azure Sentinel
-   - title: Network
+      - url: /azure/active-directory/devices/concept-azure-ad-join-hybrid
+        itemType: overview
+        text: Hybrid Azure AD joined devices
+   - title: Management
+     links:
+      - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
+        itemType: overview      
+        text: Azure Arc enabled data services (private preview sign-up) 
+      - url: /azure/azure-arc/kubernetes/
+        itemType: overview      
+        text: Azure Arc enabled Kubernetes (preview)
+      - url: /azure/azure-arc/
+        itemType: overview
+        text: Azure Arc enabled servers (preview)
+      - url: /azure/automation/
+        itemType: overview
+        text: Azure Automation
+      - url: /azure/storage/files/
+        itemType: overview
+        text: Azure Files
+      - url: /azure-monitor
+        itemType: overview
+        text: Azure Monitor 
+      - url: /azure/site-recovery/
+        itemType: overview
+        text: Azure Site Recovery        
+      - url: /azure-stack/hci/overview
+        itemType: overview
+        text: Azure Stack HCI hybrid capabilities
+      - url: /windows-server/manage/windows-admin-center/azure/
+        itemType: overview
+        text: Windows Admin Center Azure hybrid services
+   - title: Networking
      links:
       - url: /azure/networking/edge-zones-overview
         itemType: overview
@@ -242,6 +240,9 @@ conceptualContent:
       - url: /azure/load-balancer/
         itemType: overview
         text: Azure Load Balancer
+      - url: /azure/private-link/
+        itemType: overview
+        text: Azure Private Link
       - url: /azure/azure-relay/
         itemType: overview
         text: Azure Relay
@@ -254,13 +255,30 @@ conceptualContent:
       - url: /azure/vpn-gateway/
         itemType: overview
         text: Azure VPN Gateway
+   - title: Storage
+     links:
+     - url: /azure/avere-vfxt/avere-vfxt-overview
+       itemType: overview
+       text: Avere vFXT for Azure    
+     - url: /azure/backup/
+       itemType: overview
+       text: Azure Backup
+     - url: /azure/storage/files/storage-files-introduction
+       itemType: overview
+       text: Azure Files
+     - url: /azure/site-recovery/
+       itemType: overview
+       text: Azure Site Recovery
+     - url: /azure/fxt-edge-filer/fxt-overview
+       itemType: overview
+       text: Azure FXT Edge Filer
 
 # additionalContent section (optional)
 # Card with links style
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Hybrid solution examples
+    - title: Hybrid solutions
       items:
       # Cards
       - title: Hybrid app patterns and solution examples
