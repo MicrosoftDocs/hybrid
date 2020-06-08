@@ -325,7 +325,7 @@ additionalContent:
             text: Microsoft Learn interactive training
           - url: /learn/tv/
             text: Microsoft Learn TV 
-      - title: Resources for building & operating
+      - title: Resources for building and operating
         links:
           - url: /dotnet/azure/
             text: .NET development for Azure         
@@ -341,7 +341,7 @@ additionalContent:
             text: Vision AI Developer Kit   
           - url: /visualstudio/azure/
             text: Visual Studio Azure development            
-      - title: Support & other resources
+      - title: Support and other resources
         links:
           - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
             text: Certified for Azure IoT edge devices          
