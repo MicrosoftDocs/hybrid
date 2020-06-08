@@ -139,15 +139,18 @@ conceptualContent:
         text: Azure SQL Edge (preview)          
    - title: Development and integration
      links:
+      - url: /azure-stack/operator/azure-stack-app-service-overview
+        itemType: overview
+        text: App Service on Azure Stack Hub  
       - url: /azure/app-service/app-service-hybrid-connections
         itemType: overview
         text: Azure App Service Hybrid Connections
-      - url: /azure-stack/operator/azure-stack-app-service-overview
-        itemType: overview
-        text: Azure App Service on Azure Stack Hub        
       - url: /azure/devops
         itemType: overview
         text: Azure DevOps for CI/CD
+      - url: /azure/event-hubs/
+        itemType: overview
+        text: Azure Event Hubs  
       - url: /azure/azure-functions/
         itemType: overview
         text: Azure Functions
@@ -162,7 +165,7 @@ conceptualContent:
         text: Azure Service Fabric     
       - url: /azure-stack/operator/event-hubs-rp-overview
         itemType: overview
-        text: Event Hubs on Azure Stack Hub       
+        text: Event Hubs on Azure Stack Hub
    - title: Edge
      links:
       - url: /azure/databox-online/data-box-gateway-overview
@@ -340,7 +343,7 @@ additionalContent:
             text: Visual Studio Azure development            
       - title: Support & other resources
         links:
-          - url: https://catalog.azureiotsolutions.com/alldevices
-            text: Azure Certified for IoT device catalog          
+          - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
+            text: Certified for Azure IoT edge devices          
           - url: /answers/products/
             text: Microsoft Q&A forums
