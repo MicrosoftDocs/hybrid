@@ -1,3 +1,11 @@
 - name: Docs
   tocHref: /
   topicHref: /
+  items:
+  - name: Hybrid 
+    tocHref: /hybrid/
+    topicHref: /hybrid/
+    items:
+    - name: App solutions
+      tocHref: /hybrid/app-solutions/
+      topicHref: /hybrid/app-solutions/index
