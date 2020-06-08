@@ -344,6 +344,6 @@ additionalContent:
       - title: Support and other resources
         links:
           - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
-            text: Certified for Azure IoT edge devices          
+            text: Certified for Azure IoT Edge devices          
           - url: /answers/products/
             text: Microsoft Q&A forums
