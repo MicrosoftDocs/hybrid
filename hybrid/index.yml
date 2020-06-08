@@ -1,5 +1,5 @@
 ### YamlMime:Hub
-title: Azure hybrid documentation 
+title: Azure hybrid cloud documentation 
 summary: Resources for building and operating hybrid solutions that span the global cloud, datacenter, and edge.
 brand: azure
 
@@ -139,15 +139,18 @@ conceptualContent:
         text: Azure SQL Edge (preview)          
    - title: Development and integration
      links:
+      - url: /azure-stack/operator/azure-stack-app-service-overview
+        itemType: overview
+        text: App Service on Azure Stack Hub  
       - url: /azure/app-service/app-service-hybrid-connections
         itemType: overview
         text: Azure App Service Hybrid Connections
-      - url: /azure-stack/operator/azure-stack-app-service-overview
-        itemType: overview
-        text: Azure App Service on Azure Stack Hub        
       - url: /azure/devops
         itemType: overview
         text: Azure DevOps for CI/CD
+      - url: /azure/event-hubs/
+        itemType: overview
+        text: Azure Event Hubs  
       - url: /azure/azure-functions/
         itemType: overview
         text: Azure Functions
@@ -162,7 +165,7 @@ conceptualContent:
         text: Azure Service Fabric     
       - url: /azure-stack/operator/event-hubs-rp-overview
         itemType: overview
-        text: Event Hubs on Azure Stack Hub       
+        text: Event Hubs on Azure Stack Hub
    - title: Edge
      links:
       - url: /azure/databox-online/data-box-gateway-overview
@@ -322,7 +325,7 @@ additionalContent:
             text: Microsoft Learn interactive training
           - url: /learn/tv/
             text: Microsoft Learn TV 
-      - title: Resources for building & operating
+      - title: Resources for building and operating
         links:
           - url: /dotnet/azure/
             text: .NET development for Azure         
@@ -338,9 +341,9 @@ additionalContent:
             text: Vision AI Developer Kit   
           - url: /visualstudio/azure/
             text: Visual Studio Azure development            
-      - title: Support & other resources
+      - title: Support and other resources
         links:
-          - url: https://catalog.azureiotsolutions.com/alldevices
-            text: Azure Certified for IoT device catalog          
+          - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
+            text: Certified for Azure IoT Edge devices          
           - url: /answers/products/
             text: Microsoft Q&A forums
