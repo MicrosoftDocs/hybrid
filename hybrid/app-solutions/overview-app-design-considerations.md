@@ -13,7 +13,7 @@ ms.lastreviewed: 11/05/2019
 
 ---
 
-# Hybrid app design considerations
+# Hybrid app design considerations 
 
 Microsoft Azure is the only consistent hybrid cloud. It allows you to reuse your development investments and enables apps that can span global Azure, the sovereign Azure clouds, and Azure Stack, which is an extension of Azure in your datacenter. Apps that span clouds are also referred to as *hybrid apps*.
 
