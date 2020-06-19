@@ -10,7 +10,7 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 06/08/2020
+  ms.date: 06/19/2020
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -30,7 +30,10 @@ highlightedContent:
     - title: "Build 2020: Intelligent Edge sessions"
       itemType: video
       url: https://mybuild.microsoft.com/sessions?q=%2522%2520intelligent%2520edge%2520%2522%2520%2522%2520sql%2520edge%2520%2522
-            
+    - title: "Ignite 2019: Hybrid sessions"
+      itemType: video
+      url: https://myignite.techcommunity.microsoft.com/sessions?t={"from":"2019-11-03T08:00:00-05:00","to":"2019-11-08T19:00:00-05:00"}&q=hybrid&s={"name":"translate.refine.label.sort.relevance","type":0}&g=["on-demand"]
+      
 # productDirectory section (optional)
 # productDirectory:
 #   title: Azure hybrid platforms # < 60 chars (optional)
