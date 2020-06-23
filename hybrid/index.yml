@@ -322,6 +322,8 @@ additionalContent:
             text: Azure global vs Azure Stack  
           - url: https://azure.microsoft.com/overview/azure-hybrid/
             text: Azure hybrid capabilities            
+          - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
+            text: Customer hybrid cloud stories
           - url: /learn
             text: Microsoft Learn interactive training
           - url: /learn/tv/
@@ -332,6 +334,8 @@ additionalContent:
             text: .NET development for Azure         
           - url: https://github.com/likamrat/azure_arc
             text: Azure Arc jumpstart guides 
+          - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
+            text: Certified for Azure IoT Edge devices               
           - url: /samples/browse/
             text: Code sample browser
           - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
@@ -346,9 +350,5 @@ additionalContent:
         links:
           - url: https://azure.microsoft.com/blog/topics/hybrid/
             text: Azure hybrid blog 
-          - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
-            text: Certified for Azure IoT Edge devices    
-          - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
-            text: Customer hybrid cloud stories
           - url: /answers/products/
             text: Microsoft Q&A forums
