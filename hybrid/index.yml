@@ -10,7 +10,7 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 06/19/2020
+  ms.date: 06/23/2020
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -320,8 +320,6 @@ additionalContent:
         links:
           - url: /azure-stack/operator/compare-azure-azure-stack
             text: Azure global vs Azure Stack  
-          - url: https://azure.microsoft.com/blog/topics/hybrid/
-            text: Azure hybrid blog 
           - url: https://azure.microsoft.com/overview/azure-hybrid/
             text: Azure hybrid capabilities            
           - url: /learn
@@ -346,7 +344,11 @@ additionalContent:
             text: Visual Studio Azure development            
       - title: Support and other resources
         links:
+          - url: https://azure.microsoft.com/blog/topics/hybrid/
+            text: Azure hybrid blog 
           - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
-            text: Certified for Azure IoT Edge devices          
+            text: Certified for Azure IoT Edge devices    
+          - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
+            text: Customer hybrid cloud stories
           - url: /answers/products/
             text: Microsoft Q&A forums
