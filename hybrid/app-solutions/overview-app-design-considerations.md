@@ -17,9 +17,9 @@ ms.lastreviewed: 11/05/2019
 
 Microsoft Azure is the only consistent hybrid cloud. It allows you to reuse your development investments and enables apps that can span global Azure, the sovereign Azure clouds, and Azure Stack, which is an extension of Azure in your datacenter. Apps that span clouds are also referred to as *hybrid apps*.
 
-The [*Azure Application Architecture Guide*](https://docs.microsoft.com/azure/architecture/guide) describes a structured approach for designing apps that are scalable, resilient, and highly available. The considerations described in the [*Azure Application Architecture Guide*](https://docs.microsoft.com/azure/architecture/guide) equally apply to apps that are designed for a single cloud and for apps that span clouds.
+The [*Azure Application Architecture Guide*](/azure/architecture/guide) describes a structured approach for designing apps that are scalable, resilient, and highly available. The considerations described in the [*Azure Application Architecture Guide*](/azure/architecture/guide) equally apply to apps that are designed for a single cloud and for apps that span clouds.
 
-This article augments the [*Pillars of software quality*](https://docs.microsoft.com/azure/architecture/guide/pillars) discussed in the [*Azure Application*](https://docs.microsoft.com/azure/architecture/guide/) [*Architecture Guide*,](https://docs.microsoft.com/azure/architecture/guide/) focusing specifically on designing hybrid apps. In addition, we add a *placement* pillar as hybrid apps aren't exclusive to one cloud or one on-premises datacenter.
+This article augments the [*Pillars of software quality*](/azure/architecture/guide/pillars) discussed in the [*Azure Application*](/azure/architecture/guide/) [*Architecture Guide*,](/azure/architecture/guide/) focusing specifically on designing hybrid apps. In addition, we add a *placement* pillar as hybrid apps aren't exclusive to one cloud or one on-premises datacenter.
 
 Hybrid scenarios vary greatly with the resources that are available for development, and span considerations such as geography, security, internet access, and other considerations. Although this guide can't enumerate your specific considerations, it can provide some key guidelines and best practices for you to follow. Successfully designing, configuring, deploying, and maintaining a hybrid app architecture involves many design considerations that might not be inherently known to you.
 
@@ -92,7 +92,7 @@ Placement is the important task of positioning components so that they can best 
 
 **Verify required locations.** Make sure the app or any of its components are required to operate in, or require certification for, a specific cloud. This can include sovereignty requirements from your company or dictated by law. Also, determine if any on-premises operations are required for a particular location or locale.
 
-**Ascertain connectivity dependencies.** Required locations and other factors can dictate the connectivity dependencies among your components. As you place the components, determine the optimal connectivity and security for communication among them. Choices include [*VPN*,](https://docs.microsoft.com/azure/vpn-gateway/) [*ExpressRoute*,](https://docs.microsoft.com/azure/expressroute/) and [*Hybrid Connections*.](https://docs.microsoft.com/azure/app-service/app-service-hybrid-connections)
+**Ascertain connectivity dependencies.** Required locations and other factors can dictate the connectivity dependencies among your components. As you place the components, determine the optimal connectivity and security for communication among them. Choices include [*VPN*,](/azure/vpn-gateway/) [*ExpressRoute*,](/azure/expressroute/) and [*Hybrid Connections*.](/azure/app-service/app-service-hybrid-connections)
 
 **Evaluate platform capabilities.** For each app component, see if the required resource provider for the app component is available on the cloud and if the bandwidth can accommodate the expected throughput and latency requirements.
 
@@ -108,7 +108,7 @@ Placement is the important task of positioning components so that they can best 
 
 Scalability is the ability of a system to handle increased load on an app, which can vary over time as other factors and forces affect the audience size, in addition to the size and scope of the app.
 
-For the core discussion of this pillar, see [*Scalability*](https://docs.microsoft.com/azure/architecture/guide/pillars#scalability) in the five pillars of architecture excellence.
+For the core discussion of this pillar, see [*Scalability*](/azure/architecture/guide/pillars#scalability) in the five pillars of architecture excellence.
 
 A horizontal scaling approach for hybrid apps allows for adding more instances to meet demand and then disabling them during quieter periods.
 
@@ -154,7 +154,7 @@ For the core discussion of this pillar, see [*Availability*](/azure/architecture
 
 Resiliency is the ability for a hybrid app and system to recover from failures and continue to function. The goal of resiliency is to return the app to a fully functioning state after a failure occurs. Resiliency strategies include solutions like backup, replication, and disaster recovery.
 
-For the core discussion of this pillar, see [*Resiliency*](https://docs.microsoft.com/azure/architecture/guide/pillars#resiliency) in the five pillars of architecture excellence.
+For the core discussion of this pillar, see [*Resiliency*](/azure/architecture/guide/pillars#resiliency) in the five pillars of architecture excellence.
 
 ### Resiliency checklist
 
@@ -200,7 +200,7 @@ Determine the parts of the app that require monitoring.
 
 Security is one of the primary considerations for any cloud app and it becomes even more critical for hybrid cloud apps.
 
-For the core discussion of this pillar, see [*Security*](https://docs.microsoft.com/azure/architecture/guide/pillars#security) in the five pillars of architecture excellence.
+For the core discussion of this pillar, see [*Security*](/azure/architecture/guide/pillars#security) in the five pillars of architecture excellence.
 
 ### Security checklist
 
