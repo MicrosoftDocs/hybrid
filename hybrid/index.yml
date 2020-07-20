@@ -289,29 +289,29 @@ additionalContent:
       # Cards
       - title: Hybrid app patterns and solution examples
         links:
-          - url: /hybrid/app-solutions/overview-patterns-solution-examples
+          - url: ./app-solutions/overview-patterns-solution-examples.md
             text: What are patterns and solution examples?
-          - url: /hybrid/app-solutions/overview-app-design-considerations
+          - url: ./app-solutions/overview-app-design-considerations.md
             text: Hybrid app design considerations
       - title: Explore hybrid patterns
         links:
-          - url: /hybrid/app-solutions/pattern-cross-cloud-scale
+          - url: ./app-solutions/pattern-cross-cloud-scale.md
             text: Cross-cloud scaling
-          - url: /hybrid/app-solutions/pattern-cicd-pipeline
+          - url: ./app-solutions/pattern-cicd-pipeline.md
             text: DevOps hybrid CI/CD
-          - url: /hybrid/app-solutions/pattern-retail-footfall-detection
+          - url: ./app-solutions/pattern-retail-footfall-detection.md
             text: Footfall detection (retail)
-          - url: /hybrid/app-solutions/pattern-geo-distributed
+          - url: ./app-solutions/pattern-geo-distributed.md
             text: Geo-distributed app
       - title: Deploy hybrid solution examples
         links:
-          - url: /hybrid/app-solutions/solution-deployment-guide-cross-cloud-scaling
+          - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
             text: Cross-cloud scaling
           - url: https://aka.ms/hybriddevopsdeploy 
             text: DevOps hybrid CI/CD
-          - url: /hybrid/app-solutions/solution-deployment-guide-retail-footfall-detection
+          - url: ./app-solutions/solution-deployment-guide-retail-footfall-detection.md
             text: Footfall detection (retail)
-          - url: /hybrid/app-solutions/solution-deployment-guide-geo-distributed
+          - url: ./app-solutions/solution-deployment-guide-geo-distributed.md
             text: Geo-distributed app
     - title: Additional resources
       items:
