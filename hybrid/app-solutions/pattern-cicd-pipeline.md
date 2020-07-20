@@ -46,7 +46,7 @@ The DevOps Pattern is intended to ensure consistency across deployments regardle
 - Will deployment parameters work in all the target environments?
 - Are resource-specific properties available in all target clouds?
 
-For more information, see [Develop Azure Resource Manager templates for cloud consistency](https://docs.microsoft.com/azure/azure-resource-manager/templates-cloud-consistency).
+For more information, see [Develop Azure Resource Manager templates for cloud consistency](/azure/azure-resource-manager/templates-cloud-consistency).
 
 In addition, consider the following points when deciding how to implement this pattern:
 

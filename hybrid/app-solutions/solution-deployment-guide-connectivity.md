@@ -36,7 +36,7 @@ A few components are required to build a hybrid connectivity deployment. Some of
 ### Azure
 
 - If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
-- Create a [web app](https://docs.microsoft.com/vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp?view=vsts&tabs=vsts) in Azure. Make note of the web app URL because you'll need it in the solution.
+- Create a [web app](/vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp?tabs=vsts&view=vsts) in Azure. Make note of the web app URL because you'll need it in the solution.
 
 ### Azure Stack Hub
 
@@ -68,7 +68,7 @@ Verify that you meet the following criteria before you start configuring hybrid 
 
 #### Solution example values
 
-The examples in this solution use the following values. You can use these values to create a test environment or refer to them for a better understanding of the examples. For more information about VPN gateway settings, see [About VPN Gateway Settings](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings).
+The examples in this solution use the following values. You can use these values to create a test environment or refer to them for a better understanding of the examples. For more information about VPN gateway settings, see [About VPN Gateway Settings](/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings).
 
 Connection specifications:
 
@@ -98,7 +98,7 @@ Network and subnet IP addresses:
 
 ## Create a virtual network in global Azure and Azure Stack Hub
 
-Use the following steps to create a virtual network by using the portal. You can use these [example values](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal#values) if you're using this article as only a  solution. If you're using this article to configure a production environment, replace the example settings with  your own values.
+Use the following steps to create a virtual network by using the portal. You can use these [example values](/azure/vpn-gateway/vpn-gateway-howto-site-to-site-resource-manager-portal#values) if you're using this article as only a  solution. If you're using this article to configure a production environment, replace the example settings with  your own values.
 
 > [!IMPORTANT]
 > You must ensure that there isn't an overlap of IP addresses in Azure or Azure Stack Hub vNet address spaces.
@@ -211,4 +211,4 @@ You can see the connection in the **Connections** page of the virtual network ga
 
 ## Next steps
 
-- To learn more about Azure Cloud Patterns, see [Cloud Design Patterns](https://docs.microsoft.com/azure/architecture/patterns).
+- To learn more about Azure Cloud Patterns, see [Cloud Design Patterns](/azure/architecture/patterns).
