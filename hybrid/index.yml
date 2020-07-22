@@ -18,6 +18,9 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
+    - title: "Discover the new Azure Stack HCI"
+      itemType: video
+      url: https://azure.microsoft.com/resources/videos/discover-the-new-azure-stack-hci/ 
     - title: "Azure Hybrid Virtual Event"
       itemType: video
       url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf     
