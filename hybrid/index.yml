@@ -21,6 +21,9 @@ highlightedContent:
     - title: "Discover the new Azure Stack HCI"
       itemType: video
       url: https://azure.microsoft.com/resources/videos/discover-the-new-azure-stack-hci/ 
+    - title: "What's new for Azure Stack HCI"
+      itemType: video
+      url: https://azure.microsoft.com/resources/videos/discover-the-new-azure-stack-hci/       
     - title: "Azure Hybrid Virtual Event"
       itemType: video
       url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf     
@@ -337,6 +340,8 @@ additionalContent:
             text: .NET development for Azure         
           - url: https://github.com/likamrat/azure_arc
             text: Azure Arc jumpstart guides 
+          - url: https://github.com/Azure/AzureStackHCI-EvalGuide
+            text: Azure Stack HCI evaluation guide
           - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
             text: Certified for Azure IoT Edge devices               
           - url: /samples/browse/
