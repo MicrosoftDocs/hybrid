@@ -299,7 +299,7 @@ additionalContent:
             text: What are patterns and solution examples?
           - url: ./app-solutions/overview-app-design-considerations.md
             text: Hybrid app design considerations
-      - title: Explore hybrid patterns
+      - title: Explore hybrid app patterns
         links:
           - url: ./app-solutions/pattern-cross-cloud-scale.md
             text: Cross-cloud scaling
@@ -309,7 +309,7 @@ additionalContent:
             text: Footfall detection (retail)
           - url: ./app-solutions/pattern-geo-distributed.md
             text: Geo-distributed app
-      - title: Deploy hybrid solution examples
+      - title: Deploy hybrid app solution examples
         links:
           - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
             text: Cross-cloud scaling
