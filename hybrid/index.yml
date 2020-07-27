@@ -325,7 +325,7 @@ additionalContent:
       - title: General resources
         links:
           - url: /azure-stack/operator/compare-azure-azure-stack
-            text: Azure global vs Azure Stack  
+            text: Azure global cloud vs Azure Stack  
           - url: https://azure.microsoft.com/overview/azure-hybrid/
             text: Azure hybrid capabilities  
           - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
