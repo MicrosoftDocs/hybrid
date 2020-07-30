@@ -292,6 +292,9 @@ conceptualContent:
      - url: https://azure.github.io/Vision-AI-DevKit-Pages/
        itemType: overview
        text: Vision AI Developer Kit   
+     - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
+       itemType: overview
+       text: Azure IoT Tools for Visual Studio Code
      - url: /visualstudio/azure/
        itemType: overview 
        text: Visual Studio Azure development
@@ -351,6 +354,14 @@ additionalContent:
         links:
           - url: https://github.com/likamrat/azure_arc
             text: Azure Arc jumpstart guides 
+          - url: https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator
+            text: Azure IoT Edge AI video intelligence solution accelerator
+          - url: https://labs.iotedge.dev/
+            text: Azure IoT Edge hands-on-labs 
+          - url: https://www.azureiotsolutions.com/Accelerators
+            text: Azure IoT solution accelerators     
+          - url: /azure-stack/asdk
+            text: Azure Stack development kit                     
           - url: https://github.com/Azure/AzureStackHCI-EvalGuide
             text: Azure Stack HCI evaluation guide        
           - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
@@ -359,10 +370,10 @@ additionalContent:
             text: Certified for Azure IoT Edge devices
           - url: /samples/browse/
             text: Code samples browser            
+          - url: https://docs.docker.com/
+            text: Docker docs
           - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
             text: Dynamically scale from Azure Stack Hub to Azure 
-          - url: https://labs.iotedge.dev/
-            text: IoT Edge hands-on-labs        
           - url: /learn
             text: Microsoft Learn
 
