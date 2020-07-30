@@ -365,7 +365,7 @@ additionalContent:
           - url: https://github.com/Azure/AzureStackHCI-EvalGuide
             text: Azure Stack HCI evaluation guide        
           - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
-            text: Azure Stack Hybrid apps intro
+            text: Azure Stack hybrid apps intro
           - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
             text: Certified for Azure IoT Edge devices
           - url: /samples/browse/
