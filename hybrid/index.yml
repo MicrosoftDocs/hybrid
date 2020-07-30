@@ -284,6 +284,17 @@ conceptualContent:
      - url: /azure/fxt-edge-filer/fxt-overview
        itemType: overview
        text: Azure FXT Edge Filer
+   - title: Tools
+     links:
+     - url: /dotnet/azure/
+       itemType: overview
+       text: .NET development for Azure
+     - url: https://azure.github.io/Vision-AI-DevKit-Pages/
+       itemType: overview
+       text: Vision AI Developer Kit   
+     - url: /visualstudio/azure/
+       itemType: overview 
+       text: Visual Studio Azure development
 
 # additionalContent section (optional)
 # Card with links style
@@ -322,43 +333,41 @@ additionalContent:
     - title: Additional resources
       items:
       # Cards
-      - title: General resources
+      - title: General
         links:
           - url: /azure-stack/operator/compare-azure-azure-stack
             text: Azure global cloud vs Azure Stack  
+          - url: https://azure.microsoft.com/blog/topics/hybrid/
+            text: Azure hybrid blog 
           - url: https://azure.microsoft.com/overview/azure-hybrid/
             text: Azure hybrid capabilities  
-          - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
-            text: Azure Stack Hybrid Applications Intro
+          - url: https://channel9.msdn.com/Search?term=%22Azure%20Stack%20Hub%20Partner%20Solutions%20Series%22
+            text: Azure Stack Hub partner solutions
           - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
             text: Customer hybrid cloud stories
+          - url: /answers/products/
+            text: Microsoft Q&A forums            
+      - title: Learning
+        links:
+          - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
+            text: Azure Stack Hybrid Applications Intro
+          - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
+            text: Dynamically scale from Azure Stack Hub to Azure 
+          - url: https://labs.iotedge.dev/
+            text: IoT Edge hands-on-labs        
           - url: /learn
             text: Microsoft Learn interactive training
           - url: /learn/tv/
-            text: Microsoft Learn TV 
-      - title: Resources for building and operating
+            text: Microsoft Learn TV         
+      - title: Building and operating 
         links:
-          - url: /dotnet/azure/
-            text: .NET development for Azure         
           - url: https://github.com/likamrat/azure_arc
             text: Azure Arc jumpstart guides 
           - url: https://github.com/Azure/AzureStackHCI-EvalGuide
             text: Azure Stack HCI evaluation guide
           - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
-            text: Certified for Azure IoT Edge devices               
+            text: Certified for Azure IoT Edge devices
           - url: /samples/browse/
             text: Code sample browser
-          - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
-            text: Dynamically scale from Azure Stack Hub to Azure 
-          - url: https://labs.iotedge.dev/
-            text: IoT Edge hands-on-labs
-          - url: https://azure.github.io/Vision-AI-DevKit-Pages/
-            text: Vision AI Developer Kit   
-          - url: /visualstudio/azure/
-            text: Visual Studio Azure development            
-      - title: Support and other resources
-        links:
-          - url: https://azure.microsoft.com/blog/topics/hybrid/
-            text: Azure hybrid blog 
-          - url: /answers/products/
-            text: Microsoft Q&A forums
+
+
