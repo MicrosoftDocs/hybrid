@@ -1,5 +1,5 @@
 ### YamlMime:Hub
-title: Azure hybrid documentation 
+title: Azure hybrid cloud documentation # azure hybrid docs documentation cloud stack hci apps solutions resources guidance
 summary: Resources for building and operating hybrid solutions that span the global cloud, datacenter, and edge.
 brand: azure
 
@@ -10,7 +10,7 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 06/08/2020
+  ms.date: 06/30/2020
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -18,9 +18,15 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: "Azure Hybrid Virtual Event - June 24 2020"
+    - title: "Discover the new Azure Stack HCI"
       itemType: video
-      url: https://info.microsoft.com/ww-registration-azure-hybrid-virtual-event.html     
+      url: https://azure.microsoft.com/resources/videos/discover-the-new-azure-stack-hci/ 
+    - title: "Inspire 2020: What's new for Azure Stack HCI"
+      itemType: video
+      url: https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030       
+    - title: "Azure Hybrid Virtual Event"
+      itemType: video
+      url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf     
     - title: "Build 2020: Hybrid sessions"
       itemType: video
       url: https://mybuild.microsoft.com/sessions?q=hybrid&g=%255B%2522on-demand%2522%255D 
@@ -30,7 +36,10 @@ highlightedContent:
     - title: "Build 2020: Intelligent Edge sessions"
       itemType: video
       url: https://mybuild.microsoft.com/sessions?q=%2522%2520intelligent%2520edge%2520%2522%2520%2522%2520sql%2520edge%2520%2522
-            
+    - title: "Ignite 2019: Hybrid sessions"
+      itemType: video
+      url: https://myignite.techcommunity.microsoft.com/sessions?t={"from":"2019-11-03T08:00:00-05:00","to":"2019-11-08T19:00:00-05:00"}&q=hybrid&s={"name":"translate.refine.label.sort.relevance","type":0}&g=["on-demand"]
+      
 # productDirectory section (optional)
 # productDirectory:
 #   title: Azure hybrid platforms # < 60 chars (optional)
@@ -76,7 +85,7 @@ productDirectory:
     # Card
     - title: Intelligent edge platforms for devices.
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: media/index/azure-stack-hub.svg
+      imageSrc: media/index/intelligent.svg
       links:
         - url: /azure/iot-edge/
           text: Azure IoT Edge
@@ -139,15 +148,18 @@ conceptualContent:
         text: Azure SQL Edge (preview)          
    - title: Development and integration
      links:
+      - url: /azure-stack/operator/azure-stack-app-service-overview
+        itemType: overview
+        text: App Service on Azure Stack Hub  
       - url: /azure/app-service/app-service-hybrid-connections
         itemType: overview
         text: Azure App Service Hybrid Connections
-      - url: /azure-stack/operator/azure-stack-app-service-overview
-        itemType: overview
-        text: Azure App Service on Azure Stack Hub        
       - url: /azure/devops
         itemType: overview
         text: Azure DevOps for CI/CD
+      - url: /azure/event-hubs/
+        itemType: overview
+        text: Azure Event Hubs  
       - url: /azure/azure-functions/
         itemType: overview
         text: Azure Functions
@@ -162,7 +174,7 @@ conceptualContent:
         text: Azure Service Fabric     
       - url: /azure-stack/operator/event-hubs-rp-overview
         itemType: overview
-        text: Event Hubs on Azure Stack Hub       
+        text: Event Hubs on Azure Stack Hub
    - title: Edge
      links:
       - url: /azure/databox-online/data-box-gateway-overview
@@ -272,6 +284,20 @@ conceptualContent:
      - url: /azure/fxt-edge-filer/fxt-overview
        itemType: overview
        text: Azure FXT Edge Filer
+   - title: Tools
+     links:
+     - url: /dotnet/azure/
+       itemType: overview
+       text: .NET development for Azure
+     - url: https://azure.github.io/Vision-AI-DevKit-Pages/
+       itemType: overview
+       text: Vision AI Developer Kit   
+     - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
+       itemType: overview
+       text: Azure IoT Tools for Visual Studio Code
+     - url: /visualstudio/azure/
+       itemType: overview 
+       text: Visual Studio Azure development
 
 # additionalContent section (optional)
 # Card with links style
@@ -283,64 +309,73 @@ additionalContent:
       # Cards
       - title: Hybrid app patterns and solution examples
         links:
-          - url: /hybrid/app-solutions/overview-patterns-solution-examples
+          - url: ./app-solutions/overview-patterns-solution-examples.md
             text: What are patterns and solution examples?
-          - url: /hybrid/app-solutions/overview-app-design-considerations
+          - url: ./app-solutions/overview-app-design-considerations.md
             text: Hybrid app design considerations
-      - title: Explore hybrid patterns
+      - title: Explore hybrid app patterns
         links:
-          - url: /hybrid/app-solutions/pattern-cross-cloud-scale
+          - url: ./app-solutions/pattern-cross-cloud-scale.md
             text: Cross-cloud scaling
-          - url: /hybrid/app-solutions/pattern-cicd-pipeline
+          - url: ./app-solutions/pattern-cicd-pipeline.md
             text: DevOps hybrid CI/CD
-          - url: /hybrid/app-solutions/pattern-retail-footfall-detection
+          - url: ./app-solutions/pattern-retail-footfall-detection.md
             text: Footfall detection (retail)
-          - url: /hybrid/app-solutions/pattern-geo-distributed
+          - url: ./app-solutions/pattern-geo-distributed.md
             text: Geo-distributed app
-      - title: Deploy hybrid solution examples
+      - title: Deploy hybrid app solution examples
         links:
-          - url: /hybrid/app-solutions/solution-deployment-guide-cross-cloud-scaling
+          - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
             text: Cross-cloud scaling
           - url: https://aka.ms/hybriddevopsdeploy 
             text: DevOps hybrid CI/CD
-          - url: /hybrid/app-solutions/solution-deployment-guide-retail-footfall-detection
+          - url: ./app-solutions/solution-deployment-guide-retail-footfall-detection.md
             text: Footfall detection (retail)
-          - url: /hybrid/app-solutions/solution-deployment-guide-geo-distributed
+          - url: ./app-solutions/solution-deployment-guide-geo-distributed.md
             text: Geo-distributed app
     - title: Additional resources
       items:
       # Cards
-      - title: General resources
+      - title: General
         links:
           - url: /azure-stack/operator/compare-azure-azure-stack
-            text: Azure global vs Azure Stack  
+            text: Azure global cloud vs Azure Stack  
           - url: https://azure.microsoft.com/blog/topics/hybrid/
             text: Azure hybrid blog 
           - url: https://azure.microsoft.com/overview/azure-hybrid/
-            text: Azure hybrid capabilities            
-          - url: /learn
-            text: Microsoft Learn interactive training
-          - url: /learn/tv/
-            text: Microsoft Learn TV 
-      - title: Resources for building & operating
+            text: Azure hybrid capabilities  
+          - url: https://channel9.msdn.com/Search?term=%22Azure%20Stack%20Hub%20Partner%20Solutions%20Series%22
+            text: Customer Azure Stack Hub solutions
+          - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
+            text: Customer hybrid cloud stories
+          - url: /answers/products/
+            text: Microsoft Q&A forums            
+      - title: Evaluation and learning
         links:
-          - url: /dotnet/azure/
-            text: .NET development for Azure         
           - url: https://github.com/likamrat/azure_arc
             text: Azure Arc jumpstart guides 
+          - url: https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator
+            text: Azure IoT Edge AI video intelligence solution accelerator
+          - url: https://labs.iotedge.dev/
+            text: Azure IoT Edge hands-on-labs 
+          - url: https://www.azureiotsolutions.com/Accelerators
+            text: Azure IoT solution accelerators     
+          - url: /azure-stack/asdk
+            text: Azure Stack development kit                     
+          - url: https://github.com/Azure/AzureStackHCI-EvalGuide
+            text: Azure Stack HCI evaluation guide        
+          - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
+            text: Azure Stack hybrid apps intro
+          - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
+            text: Certified for Azure IoT Edge devices
           - url: /samples/browse/
-            text: Code sample browser
+            text: Code samples browser            
+          - url: https://docs.docker.com/
+            text: Docker docs
           - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
             text: Dynamically scale from Azure Stack Hub to Azure 
-          - url: https://labs.iotedge.dev/
-            text: IoT Edge hands-on-labs
-          - url: https://azure.github.io/Vision-AI-DevKit-Pages/
-            text: Vision AI Developer Kit   
-          - url: /visualstudio/azure/
-            text: Visual Studio Azure development            
-      - title: Support & other resources
-        links:
-          - url: https://catalog.azureiotsolutions.com/alldevices
-            text: Azure Certified for IoT device catalog          
-          - url: /answers/products/
-            text: Microsoft Q&A forums
+          - url: /learn
+            text: Microsoft Learn
+
+
+

@@ -67,7 +67,7 @@ The cross-cloud solution ensures seamless management and familiar interface betw
 
 ### Get a custom domain and configure DNS
 
-Update the DNS zone file for the domain. Azure AD will verify ownership of the custom domain name. Use [Azure DNS](https://docs.microsoft.com/azure/dns/dns-getstarted-portal) for Azure/Office 365/external DNS records within Azure, or add the DNS entry at [a different DNS registrar](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/).
+Update the DNS zone file for the domain. Azure AD will verify ownership of the custom domain name. Use [Azure DNS](/azure/dns/dns-getstarted-portal) for Azure/Office 365/external DNS records within Azure, or add the DNS entry at [a different DNS registrar](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23/).
 
 1. Register a custom domain with a public registrar.
 2. Sign in to the domain name registrar for the domain. An approved admin may be required to make DNS updates.
@@ -96,7 +96,7 @@ Azure Repos
 
 ### Create self-contained web app deployment for App Services in both clouds
 
-1. Edit the **WebApplication.csproj** file. Select `Runtimeidentifier` and add `win10-x64`. (See [Self-contained deployment](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf) documentation.)
+1. Edit the **WebApplication.csproj** file. Select `Runtimeidentifier` and add `win10-x64`. (See [Self-contained deployment](/dotnet/core/deploying/deploy-with-vs#simpleSelf) documentation.)
 
     ![Edit web app project file](media/solution-deployment-guide-cross-cloud-scaling/image3.png)
 
@@ -112,7 +112,7 @@ Azure Repos
 
     ![Add code to the web app](media/solution-deployment-guide-cross-cloud-scaling/image4.png)
 
-3. Run the build. The [self-contained deployment build](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf) process will publish artifacts that run on Azure and Azure Stack Hub.
+3. Run the build. The [self-contained deployment build](/dotnet/core/deploying/deploy-with-vs#simpleSelf) process will publish artifacts that run on Azure and Azure Stack Hub.
 
 ## Use an Azure hosted agent
 
@@ -210,7 +210,7 @@ Azure Pipelines and Azure DevOps Services provide a highly configurable and mana
 21. Save all changes.
 
 > [!Note]  
-> Some settings for the tasks may have been automatically defined as [environment variables](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=vsts&tabs=batch#custom-variables) when creating a release definition from a template. These settings can't be modified in the task settings; instead, the parent environment item must be selected to edit these settings.
+> Some settings for the tasks may have been automatically defined as [environment variables](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables) when creating a release definition from a template. These settings can't be modified in the task settings; instead, the parent environment item must be selected to edit these settings.
 
 ## Publish to Azure Stack Hub via Visual Studio
 
@@ -253,7 +253,7 @@ Use [Azure Resource Manager templates](https://azure.microsoft.com/resources/tem
 
 #### Create self-contained web app deployment for App Services in both clouds
 
-1. Edit the **WebApplication.csproj** file: Select `Runtimeidentifier` and then add `win10-x64`. For more information, see [Self-contained deployment](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf) documentation.
+1. Edit the **WebApplication.csproj** file: Select `Runtimeidentifier` and then add `win10-x64`. For more information, see [Self-contained deployment](/dotnet/core/deploying/deploy-with-vs#simpleSelf) documentation.
 
 2. Use Team Explorer to check the code into Azure Repos.
 
@@ -267,7 +267,7 @@ Use [Azure Resource Manager templates](https://azure.microsoft.com/resources/tem
 
 3. In **Arguments**, add **-r win10-x64** code. This addition is required to trigger a self-contained deployment with .NET Core.
 
-4. Run the build. The [self-contained deployment build](https://docs.microsoft.com/dotnet/core/deploying/deploy-with-vs#simpleSelf) process will publish artifacts that can run on Azure and Azure Stack Hub.
+4. Run the build. The [self-contained deployment build](/dotnet/core/deploying/deploy-with-vs#simpleSelf) process will publish artifacts that can run on Azure and Azure Stack Hub.
 
 #### Use an Azure hosted build agent
 
@@ -328,7 +328,7 @@ Creating a release definition is the final step in the app build process. This r
 23. Save all changes.
 
 > [!Note]  
-> Some settings for release tasks are automatically defined as [environment variables](https://docs.microsoft.com/azure/devops/pipelines/release/variables?view=vsts&tabs=batch#custom-variables) when creating a release definition from a template. These settings can't be modified in the task settings but can be modified in the parent environment items.
+> Some settings for release tasks are automatically defined as [environment variables](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables) when creating a release definition from a template. These settings can't be modified in the task settings but can be modified in the parent environment items.
 
 ## Create a release
 
@@ -360,4 +360,4 @@ A flexible and robust multi-cloud service provides data security, back up and re
 
 ## Next steps
 
-- To learn more about Azure Cloud Patterns, see [Cloud Design Patterns](https://docs.microsoft.com/azure/architecture/patterns).
+- To learn more about Azure Cloud Patterns, see [Cloud Design Patterns](/azure/architecture/patterns).
