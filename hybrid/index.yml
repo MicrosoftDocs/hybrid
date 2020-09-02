@@ -305,6 +305,7 @@ additionalContent:
   # Supports up to 3 sections
   sections:
     - title: Hybrid solutions
+      summary: Guidance and examples to explore and reuse for your hybrid projects
       items:
       # Cards
       - title: Hybrid app patterns and solution examples
