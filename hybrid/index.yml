@@ -10,7 +10,7 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 08/05/2020
+  ms.date: 09/02/2020
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -220,7 +220,7 @@ conceptualContent:
       - url: /azure/azure-arc/kubernetes/
         itemType: overview      
         text: Azure Arc enabled Kubernetes (preview)
-      - url: /azure/azure-arc/
+      - url: /azure/azure-arc/servers
         itemType: overview
         text: Azure Arc enabled servers (preview)
       - url: /azure/automation/
