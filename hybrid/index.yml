@@ -252,6 +252,9 @@ conceptualContent:
       - url: /azure/expressroute/
         itemType: overview
         text: Azure ExpressRoute
+      - url: /azure/networking/azure-orbital-overview
+        itemType: overview
+        text: Azure Orbital (preview)
       - url: /azure/load-balancer/
         itemType: overview
         text: Azure Load Balancer
