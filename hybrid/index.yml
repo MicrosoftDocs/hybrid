@@ -24,15 +24,15 @@ highlightedContent:
     - title: "Ignite 2020: Azure Arc sessions"
       itemType: video
       url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=%2520Arc%2520    
+    - title: "Ignite 2020: Intelligent Edge sessions"
+      itemType: video
+      url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=intelligent%2520edge    
     - title: "Discover the new Azure Stack HCI"
       itemType: video
       url: https://azure.microsoft.com/resources/videos/discover-the-new-azure-stack-hci/ 
     - title: "Inspire 2020: What's new for Azure Stack HCI"
       itemType: video
       url: https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030       
-    - title: "Azure Hybrid Virtual Event"
-      itemType: video
-      url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf     
     - title: "Build 2020: Hybrid sessions"
       itemType: video
       url: https://mybuild.microsoft.com/sessions?q=hybrid&g=%255B%2522on-demand%2522%255D 
@@ -217,15 +217,18 @@ conceptualContent:
         text: Hybrid Azure AD joined devices
    - title: Management
      links:
-      - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
-        itemType: overview      
-        text: Azure Arc enabled data services (private preview sign-up) 
+      - url: /azure/azure-arc/data/overview
+        itemType: overview
+        text: Azure Arc enabled data services (preview)
       - url: /azure/azure-arc/kubernetes/
-        itemType: overview      
+        itemType: overview
         text: Azure Arc enabled Kubernetes (preview)
       - url: /azure/azure-arc/servers
         itemType: overview
         text: Azure Arc enabled servers (preview)
+      - url: /sql/sql-server/azure-arc/overview
+        itemType: overview
+        text: Azure Arc enabled SQL Server (preview)
       - url: /azure/automation/
         itemType: overview
         text: Azure Automation
@@ -350,7 +353,9 @@ additionalContent:
           - url: https://azure.microsoft.com/blog/topics/hybrid/
             text: Azure hybrid blog 
           - url: https://azure.microsoft.com/overview/azure-hybrid/
-            text: Azure hybrid capabilities  
+            text: Azure hybrid capabilities
+          - url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
+            text: Azure hybrid virtual event
           - url: https://channel9.msdn.com/Search?term=%22Azure%20Stack%20Hub%20Partner%20Solutions%20Series%22
             text: Customer Azure Stack Hub solutions
           - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
