@@ -18,6 +18,9 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
+    - title: "Ignite 2020: Hybrid sessions"
+      itemType: video
+      url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=hybrid    
     - title: "Discover the new Azure Stack HCI"
       itemType: video
       url: https://azure.microsoft.com/resources/videos/discover-the-new-azure-stack-hci/ 
@@ -36,9 +39,6 @@ highlightedContent:
     - title: "Build 2020: Intelligent Edge sessions"
       itemType: video
       url: https://mybuild.microsoft.com/sessions?q=%2522%2520intelligent%2520edge%2520%2522%2520%2522%2520sql%2520edge%2520%2522
-    - title: "Ignite 2019: Hybrid sessions"
-      itemType: video
-      url: https://myignite.techcommunity.microsoft.com/sessions?t={"from":"2019-11-03T08:00:00-05:00","to":"2019-11-08T19:00:00-05:00"}&q=hybrid&s={"name":"translate.refine.label.sort.relevance","type":0}&g=["on-demand"]
       
 # productDirectory section (optional)
 # productDirectory:
