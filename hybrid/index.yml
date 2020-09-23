@@ -228,7 +228,7 @@ conceptualContent:
         text: Azure Arc enabled Kubernetes (preview)
       - url: /azure/azure-arc/servers
         itemType: overview
-        text: Azure Arc enabled servers (preview)
+        text: Azure Arc enabled servers
       - url: /sql/sql-server/azure-arc/overview
         itemType: overview
         text: Azure Arc enabled SQL Server (preview)
