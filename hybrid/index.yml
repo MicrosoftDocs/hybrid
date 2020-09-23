@@ -21,6 +21,9 @@ highlightedContent:
     - title: "Ignite 2020: Hybrid sessions"
       itemType: video
       url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=hybrid    
+    - title: "Ignite 2020: Azure Arc sessions"
+      itemType: video
+      url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=%2520Arc%2520    
     - title: "Discover the new Azure Stack HCI"
       itemType: video
       url: https://azure.microsoft.com/resources/videos/discover-the-new-azure-stack-hci/ 
