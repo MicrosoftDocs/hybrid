@@ -20,13 +20,13 @@ highlightedContent:
     # Card
     - title: "Ignite 2020: Hybrid sessions"
       itemType: video
-      url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=hybrid    
+      url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=hybrid
     - title: "Ignite 2020: Azure Arc sessions"
       itemType: video
-      url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=%2520Arc%2520    
+      url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=" Arc "
     - title: "Ignite 2020: Intelligent Edge sessions"
       itemType: video
-      url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=intelligent%2520edge    
+      url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q="intelligent edge"
     - title: "Discover the new Azure Stack HCI"
       itemType: video
       url: https://azure.microsoft.com/resources/videos/discover-the-new-azure-stack-hci/ 
@@ -143,9 +143,12 @@ conceptualContent:
        text: IoT Edge on Kubernetes
    - title: Database
      links:
-      - url: https://azure.microsoft.com/services/azure-arc/hybrid-data-services/
-        itemType: overview      
-        text: Azure Arc enabled data services (private preview sign-up) 
+      - url: /azure/azure-arc/data/overview
+        itemType: overview
+        text: Azure Arc enabled data services (preview)
+      - url: /sql/sql-server/azure-arc/overview
+        itemType: overview
+        text: Azure Arc enabled SQL Server (preview)
       - url: /azure/azure-sql-edge/overview
         itemType: overview      
         text: Azure SQL Edge (preview)          
