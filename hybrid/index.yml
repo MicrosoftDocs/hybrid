@@ -351,6 +351,8 @@ additionalContent:
             text: Certified for Azure IoT Edge devices            
       - title: General
         links:
+          - url: /learn/modules/align-requirements-in-azure/
+            text: Align requirements with cloud types and service models in Azure
           - url: https://azure.microsoft.com/overview/azure-hybrid/
             text: Azure hybrid capabilities
           - url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
@@ -361,16 +363,44 @@ additionalContent:
             text: Microsoft Learn            
       - title: Identity and security
         links:
-          - url: /learn/modules/intro-to-azure-sentinel/
-            text: Intro to Azure Sentinel
           - url: /learn/modules/azure-sentinel-deploy-configure/
             text: Deploy Azure Sentinel and connect data sources 
+          - url: /learn/modules/implement-hybrid-identity-windows-server/
+            text: Implement hybrid identity with Windows Server
+          - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
+            text: Implement Windows Server hybrid cloud management, monitoring, and security              
+          - url: /learn/modules/intro-to-azure-sentinel/
+            text: Intro to Azure Sentinel
       - title: Management
         links:
           - url: https://github.com/likamrat/azure_arc
             text: Azure Arc jumpstart guides 
+          - url: /learn/modules/describe-high-availability-disaster-recovery-strategies/
+            text: Describe high availability and disaster recovery strategies 
+          - url: /learn/modules/explore-iaas-paas-platform-tools-for-high-availability-disaster-recovery/
+            text: Explore IaaS and PaaS platform tools for high availability and disaster recovery 
           - url: /learn/modules/intro-to-azure-arc/
-            text: Intro to Azure Arc            
+            text: Intro to Azure Arc
+          - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
+            text: Implement Windows Server hybrid cloud management, monitoring, and security                         
+          - url: /learn/modules/manage-hybrid-workloads-azure-arc/
+            text: Manage hybrid workloads with Azure Arc
+          - url: /learn/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances/
+            text: Monitor Windows Server IaaS Virtual Machines and hybrid instances
+      - title: Networking
+        links:
+          - url: /learn/modules/design-a-hybrid-network-architecture/
+            text: Design a hybrid network architecture on Azure 
+          - url: /learn/modules/expose-hybrid-services-with-azure-relay/
+            text: Expose hybrid services securely with Azure Relay 
+          - url: /learn/modules/implement-hybrid-network-infrastructure/
+            text: Implement hybrid network infrastructure             
+      - title: Storage
+        links:
+          - url: /learn/modules/implement-hybrid-file-server-infrastructure/
+            text: Implement a hybrid file server infrastructure 
+          - url: /learn/modules/implement-hybrid-backup-recovery-windows-server-iaas/
+            text: Implement hybrid backup and recovery with Windows Server IaaS  
 
     - title: Additional resources
       items:
@@ -389,8 +419,14 @@ additionalContent:
             text: Customer hybrid cloud stories
       - title: Help + Support
         links:
+          - url: https://azure.microsoft.com/support/options/
+            text: Azure support
+          - url: https://feedback.azure.com/
+            text: Azure user voice feedback
           - url: /answers/products/
             text: Microsoft Q&A forums
+          - url: https://stackoverflow.com/
+            text: Stack Overflow
 
 #   - title: Additional resources
 #     items:
