@@ -275,20 +275,6 @@ conceptualContent:
      - url: /azure/fxt-edge-filer/fxt-overview
        itemType: overview
        text: Azure FXT Edge Filer
-   - title: Tools
-     links:
-     - url: /dotnet/azure/
-       itemType: overview
-       text: .NET development for Azure
-     - url: https://azure.github.io/Vision-AI-DevKit-Pages/
-       itemType: overview
-       text: Vision AI Developer Kit   
-     - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
-       itemType: overview
-       text: Azure IoT Tools for Visual Studio Code
-     - url: /visualstudio/azure/
-       itemType: overview 
-       text: Visual Studio Azure development
 
 # additionalContent section (optional)
 # Card with links style
@@ -405,6 +391,20 @@ additionalContent:
     - title: Additional resources
       items:
       # Cards
+      - title: Development resources
+        links:
+        - url: /dotnet/azure/
+          text: .NET development for Azure
+        - url: /azure/architecture/hybrid/azure-arc-hybrid-config
+          text: Azure hybrid architectures
+        - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
+          text: Azure IoT Tools for Visual Studio Code
+        - url: /rest/api/azure/
+          text: Azure REST API reference
+        - url: https://azure.github.io/Vision-AI-DevKit-Pages/
+          text: Vision AI Developer Kit   
+        - url: /visualstudio/azure/
+          text: Visual Studio Azure development
       - title: General
         links:
           - url: https://azure.microsoft.com/blog/topics/hybrid/
