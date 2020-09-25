@@ -353,26 +353,26 @@ additionalContent:
             text: Deploy Azure Sentinel and connect data sources 
           - url: /learn/modules/implement-hybrid-identity-windows-server/
             text: Implement hybrid identity with Windows Server
-          - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
-            text: Implement Windows Server hybrid cloud management, monitoring, and security              
           - url: /learn/modules/intro-to-azure-sentinel/
             text: Intro to Azure Sentinel
+          - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
+            text: Windows Server hybrid cloud management, monitoring, and security              
       - title: Management
         links:
           - url: https://github.com/likamrat/azure_arc
             text: Azure Arc jumpstart guides 
           - url: /learn/modules/describe-high-availability-disaster-recovery-strategies/
-            text: Describe high availability and disaster recovery strategies 
+            text: High availability and disaster recovery strategies 
           - url: /learn/modules/explore-iaas-paas-platform-tools-for-high-availability-disaster-recovery/
-            text: Explore IaaS and PaaS platform tools for high availability and disaster recovery 
+            text: IaaS and PaaS platform tools for high availability and disaster recovery 
           - url: /learn/modules/intro-to-azure-arc/
             text: Intro to Azure Arc
-          - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
-            text: Implement Windows Server hybrid cloud management, monitoring, and security                         
           - url: /learn/modules/manage-hybrid-workloads-azure-arc/
             text: Manage hybrid workloads with Azure Arc
           - url: /learn/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances/
             text: Monitor Windows Server IaaS Virtual Machines and hybrid instances
+          - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
+            text: Windows Server hybrid cloud management, monitoring, and security    
       - title: Networking
         links:
           - url: /learn/modules/design-a-hybrid-network-architecture/
