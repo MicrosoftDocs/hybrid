@@ -44,27 +44,6 @@ highlightedContent:
       url: https://mybuild.microsoft.com/sessions?q=%2522%2520intelligent%2520edge%2520%2522%2520%2522%2520sql%2520edge%2520%2522
       
 # productDirectory section (optional)
-# productDirectory:
-#   title: Azure hybrid platforms # < 60 chars (optional)
-#   summary: Learn about hybrid-capable products and services used to build and operate hybrid solutions. # < 160 chars (optional)
-#   items:
-#     # Card
-#     - title: Azure hybrid capabilities
-#       # imageSrc should be square in ratio with no whitespace
-#       imageSrc: media/index/logo_azure.svg
-#       summary: Explore hybrid capabilities offered by Azure services and products
-#       url: https://azure.microsoft.com/overview/azure-hybrid/
-#     # Card
-#     - title: Azure
-#       imageSrc: media/index/logo_azure.svg
-#       summary: Azure service documentation.
-#       url: /Azure
-#     # Card
-#     - title: Azure Stack
-#       imageSrc: media/index/azure-stack-hub.svg
-#       summary: Azure Stack portfolio documentation, including Azure Stack Hub, Edge, and HCI.
-#       url: /Azure-Stack
-
 productDirectory:
   title: Azure hybrid cloud platform # < 60 chars (optional)
   summary: Hybrid-capable platforms used to build and operate hybrid solutions. # < 160 chars (optional)
@@ -296,20 +275,6 @@ conceptualContent:
      - url: /azure/fxt-edge-filer/fxt-overview
        itemType: overview
        text: Azure FXT Edge Filer
-   - title: Tools
-     links:
-     - url: /dotnet/azure/
-       itemType: overview
-       text: .NET development for Azure
-     - url: https://azure.github.io/Vision-AI-DevKit-Pages/
-       itemType: overview
-       text: Vision AI Developer Kit   
-     - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
-       itemType: overview
-       text: Azure IoT Tools for Visual Studio Code
-     - url: /visualstudio/azure/
-       itemType: overview 
-       text: Visual Studio Azure development
 
 # additionalContent section (optional)
 # Card with links style
@@ -346,51 +311,163 @@ additionalContent:
             text: Footfall detection (retail)
           - url: ./app-solutions/solution-deployment-guide-geo-distributed.md
             text: Geo-distributed app
-    - title: Additional resources
+
+    - title: Evaluation and learning resources
       items:
       # Cards
-      - title: General
+      - title: Azure Stack 
         links:
-          - url: /azure-stack/operator/compare-azure-azure-stack
-            text: Azure global cloud vs Azure Stack  
-          - url: https://azure.microsoft.com/blog/topics/hybrid/
-            text: Azure hybrid blog 
-          - url: https://azure.microsoft.com/overview/azure-hybrid/
-            text: Azure hybrid capabilities
-          - url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
-            text: Azure hybrid virtual event
-          - url: https://channel9.msdn.com/Search?term=%22Azure%20Stack%20Hub%20Partner%20Solutions%20Series%22
-            text: Customer Azure Stack Hub solutions
-          - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
-            text: Customer hybrid cloud stories
-          - url: /answers/products/
-            text: Microsoft Q&A forums            
-      - title: Evaluation and learning
+          - url: /azure-stack/asdk
+            text: Azure Stack development kit
+          - url: https://github.com/Azure/AzureStackHCI-EvalGuide
+            text: Azure Stack HCI evaluation guide
+          - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
+            text: Azure Stack hybrid apps intro
+          - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
+            text: Dynamically scale from Azure Stack Hub to Azure 
+      - title: Edge
         links:
-          - url: https://github.com/likamrat/azure_arc
-            text: Azure Arc jumpstart guides 
           - url: https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator
             text: Azure IoT Edge AI video intelligence solution accelerator
           - url: https://labs.iotedge.dev/
             text: Azure IoT Edge hands-on-labs 
           - url: https://www.azureiotsolutions.com/Accelerators
-            text: Azure IoT solution accelerators     
-          - url: /azure-stack/asdk
-            text: Azure Stack development kit                     
-          - url: https://github.com/Azure/AzureStackHCI-EvalGuide
-            text: Azure Stack HCI evaluation guide        
-          - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
-            text: Azure Stack hybrid apps intro
+            text: Azure IoT solution accelerators
           - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
-            text: Certified for Azure IoT Edge devices
-          - url: /samples/browse/
-            text: Code samples browser            
-          - url: https://docs.docker.com/
-            text: Docker docs
-          - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
-            text: Dynamically scale from Azure Stack Hub to Azure 
+            text: Certified for Azure IoT Edge devices            
+      - title: General
+        links:
+          - url: /learn/modules/align-requirements-in-azure/
+            text: Align requirements with cloud types and service models in Azure
+          - url: https://azure.microsoft.com/overview/azure-hybrid/
+            text: Azure hybrid capabilities
+          - url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
+            text: Azure hybrid virtual event
+          - url: /learn/modules/intro-to-azure-hybrid-services/
+            text: Intro to Azure hybrid cloud            
           - url: /learn
-            text: Microsoft Learn
+            text: Microsoft Learn            
+      - title: Identity and security
+        links:
+          - url: /learn/modules/azure-sentinel-deploy-configure/
+            text: Deploy Azure Sentinel and connect data sources 
+          - url: /learn/modules/implement-hybrid-identity-windows-server/
+            text: Implement hybrid identity with Windows Server
+          - url: /learn/modules/intro-to-azure-sentinel/
+            text: Intro to Azure Sentinel
+          - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
+            text: Windows Server hybrid cloud management, monitoring, and security              
+      - title: Management
+        links:
+          - url: https://github.com/likamrat/azure_arc
+            text: Azure Arc jumpstart guides 
+          - url: /learn/modules/describe-high-availability-disaster-recovery-strategies/
+            text: High availability and disaster recovery strategies 
+          - url: /learn/modules/explore-iaas-paas-platform-tools-for-high-availability-disaster-recovery/
+            text: IaaS and PaaS platform tools for high availability and disaster recovery 
+          - url: /learn/modules/intro-to-azure-arc/
+            text: Intro to Azure Arc
+          - url: /learn/modules/manage-hybrid-workloads-azure-arc/
+            text: Manage hybrid workloads with Azure Arc
+          - url: /learn/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances/
+            text: Monitor Windows Server IaaS Virtual Machines and hybrid instances
+          - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
+            text: Windows Server hybrid cloud management, monitoring, and security    
+      - title: Networking
+        links:
+          - url: /learn/modules/design-a-hybrid-network-architecture/
+            text: Design a hybrid network architecture on Azure 
+          - url: /learn/modules/expose-hybrid-services-with-azure-relay/
+            text: Expose hybrid services securely with Azure Relay 
+          - url: /learn/modules/implement-hybrid-network-infrastructure/
+            text: Implement hybrid network infrastructure             
+      - title: Storage
+        links:
+          - url: /learn/modules/implement-hybrid-file-server-infrastructure/
+            text: Implement a hybrid file server infrastructure 
+          - url: /learn/modules/implement-hybrid-backup-recovery-windows-server-iaas/
+            text: Implement hybrid backup and recovery with Windows Server IaaS  
 
+    - title: Additional resources
+      items:
+      # Cards
+      - title: Developer
+        links:
+        - url: /azure/developer/
+          text: Azure developer docs and tools
+        - url: /azure/architecture/hybrid/azure-arc-hybrid-config
+          text: Azure hybrid architectures
+        - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
+          text: Azure IoT Tools for Visual Studio Code
+        - url: /samples/browse/
+          text: Code samples browser
+        - url: https://azure.github.io/Vision-AI-DevKit-Pages/
+          text: Vision AI Developer Kit   
+        - url: /visualstudio/azure/
+          text: Visual Studio Azure development
+      - title: General
+        links:
+          - url: https://azure.microsoft.com/blog/topics/hybrid/
+            text: Azure hybrid blog 
+          - url: https://azure.microsoft.com/overview/azure-hybrid/
+            text: Azure hybrid capabilities
+          - url: https://channel9.msdn.com/Search?term=%22Azure%20Stack%20Hub%20Partner%20Solutions%20Series%22
+            text: Customer Azure Stack Hub solutions
+          - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
+            text: Customer hybrid cloud stories
+      - title: Help + Support
+        links:
+          - url: https://azure.microsoft.com/support/options/
+            text: Azure support
+          - url: https://feedback.azure.com/
+            text: Azure user voice feedback
+          - url: /answers/products/
+            text: Microsoft Q&A forums
+          - url: https://stackoverflow.com/
+            text: Stack Overflow
 
-
+#   - title: Additional resources
+#     items:
+#     # Cards
+#     - title: General
+#       links:
+#         - url: /azure-stack/operator/compare-azure-azure-stack
+#           text: Azure global cloud vs Azure Stack  
+#         - url: https://azure.microsoft.com/blog/topics/hybrid/
+#           text: Azure hybrid blog 
+#         - url: https://azure.microsoft.com/overview/azure-hybrid/
+#           text: Azure hybrid capabilities
+#         - url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
+#           text: Azure hybrid virtual event
+#         - url: https://channel9.msdn.com/Search?term=%22Azure%20Stack%20Hub%20Partner%20Solutions%20Series%22
+#           text: Customer Azure Stack Hub solutions
+#         - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
+#           text: Customer hybrid cloud stories
+#         - url: /answers/products/
+#           text: Microsoft Q&A forums
+#     - title: Evaluation and learning
+#       links:
+#         - url: https://github.com/likamrat/azure_arc
+#           text: Azure Arc jumpstart guides 
+#         - url: https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator
+#           text: Azure IoT Edge AI video intelligence solution accelerator
+#         - url: https://labs.iotedge.dev/
+#           text: Azure IoT Edge hands-on-labs 
+#         - url: https://www.azureiotsolutions.com/Accelerators
+#           text: Azure IoT solution accelerators     
+#         - url: /azure-stack/asdk
+#           text: Azure Stack development kit                     
+#         - url: https://github.com/Azure/AzureStackHCI-EvalGuide
+#           text: Azure Stack HCI evaluation guide        
+#         - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
+#           text: Azure Stack hybrid apps intro
+#         - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
+#           text: Certified for Azure IoT Edge devices
+#         - url: /samples/browse/
+#           text: Code samples browser            
+#         - url: https://docs.docker.com/
+#           text: Docker docs
+#         - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
+#           text: Dynamically scale from Azure Stack Hub to Azure 
+#         - url: /learn
+#           text: Microsoft Learn
