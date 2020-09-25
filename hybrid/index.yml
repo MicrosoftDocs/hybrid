@@ -391,16 +391,16 @@ additionalContent:
     - title: Additional resources
       items:
       # Cards
-      - title: Development resources
+      - title: Developer
         links:
-        - url: /dotnet/azure/
-          text: .NET development for Azure
+        - url: /azure/developer/
+          text: Azure developer docs and tools
         - url: /azure/architecture/hybrid/azure-arc-hybrid-config
           text: Azure hybrid architectures
         - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
           text: Azure IoT Tools for Visual Studio Code
-        - url: /rest/api/azure/
-          text: Azure REST API reference
+        - url: /samples/browse/
+          text: Code samples browser
         - url: https://azure.github.io/Vision-AI-DevKit-Pages/
           text: Vision AI Developer Kit   
         - url: /visualstudio/azure/
@@ -411,8 +411,6 @@ additionalContent:
             text: Azure hybrid blog 
           - url: https://azure.microsoft.com/overview/azure-hybrid/
             text: Azure hybrid capabilities
-          - url: /samples/browse/
-            text: Code samples browser
           - url: https://channel9.msdn.com/Search?term=%22Azure%20Stack%20Hub%20Partner%20Solutions%20Series%22
             text: Customer Azure Stack Hub solutions
           - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
