@@ -106,5 +106,5 @@ different versions of Azure PowerShell.
 ## Next steps
 
 - Use SQL Server Management Studio to manually fail over the cluster. See [Perform a Forced Manual Failover of an Always On Availability Group (SQL Server)](/sql/database-engine/availability-groups/windows/perform-a-forced-manual-failover-of-an-availability-group-sql-server?view=sql-server-2017)
-- Learn more about hybrid cloud apps. See [Hybrid Cloud Solutions.](https://aka.ms/azsdevtutorials)
+- Learn more about hybrid cloud apps. See [Hybrid Cloud Solutions.](/azure-stack/user/)
 - Use your own data or modify the code to this sample on [GitHub](https://github.com/Azure-Samples/azure-intelligent-edge-patterns).
