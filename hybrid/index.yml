@@ -18,6 +18,9 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
+    - title: "Introducing the Azure Modular Datacenter"
+      itemType: video
+      url: https://azure.microsoft.com/blog/introducing-the-microsoft-azure-modular-datacenter/ 
     - title: "Ignite 2020: Hybrid sessions"
       itemType: video
       url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=hybrid
@@ -27,9 +30,6 @@ highlightedContent:
     - title: "Ignite 2020: Intelligent Edge sessions"
       itemType: video
       url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q="intelligent edge"
-    - title: "Discover the new Azure Stack HCI"
-      itemType: video
-      url: https://azure.microsoft.com/resources/videos/discover-the-new-azure-stack-hci/ 
     - title: "Inspire 2020: What's new for Azure Stack HCI"
       itemType: video
       url: https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030       
@@ -60,9 +60,11 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: media/index/azure-stack-hub.svg
       links:
-        - url: /azure-stack/operator
+        - url: /azure-stack#azure-stack-hub
           text: Azure Stack Hub 
-        - url: /azure-stack/hci
+        - url: /azure-stack#azure-stack-hub
+          text: Azure Modular Data Center           
+        - url: /azure-stack#azure-stack-hci
           text: Azure Stack HCI
     # Card
     - title: Intelligent edge platforms for devices.
