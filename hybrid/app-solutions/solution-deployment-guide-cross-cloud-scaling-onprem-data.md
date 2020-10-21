@@ -152,7 +152,7 @@ To provide connectivity between the web front end in Azure and the SQL Server da
 
 The virtual network gateway in the Azure side of the hybrid network must allow point-to-site connections to integrate with Azure App Service.
 
-1. In Azure, go to the virtual network gateway page. Under **Settings**, select **Point-to-site configuration**.
+1. In the Azure portal, go to the virtual network gateway page. Under **Settings**, select **Point-to-site configuration**.
 
     ![Point-to-site option in Azure virtual network gateway](media/solution-deployment-guide-hybrid/image8.png)
 
@@ -191,7 +191,7 @@ To learn more about how App Service integrates with Azure VNets, see [Integrate 
 
 The local network gateway in the Azure Stack Hub virtual network needs to be configured to route traffic from the App Service point-to-site address range.
 
-1. In Azure Stack Hub, go to **Local network gateway**. Under **Settings**, select **Configuration**.
+1. In the Azure Stack Hub portal, go to **Local network gateway**. Under **Settings**, select **Configuration**.
 
     ![Gateway configuration option in Azure Stack Hub local network gateway](media/solution-deployment-guide-hybrid/image14.png)
 
@@ -237,13 +237,13 @@ To add SSL to Azure:
 
 1. Make sure that the SSL certificate you get is valid for the subdomain you created. (It's okay to use wildcard certificates.)
 
-2. In Azure, follow the instructions in the **Prepare your web app** and **Bind your SSL certificate** sections of the [Bind an existing custom SSL certificate to Azure Web Apps](/azure/app-service/app-service-web-tutorial-custom-ssl) article. Select **SNI-based SSL** as the **SSL Type**.
+2. In the Azure portal, follow the instructions in the **Prepare your web app** and **Bind your SSL certificate** sections of the [Bind an existing custom SSL certificate to Azure Web Apps](/azure/app-service/app-service-web-tutorial-custom-ssl) article. Select **SNI-based SSL** as the **SSL Type**.
 
 3. Redirect all traffic to the HTTPS port. Follow the instructions in the   **Enforce HTTPS** section of the [Bind an existing custom SSL certificate to Azure Web Apps](/azure/app-service/app-service-web-tutorial-custom-ssl) article.
 
 To add SSL to Azure Stack Hub:
 
-1. Repeat steps 1-3 that you used for Azure.
+1. Repeat steps 1-3 that you used for Azure, using the Azure Stack Hub portal.
 
 ## Configure and deploy the web app
 
@@ -299,7 +299,7 @@ When you create your web app in an App Service environment, it starts with one i
 
 ### Enable automatic scale-out
 
-1. In Azure, find the App Service plan for the sites you want to scale out, and then select **Scale-out (App Service plan)**.
+1. In the Azure portal, find the App Service plan for the sites you want to scale out, and then select **Scale-out (App Service plan)**.
 
     ![Scale out Azure App Service](media/solution-deployment-guide-hybrid/image16.png)
 
@@ -371,7 +371,7 @@ When traffic decreases, the Azure web app can automatically reduce the number of
 
 ## Create a Traffic Manager profile and configure cross-cloud scaling
 
-Create a Traffic Manager profile in Azure and then configure endpoints to enable cross-cloud scaling.
+Create a Traffic Manager profile using the Azure portal, then configure endpoints to enable cross-cloud scaling.
 
 ### Create Traffic Manager profile
 
@@ -429,15 +429,15 @@ After both endpoints are configured, they're listed in **Traffic Manager profile
 
 ![Endpoints in Traffic Manager profile](media/solution-deployment-guide-hybrid/image20.png)
 
-## Set up Application Insights monitoring and alerting
+## Set up Application Insights monitoring and alerting in Azure
 
 Azure Application Insights lets you monitor your app and send alerts based on conditions you configure. Some examples are: the app is unavailable, is experiencing failures, or is showing performance issues.
 
-You'll use Application Insights metrics to create alerts. When these alerts trigger, your web app's instance will automatically switch from Azure Stack Hub to Azure to scale out, and then back to Azure Stack Hub to scale in.
+You'll use Azure Application Insights metrics to create alerts. When these alerts trigger, your web app's instance will automatically switch from Azure Stack Hub to Azure to scale out, and then back to Azure Stack Hub to scale in.
 
 ### Create an alert from metrics
 
-Go to the resource group for this tutorial and then select the Application Insights instance to open **Application Insights**.
+In the Azure portal, go to the resource group for this tutorial, and select the Application Insights instance to open **Application Insights**.
 
 ![Application Insights](media/solution-deployment-guide-hybrid/image21.png)
 
