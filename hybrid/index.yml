@@ -150,6 +150,9 @@ conceptualContent:
       - url: /azure/azure-functions/
         itemType: overview
         text: Azure Functions
+      - url: /azure/iot-hub/
+        itemType: overview
+        text: Azure IoT Hub          
       - url: /azure/logic-apps/
         itemType: overview
         text: Azure Logic Apps
@@ -159,9 +162,12 @@ conceptualContent:
       - url: /azure/service-fabric/
         itemType: overview
         text: Azure Service Fabric     
-      - url: /azure-stack/operator/event-hubs-rp-overview
+      - url: /azure-stack/user/event-hubs-overview
         itemType: overview
         text: Event Hubs on Azure Stack Hub
+      - url: /azure-stack/user/iot-hub-overview
+        itemType: overview
+        text: IoT Hub on Azure Stack Hub
    - title: Edge
      links:
       - url: /azure/databox-online/data-box-gateway-overview
