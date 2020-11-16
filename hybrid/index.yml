@@ -167,7 +167,7 @@ conceptualContent:
         text: Event Hubs on Azure Stack Hub
       - url: /azure-stack/user/iot-hub-overview
         itemType: overview
-        text: IoT Hub on Azure Stack Hub
+        text: IoT Hub on Azure Stack Hub (preview)
    - title: Edge
      links:
       - url: /azure/databox-online/data-box-gateway-overview
@@ -176,6 +176,9 @@ conceptualContent:
       - url: /azure/iot-edge/
         itemType: overview
         text: Azure IoT Edge
+      - url: /azure/iot-edge/how-to-install-iot-edge-kubernetes
+        itemType: overview
+        text: Azure IoT Edge on Kubernetes
       - url: /azure-sphere
         itemType: overview
         text: Azure Sphere
@@ -185,9 +188,6 @@ conceptualContent:
       - url: /azure/azure-sql-edge/overview
         itemType: overview      
         text: Azure SQL Edge (preview)  
-      - url: /azure/iot-edge/how-to-install-iot-edge-kubernetes
-        itemType: overview
-        text: IoT Edge on Kubernetes
       - url: /windows/iot-core/
         itemType: overview      
         text: Windows for IoT
