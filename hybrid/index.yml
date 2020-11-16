@@ -1,16 +1,16 @@
 ### YamlMime:Hub
-title: Azure hybrid documentation # azure hybrid docs documentation cloud stack hci apps solutions resources guidance
-summary: Resources for building and operating hybrid solutions that span the global cloud, datacenter, and edge.
+title: Azure hybrid and multicloud documentation # azure hybrid multicloud docs documentation cloud stack hci apps solutions resources guidance
+summary: Resources for building and operating hybrid and multicloud solutions that span the global cloud, datacenter, and edge.
 brand: azure
 
 metadata:
-  title: Azure hybrid cloud documentation 
-  description: Resources for building and operating hybrid solutions that span the global cloud, datacenter, and edge.
+  title: Azure hybrid and multicloud cloud documentation 
+  description: Resources for building and operating hybrid and multicloud solutions that span the global cloud, datacenter, and edge.
   ms.service: multiple
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 09/02/2020
+  ms.date: 11/16/2020
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -45,8 +45,8 @@ highlightedContent:
       
 # productDirectory section (optional)
 productDirectory:
-  title: Azure hybrid cloud platform # < 60 chars (optional)
-  summary: Hybrid-capable platforms used to build and operate hybrid solutions. # < 160 chars (optional)
+  title: Azure hybrid and multicloud platform # < 60 chars (optional)
+  summary: Platforms used to build and operate hybrid- and multi-cloud solutions. # < 160 chars (optional)
   items:
     # Card
     - title: Azure global public/sovereign cloud platform.
@@ -81,8 +81,8 @@ productDirectory:
 # conceptualContent section (optional)
 conceptualContent:
 #itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
- title: Hybrid-enabling technologies
- summary: Services and products for building and operating hybrid solutions.
+ title: Hybrid and multicloud technologies
+ summary: Services and products for building and operating hybrid and multicloud solutions.
  items:
    # Card
    - title: AI + Machine Learning 
@@ -289,8 +289,8 @@ conceptualContent:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Hybrid solutions
-      summary: Guidance and examples to explore and reuse for your hybrid projects.
+    - title: Hybrid and multicloud solutions
+      summary: Guidance and examples to explore and reuse for your hybrid and multicloud projects.
       items:
       # Cards
       - title: Hybrid app patterns and solution examples
