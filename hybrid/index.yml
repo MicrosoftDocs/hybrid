@@ -293,13 +293,13 @@ additionalContent:
       summary: Guidance and examples to explore and reuse for your hybrid and multicloud projects.
       items:
       # Cards
-      - title: Hybrid app patterns and solution examples
+      - title: App patterns and solution examples
         links:
           - url: ./app-solutions/overview-patterns-solution-examples.md
             text: What are patterns and solution examples?
           - url: ./app-solutions/overview-app-design-considerations.md
-            text: Hybrid app design considerations
-      - title: Explore hybrid app patterns
+            text: App design considerations
+      - title: Explore app patterns
         links:
           - url: ./app-solutions/pattern-cross-cloud-scale.md
             text: Cross-cloud scaling
@@ -309,7 +309,7 @@ additionalContent:
             text: Footfall detection (retail)
           - url: ./app-solutions/pattern-geo-distributed.md
             text: Geo-distributed app
-      - title: Deploy hybrid app solution examples
+      - title: Deploy app solution examples
         links:
           - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
             text: Cross-cloud scaling
