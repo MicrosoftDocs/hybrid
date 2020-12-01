@@ -193,5 +193,5 @@ porter uninstall footfall-camera –tag intelligentedge/footfall-camera-deployme
 
 ## Next steps
 
-- Learn more about [Hybrid app design considerations].(overview-app-design-considerations.md)
+- Learn more about [Hybrid app design considerations](overview-app-design-considerations.md)
 - Review and propose improvements to [the code for this sample on GitHub](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/tree/master/footfall-analysis).
