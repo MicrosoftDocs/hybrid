@@ -42,6 +42,7 @@ In this solution deployment guide, you learn how to:
 Before getting started with this deployment guide, make sure you:
 
 - Review the [High availability Kubernetes cluster pattern](pattern-ha-kubernetes.md) article.
+- Review the contents of the [companion GitHub repository](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/tree/master/AKSe-on-AzStackHub), which contains additional assets referenced in this article.
 - Have an account that can access the [Azure Stack Hub user portal](/azure-stack/user/azure-stack-use-portal), with at least ["contributor" permissions](/azure-stack/user/azure-stack-manage-permissions).
 
 ## Download and Prepare AKS Engine
@@ -228,11 +229,9 @@ The Operations Management Suite (OMS) Agent on your Kubernetes cluster will send
 
 ## Deploy Application
 
-Before installing our sample application, there's another step to configure the nginx-based Ingress controller on our Kubernetes cluster. The Ingress controller is used as a layer 7 load balancer to route traffic in our cluster based on host, path, or protocol. Nginx-ingress is available as a Helm Chart and you can find detailed instructions [here](https://github.com/helm/charts/tree/master/stable/nginx-ingress).
+Before installing our sample application, there's another step to configure the nginx-based Ingress controller on our Kubernetes cluster. The Ingress controller is used as a layer 7 load balancer to route traffic in our cluster based on host, path, or protocol. Nginx-ingress is available as a Helm Chart. For detailed instructions, refer to the [Helm Chart GitHub repository](https://github.com/helm/charts/tree/master/stable/nginx-ingress).
 
-Our sample application is also packaged as a Helm Chart, like the [Azure Monitoring Agent](#configure-monitoring) in the previous step. As such, it's straightforward to deploy the application onto our Kubernetes cluster. You can find the Helm Chart here:
-
-* [application/helm](application/helm) and you can find additional information around the sample application [here](application/).
+Our sample application is also packaged as a Helm Chart, like the [Azure Monitoring Agent](#configure-monitoring) in the previous step. As such, it's straightforward to deploy the application onto our Kubernetes cluster. You can find the [Helm Chart files in the companion GitHub repo](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/tree/master/AKSe-on-AzStackHub/application/helm)
 
 The sample application is a three tier application, deployed onto a Kubernetes cluster on each of two Azure Stack Hub instances. The application uses a MongoDB database. You can learn more about how to get the data replicated across multiple instances in the pattern [Data and Storage considerations](pattern-ha-kubernetes.md#data-and-storage-considerations).
 
@@ -303,7 +302,7 @@ In Azure, we configure Traffic Manager to point to the two different instances o
 
 ![TM endpoint profile](media/solution-deployment-guide-ha-kubernetes/traffic-manager-endpoint-profile-1.png)
 
-As you can see, the two endpoints point to the two instances of the deployed application from the [previous step](#deploy-applications).
+As you can see, the two endpoints point to the two instances of the deployed application from the [previous section](#deploy-application).
 
 At this point:
 - The Kubernetes infrastructure has been created, including an Ingress Controller.

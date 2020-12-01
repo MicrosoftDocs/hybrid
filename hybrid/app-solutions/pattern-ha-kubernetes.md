@@ -53,7 +53,7 @@ Services like Azure Container Registry, Azure Monitor, and others, are hosted ou
 
 The overall architecture consists of the following components:
 
-**Azure Stack Hub** is an extension of Azure that can run workloads in an on-premises environment by providing Azure services in your datacenter. Go to [Azure Stack Hub overview](../operator/azure-stack-overview) to learn more.
+**Azure Stack Hub** is an extension of Azure that can run workloads in an on-premises environment by providing Azure services in your datacenter. Go to [Azure Stack Hub overview](/azure-stack/operator/azure-stack-overview) to learn more.
 
 **Azure Kubernetes Service Engine (AKS Engine)** is the engine behind the managed Kubernetes service offering, Azure Kubernetes Service (AKS), that is available in Azure today. For Azure Stack Hub, AKS Engine allows us to deploy, scale, and upgrade fully featured, self-managed Kubernetes clusters using Azure Stack Hub's IaaS capabilities. Go to [AKS Engine Overview](https://github.com/Azure/aks-engine) to learn more.
 
