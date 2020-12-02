@@ -302,7 +302,7 @@ In Azure, we configure Traffic Manager to point to the two different instances o
 
 [![TM endpoint profile](media/solution-deployment-guide-ha-kubernetes/traffic-manager-endpoint-profile-1.png)](media/solution-deployment-guide-ha-kubernetes/traffic-manager-endpoint-profile-1.png#lightbox)
 
-As you can see, the two endpoints point to the two instances of the deployed application from the [previous section](#deploy-application).
+As you can see, the two endpoints point to the two instances of the deployed application from the [previous section](#deploy-the-application).
 
 At this point:
 - The Kubernetes infrastructure has been created, including an Ingress Controller.
