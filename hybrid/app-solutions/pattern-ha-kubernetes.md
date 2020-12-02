@@ -18,7 +18,7 @@ This article describes how to architect and operate a highly available Kubernete
 
 ## Context and problem
 
-Many organizations are developing cloud-native solutions leveraging state-of-the-art services and technologies like Kubernetes. Although Azure provides datacenters in most regions of the world, sometimes there are edge use-cases and scenarios where business critical applications must run in a specific location. Considerations include:
+Many organizations are developing cloud-native solutions that leverage state-of-the-art services and technologies like Kubernetes. Although Azure provides datacenters in most regions of the world, sometimes there are edge use-cases and scenarios where business critical applications must run in a specific location. Considerations include:
 
 - Location sensitivity
 - Latency between the application and on-premises systems
@@ -34,9 +34,9 @@ This pattern assumes that we have to deal with a strict set of constraints. The 
 
 The sample application shown here (based on [Azure Kubernetes Service Workshop](/learn/modules/aks-workshop/)) is designed to use Kubernetes-native solutions whenever possible. This design avoids vendor lock-in, instead of using platform-native services. As an example, the application uses a self-hosted MongoDB database backend instead of a PaaS service or external database service.
 
-![Application Pattern Hybrid](media/pattern-ha-kubernetes/application-architecture.png)
+[![Application Pattern Hybrid](media/pattern-ha-kubernetes/application-architecture.png)](media/pattern-ha-kubernetes/application-architecture.png#lightbox)
 
-The above diagram illustrates the application architecture of the sample application running on Kubernetes on Azure Stack Hub. The app consists of several components, including:
+The preceding diagram illustrates the application architecture of the sample application running on Kubernetes on Azure Stack Hub. The app consists of several components, including:
 
  1) An AKS Engine based Kubernetes cluster on Azure Stack Hub.
  2) [cert-manager](https://www.jetstack.io/cert-manager/), which provides a suite of tools for certificate management in Kubernetes, used to automatically request certificates from Let's Encrypt.
@@ -99,7 +99,7 @@ The sample scenario covers scalability on multiple layers of the application sta
 | Cluster | Kubernetes cluster | Number of Nodes (between 1 and 50), VM-SKU-sizes, and Node Pools (AKS Engine on Azure Stack Hub currently supports only a single node pool); using AKS Engine's scale command (manual) |
 | Infrastructure | Azure Stack Hub | Number of nodes, capacity, and scale units within an Azure Stack Hub deployment |
 
-\* - Using Kubernetes' Horizontal Pod Autoscaler (HPA); automated metric-based scaling or vertical scaling by sizing the container instances (cpu/memory).
+\* Using Kubernetes' Horizontal Pod Autoscaler (HPA); automated metric-based scaling or vertical scaling by sizing the container instances (cpu/memory).
 
 **Azure Stack Hub (Infrastructure-level)**
 
@@ -361,11 +361,11 @@ The following image helps you to decide if you need a self-hosted or a Microsoft
 
 In scenarios where the Azure Stack Hub management endpoints and Kubernetes API are accessible via the internet, the deployment can use a Microsoft-hosted agent. This deployment will result in an application architecture as follows:
 
-![Public architecture overview](media/pattern-ha-kubernetes/aks-azure-stack-app-patter.png)
+![Public architecture overview](media/pattern-ha-kubernetes/aks-azure-stack-app-pattern.png)
 
 If the Azure Resource Manager endpoints, Kubernetes API, or both aren't directly accessible via the Internet, we can leverage a self-hosted build agent to run the pipeline steps. This design needs less connectivity, and can be deployed with only on-premises network connectivity to Azure Resource Manager endpoints and the Kubernetes API:
 
-![On-prem architecture overview](media/pattern-ha-kubernetes/aks-azure-stack-app-patter-selfhosted.png)
+![On-prem architecture overview](media/pattern-ha-kubernetes/aks-azure-stack-app-pattern-selfhosted.png)
 
 > [!NOTE]
 > **What About Disconnected Scenarios?** In scenarios where either Azure Stack Hub or Kubernetes or both of them do not have internet-facing management endpoints, it is still possible to use Azure DevOps for your deployments. You can either use a self-hosted Agent Pool (which is a DevOps Agent running on-premises or on Azure Stack Hub itself) or a completly self-hosted Azure DevOps Server on-premises. The self-hosted agent needs only outbound HTTPS (TCP/443) Internet connectivity.

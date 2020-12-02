@@ -65,12 +65,12 @@ The details and differences of AKS Engine on Azure Stack Hub are described here:
 
 The sample environment will use Terraform to automate the deployment of the AKS Engine VM. You can find the [details and code in the companion GitHub repo](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/blob/master/AKSe-on-AzStackHub/src/tf/aksengine/README.md).
 
-The result of this step is a new resource group on Azure Stack Hub that contains the AKS Engine helper VM:
+The result of this step is a new resource group on Azure Stack Hub that contains the AKS Engine helper VM and related resources:
 
 ![AKS Engine VM Resources in Azure Stack](media/solution-deployment-guide-ha-kubernetes/aksengine-resources-on-azurestack.png)
 
 > [!NOTE]
-> If you have to deploy AKS Engine in a disconnected air-gapped environment, go to [Disconnected Azure Stack Hub Instances](https://github.com/Azure/aks-engine/blob/master/docs/topics/azure-stack.md#disconnected-azure-stack-hub-instances) to learn more.
+> If you have to deploy AKS Engine in a disconnected air-gapped environment, review [Disconnected Azure Stack Hub Instances](https://github.com/Azure/aks-engine/blob/master/docs/topics/azure-stack.md#disconnected-azure-stack-hub-instances) to learn more.
 
 In the next step, we'll use the newly deployed AKS Engine VM to deploy a Kubernetes cluster.
 
@@ -220,9 +220,9 @@ omsagent-rs-76c45758f5-lmc4l               1/1     Running
 
 The Operations Management Suite (OMS) Agent on your Kubernetes cluster will send monitoring data to your Azure Log Analytics Workspace (using outbound HTTPS). You can now use Azure Monitor to get deeper insights about your Kubernetes clusters on Azure Stack Hub. This design is a powerful way to demonstrate the power of analytics that can be automatically deployed with your application's clusters.
 
-![Azure Stack Hub clusters in Azure monitor](media/solution-deployment-guide-ha-kubernetes/azuremonitor_on_stack1.png)
+[![Azure Stack Hub clusters in Azure monitor](media/solution-deployment-guide-ha-kubernetes/azuremonitor_on_stack1.png)](media/solution-deployment-guide-ha-kubernetes/azuremonitor_on_stack1.png#lightbox)
 
-![Azure Monitor cluster details](media/solution-deployment-guide-ha-kubernetes/azuremonitor_on_stack2.png)
+[![Azure Monitor cluster details](media/solution-deployment-guide-ha-kubernetes/azuremonitor_on_stack2.png)](media/solution-deployment-guide-ha-kubernetes/azuremonitor_on_stack2.png#lightbox)
 
 > [!IMPORTANT]
 > If Azure Monitor does not show any Azure Stack Hub data, please make sure that you have followed the instructions on [how to add AzureMonitor-Containers solution to a Azure Loganalytics workspace](https://github.com/Microsoft/OMS-docker/blob/ci_feature_prod/docs/solution-onboarding.md) carefully.
@@ -300,7 +300,7 @@ Instead of using Azure Traffic Manager you can also use other global load-balanc
 
 In Azure, we configure Traffic Manager to point to the two different instances of our application:
 
-![TM endpoint profile](media/solution-deployment-guide-ha-kubernetes/traffic-manager-endpoint-profile-1.png)
+[![TM endpoint profile](media/solution-deployment-guide-ha-kubernetes/traffic-manager-endpoint-profile-1.png)](media/solution-deployment-guide-ha-kubernetes/traffic-manager-endpoint-profile-1.png#lightbox)
 
 As you can see, the two endpoints point to the two instances of the deployed application from the [previous section](#deploy-application).
 
