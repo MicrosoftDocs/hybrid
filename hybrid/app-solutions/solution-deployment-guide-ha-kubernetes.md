@@ -45,7 +45,7 @@ Before getting started with this deployment guide, make sure you:
 - Review the contents of the [companion GitHub repository](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/tree/master/AKSe-on-AzStackHub), which contains additional assets referenced in this article.
 - Have an account that can access the [Azure Stack Hub user portal](/azure-stack/user/azure-stack-use-portal), with at least ["contributor" permissions](/azure-stack/user/azure-stack-manage-permissions).
 
-## Download and Prepare AKS Engine
+## Download and prepare AKS Engine
 
 AKS Engine is a binary that can be used from any Windows or Linux host that can reach the Azure Stack Hub Azure Resource Manager endpoints. This guide describes deploying a new Linux (or Windows) VM on Azure Stack Hub. It will be used later when AKS Engine deploys the Kubernetes clusters.
 
@@ -67,7 +67,7 @@ The sample environment will use Terraform to automate the deployment of the AKS 
 
 The result of this step is a new resource group on Azure Stack Hub that contains the AKS Engine helper VM and related resources:
 
-![AKS Engine VM Resources in Azure Stack](media/solution-deployment-guide-ha-kubernetes/aksengine-resources-on-azurestack.png)
+![AKS Engine VM Resources in Azure Stack Hub](media/solution-deployment-guide-ha-kubernetes/aksengine-resources-on-azurestack.png)
 
 > [!NOTE]
 > If you have to deploy AKS Engine in a disconnected air-gapped environment, review [Disconnected Azure Stack Hub Instances](https://github.com/Azure/aks-engine/blob/master/docs/topics/azure-stack.md#disconnected-azure-stack-hub-instances) to learn more.
@@ -171,15 +171,15 @@ When deploying self-hosted Agents for Azure Pipelines, you may deploy either on 
 
 The pattern [Deployment (CI/CD) considerations](pattern-ha-kubernetes.md#deployment-cicd-considerations) section contains a decision flow that helps you to understand whether to use Microsoft-hosted agents or self-hosted agents:
 
-![decision flow self hosted agents](media/solution-deployment-guide-ha-kubernetes/aks-on-stack-self-hosted-build-agents-yes-or-no.png)
+[![decision flow self hosted agents](media/solution-deployment-guide-ha-kubernetes/aks-on-stack-self-hosted-build-agents-yes-or-no.png)](media/solution-deployment-guide-ha-kubernetes/aks-on-stack-self-hosted-build-agents-yes-or-no.png#lightbox)
 
 In this sample solution, the topology includes a self-hosted build agent on each Azure Stack Hub instance. The agent can access the Azure Stack Hub Management Endpoints and the Kubernetes cluster API endpoints.
 
-![only outbound traffic](media/solution-deployment-guide-ha-kubernetes/azs-architecture-only-outbound-traffic.png)
+[![only outbound traffic](media/solution-deployment-guide-ha-kubernetes/azs-architecture-only-outbound-traffic.png)](media/solution-deployment-guide-ha-kubernetes/azs-architecture-only-outbound-traffic.png#lightbox)
 
 This design fulfills a common regulatory requirement, which is to have only outbound connections from the application solution.
 
-## Configure Monitoring
+## Configure monitoring
 
 You can use [Azure Monitor](/azure/azure-monitor/) for containers to monitor the containers in the solution. This points Azure Monitor to the AKS Engine-deployed Kubernetes cluster on Azure Stack Hub.
 
@@ -227,7 +227,7 @@ The Operations Management Suite (OMS) Agent on your Kubernetes cluster will send
 > [!IMPORTANT]
 > If Azure Monitor does not show any Azure Stack Hub data, please make sure that you have followed the instructions on [how to add AzureMonitor-Containers solution to a Azure Loganalytics workspace](https://github.com/Microsoft/OMS-docker/blob/ci_feature_prod/docs/solution-onboarding.md) carefully.
 
-## Deploy Application
+## Deploy the application
 
 Before installing our sample application, there's another step to configure the nginx-based Ingress controller on our Kubernetes cluster. The Ingress controller is used as a layer 7 load balancer to route traffic in our cluster based on host, path, or protocol. Nginx-ingress is available as a Helm Chart. For detailed instructions, refer to the [Helm Chart GitHub repository](https://github.com/helm/charts/tree/master/stable/nginx-ingress).
 
@@ -272,7 +272,7 @@ ratings-web                                  ClusterIP      10.0.161.124   <none
 
 The "External IP" address is our "application endpoint". It's how users will connect to open the application and will also be used as the endpoint for our next step [Configure Traffic Manager](#configure-traffic-manager).
 
-## Autoscale application
+## Autoscale the application
 You can optionally configure the [Horizontal Pod Autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/) to scale up or down based on certain metrics like CPU utilization. The following command will create a Horizontal Pod Autoscaler that maintains 1 to 10 replicas of the Pods controlled by the ratings-web deployment. HPA will increase and decrease the number of replicas (via the deployment) to maintain an average CPU utilization across all Pods of 80%.
 
 ```kubectl
