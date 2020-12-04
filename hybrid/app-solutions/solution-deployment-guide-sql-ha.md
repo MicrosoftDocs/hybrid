@@ -8,12 +8,12 @@ ms.author: bryanla
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
 
-# Intent: As an Azure Stack Hub operator, I want to deploy a SQL Server 2016 availability group to Azure and Azure Stack Hub so I can have a highly available solution with a disaster recovery site. 
+# Intent: As an Azure Stack Hub operator, I want to deploy a SQL Server 2016 availability group across two Azure Stack Hub environments so I can have a highly available solution with a disaster recovery site. 
 # Keyword: sql server 2016 availability group azure stack hub
 
 ---
 
-# Deploy a SQL Server 2016 availability group to Azure and Azure Stack Hub
+# Deploy a SQL Server 2016 availability group across two Azure Stack Hub environments
 
 This article will step you through an automated deployment of a basic highly available (HA) SQL Server 2016 Enterprise cluster with an asynchronous disaster recovery (DR) site across two Azure Stack Hub environments. To learn more about SQL Server 2016 and high availability, see [Always On availability groups: a high-availability and disaster-recovery solution](/sql/database-engine/availability-groups/windows/always-on-availability-groups-sql-server?view=sql-server-2016).
 
