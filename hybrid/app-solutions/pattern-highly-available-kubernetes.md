@@ -93,7 +93,7 @@ Scalability is important to provide users consistent, reliable, and well-perform
 
 The sample scenario covers scalability on multiple layers of the application stack. Here's a high-level overview of the different layers:
 
-| Architecture Level | Affects | How? |
+| Architecture level | Affects | How? |
 | --- | --- | ---
 | Application | Application | Horizontal scaling based on the number of Pods/Replicas/Container Instances* |
 | Cluster | Kubernetes cluster | Number of Nodes (between 1 and 50), VM-SKU-sizes, and Node Pools (AKS Engine on Azure Stack Hub currently supports only a single node pool); using AKS Engine's scale command (manual) |
@@ -101,14 +101,14 @@ The sample scenario covers scalability on multiple layers of the application sta
 
 \* Using Kubernetes' Horizontal Pod Autoscaler (HPA); automated metric-based scaling or vertical scaling by sizing the container instances (cpu/memory).
 
-**Azure Stack Hub (Infrastructure-level)**
+**Azure Stack Hub (infrastructure level)**
 
 The Azure Stack Hub infrastructure is the foundation of this implementation, because Azure Stack Hub runs on physical hardware in a datacenter. When selecting your Hub hardware, you need to make choices for CPU, memory density, storage configuration, and number of servers. To learn more about Azure Stack Hub's scalability, check out the following resources:
 
 - [Capacity planning for Azure Stack Hub overview](/azure-stack/operator/azure-stack-capacity-planning-overview)
 - [Add additional scale unit nodes in Azure Stack Hub](/azure-stack/operator/azure-stack-add-scale-node)
 
-**Kubernetes cluster (cluster-level)**
+**Kubernetes cluster (cluster level)**
 
 The Kubernetes cluster itself consists of, and is built on top of Azure (Stack) IaaS components including compute, storage, and network resources. Kubernetes solutions involve master and worker nodes, which are deployed as VMs in Azure (and Azure Stack Hub).
 
@@ -127,9 +127,9 @@ When selecting VM sizes for the initial deployment, there are several considerat
 
 - **Quotas** - Consider the [quotas](/azure-stack/operator/azure-stack-quota-types) you've configured when planning out an AKS deployment on your Azure Stack Hub. Make sure each [subscription](/azure-stack/operator/service-plan-offer-subscription-overview) has the proper plans and the quotas configured. The subscription will need to accommodate the amount of compute, storage, and other services needed for your clusters as they scale out.
 
-- **Application Workloads** - Refer to the [Clusters and workloads concepts](/azure/aks/concepts-clusters-workloads#nodes-and-node-pools) in the Kubernetes core concepts for Azure Kubernetes Service document. This article will help you scope the proper VM size based on the compute and memory needs of your application.  
+- **Application workloads** - Refer to the [Clusters and workloads concepts](/azure/aks/concepts-clusters-workloads#nodes-and-node-pools) in the Kubernetes core concepts for Azure Kubernetes Service document. This article will help you scope the proper VM size based on the compute and memory needs of your application.  
 
-**Application (Application-level)**
+**Application (application level)**
 
 On the application layer, we use Kubernetes [Horizontal Pod Autoscaler (HPA)](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/). HPA can increase or decrease the number of Replicas (Pod/Container Instances) in our deployment based on different metrics (like CPU utilization).
 
@@ -226,9 +226,9 @@ BCDR affects the same areas mentioned in the previous section [Data and storage 
 
 And as mentioned in the previous section, these areas are the responsibility of the Azure Stack Hub operator and can vary between organizations. Plan BCDR according to your available tools and processes.
 
-**Infrastructure / Configuration**
+**Infrastructure and configuration**
 
-The Infrastructure / Configuration section covers the physical and logical infrastructure and the configuration of Azure Stack Hub. It covers actions in the admin and the tenant spaces.
+This section covers the physical and logical infrastructure and the configuration of Azure Stack Hub. It covers actions in the admin and the tenant spaces.
 
 The Azure Stack Hub operator (or administrator) is responsible for maintenance of the Azure Stack Hub instances. Including components such as the network, storage, identity, and other topics that are outside the scope of this article. To learn more about the specifics of Azure Stack Hub operations, see the following resources:
 
@@ -284,7 +284,7 @@ Identity and security are important topics. Especially when the solution spans i
 - Azure RBAC controls access to resources in Azure (and Azure Stack Hub), including the ability to create new Azure resources. Permissions can be assigned to users, groups, or service principals. (A service principal is a security identity used by applications.)
 - Kubernetes RBAC controls permissions to the Kubernetes API. For example, creating pods and listing pods are actions that can be authorized (or denied) to a user through RBAC. To assign Kubernetes permissions to users, you create roles and role bindings.
 
-**Azure Stack Hub Identity and RBAC**
+**Azure Stack Hub identity and RBAC**
 
 Azure Stack Hub provides two identity provider choices. The provider you use depends on the environment and whether running in a connected or disconnected environment:
 
@@ -293,7 +293,7 @@ Azure Stack Hub provides two identity provider choices. The provider you use dep
 
 The identity provider manages users and groups, including authentication and authorization for accessing resources. Access can be granted to Azure Stack Hub resources like subscriptions, resource groups, and individual resources like VMs or load balancers. To have a consistent access model, you should consider using the same groups (either direct or nested) for all Azure Stack Hubs. Here's a configuration example:
 
-![nested aad groups with azure stack hub](media/pattern-highly-available-kubernetes/azurestack_aad_nested_groups.png)
+![nested aad groups with azure stack hub](media/pattern-highly-available-kubernetes/azure-stack-azure-ad-nested-groups.png)
 
 The example contains a dedicated group (using AAD or ADFS) for a specific purpose. For example, to provide Contributor permissions for the Resource Group that contains our Kubernetes cluster infrastructure on a specific Azure Stack Hub instance (here "Seattle K8s Cluster Contributor"). These groups are then nested into an overall group that contains the "subgroups" for each Azure Stack Hub.
 
@@ -302,13 +302,13 @@ Our sample user will now have "Contributor" permissions to both Resources Groups
 > [!IMPORTANT]
 > These permissions affect only Azure Stack Hub and some of the resources deployed on top of it. A user who has this level of access can do a lot of harm, but cannot access the Kubernetes IaaS VMs nor the Kubernetes API without additional access to the Kubernetes deployment.
 
-**Kubernetes Identity and RBAC**
+**Kubernetes identity and RBAC**
 
 A Kubernetes cluster, by default, doesn't use the same Identity Provider as the underlaying Azure Stack Hub. The VMs hosting the Kubernetes cluster, the master, and worker nodes, use the SSH Key that is specified during the deployment of the cluster. This SSH key is required to connect to these nodes using SSH.
 
 The Kubernetes API (for example, accessed by using `kubectl`) is also protected by service accounts including a default "cluster admin" service account. The credentials for this service account are initially stored in the `.kube/config` file on your Kubernetes master nodes.
 
-**Secrets Management and Application Credentials**
+**Secrets management and application credentials**
 
 To store secrets like connection strings or database credentials there are several choices, including:
 
@@ -362,10 +362,10 @@ In scenarios where the Azure Stack Hub management endpoints and Kubernetes API a
 
 If the Azure Resource Manager endpoints, Kubernetes API, or both aren't directly accessible via the Internet, we can leverage a self-hosted build agent to run the pipeline steps. This design needs less connectivity, and can be deployed with only on-premises network connectivity to Azure Resource Manager endpoints and the Kubernetes API:
 
-[![On-prem architecture overview](media/pattern-highly-available-kubernetes/aks-azure-stack-app-pattern-selfhosted.png)](media/pattern-highly-available-kubernetes/aks-azure-stack-app-pattern-selfhosted.png#lightbox)
+[![On-prem architecture overview](media/pattern-highly-available-kubernetes/aks-azure-stack-app-pattern-self-hosted.png)](media/pattern-highly-available-kubernetes/aks-azure-stack-app-pattern-self-hosted.png#lightbox)
 
 > [!NOTE]
-> **What About Disconnected Scenarios?** In scenarios where either Azure Stack Hub or Kubernetes or both of them do not have internet-facing management endpoints, it is still possible to use Azure DevOps for your deployments. You can either use a self-hosted Agent Pool (which is a DevOps Agent running on-premises or on Azure Stack Hub itself) or a completly self-hosted Azure DevOps Server on-premises. The self-hosted agent needs only outbound HTTPS (TCP/443) Internet connectivity.
+> **What about disconnected scenarios?** In scenarios where either Azure Stack Hub or Kubernetes or both of them do not have internet-facing management endpoints, it is still possible to use Azure DevOps for your deployments. You can either use a self-hosted Agent Pool (which is a DevOps Agent running on-premises or on Azure Stack Hub itself) or a completly self-hosted Azure DevOps Server on-premises. The self-hosted agent needs only outbound HTTPS (TCP/443) Internet connectivity.
 
 The pattern can use a Kubernetes cluster (deployed and orchestrated with AKS engine) on each Azure Stack Hub instance. It includes an application consisting of a frontend, a mid-tier, backend services (for example MongoDB), and an nginx-based Ingress Controller. Instead of using a database hosted on the K8s cluster, you can leverage "external data stores". Database options include MySQL, SQL Server, or any kind of database hosted outside of Azure Stack Hub or in IaaS. Configurations like this aren't in scope here.
 
@@ -373,7 +373,7 @@ The pattern can use a Kubernetes cluster (deployed and orchestrated with AKS eng
 
 There are Microsoft Partner solutions that can extend the capabilities of Azure Stack Hub. These solutions have been found useful in deployments of applications running on Kubernetes clusters.  
 
-## Storage and Data solutions
+## Storage and data solutions
 
 As described in [Data and storage considerations](#data-and-storage-considerations), Azure Stack Hub currently doesn't have a native solution to replicate storage across multiple instances. Unlike Azure, the capability of replicating storage across multiple regions does not exist. In Azure Stack Hub, each instance is its own distinct cloud. However, solutions are available from Microsoft Partners that enable storage replication across Azure Stack Hubs and Azure. 
 

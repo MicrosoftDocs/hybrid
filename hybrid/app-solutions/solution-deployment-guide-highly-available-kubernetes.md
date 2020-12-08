@@ -67,7 +67,7 @@ The sample environment will use Terraform to automate the deployment of the AKS 
 
 The result of this step is a new resource group on Azure Stack Hub that contains the AKS Engine helper VM and related resources:
 
-![AKS Engine VM Resources in Azure Stack Hub](media/solution-deployment-guide-highly-available-kubernetes/aksengine-resources-on-azurestack.png)
+![AKS Engine VM Resources in Azure Stack Hub](media/solution-deployment-guide-highly-available-kubernetes/aks-engine-resources-on-azure-stack.png)
 
 > [!NOTE]
 > If you have to deploy AKS Engine in a disconnected air-gapped environment, review [Disconnected Azure Stack Hub Instances](https://github.com/Azure/aks-engine/blob/master/docs/topics/azure-stack.md#disconnected-azure-stack-hub-instances) to learn more.
@@ -80,7 +80,7 @@ First you must connect to the previously created AKS Engine helper VM.
 
 The VM should have a Public IP Address and should be accessible via SSH (Port 22/TCP).
 
-![AKS Engine VM Overview page](media/solution-deployment-guide-highly-available-kubernetes/aksengine-vm-overview.png)
+![AKS Engine VM Overview page](media/solution-deployment-guide-highly-available-kubernetes/aks-engine-vm-overview.png)
 
 > [!TIP]
 > You can use a tool of your choice like MobaXterm, puTTY or PowerShell in Windows 10 to connect to a Linux VM using SSH.
@@ -91,7 +91,7 @@ ssh <username>@<ipaddress>
 
 After connecting, run the command `aks-engine`. Go to [Supported AKS Engine Versions](https://github.com/Azure/aks-engine/blob/master/docs/topics/azure-stack.md#supported-aks-engine-versions) to learn more about the AKS Engine and Kubernetes versions.
 
-![aks-engine command line example](media/solution-deployment-guide-highly-available-kubernetes/aksengine-cmdline-example.png)
+![aks-engine command line example](media/solution-deployment-guide-highly-available-kubernetes/aks-engine-cmdline-example.png)
 
 ## Deploy a Kubernetes cluster
 
@@ -119,7 +119,7 @@ You can now connect to the previously created Kubernetes cluster, either via SSH
 ssh azureuser@<k8s-master-lb-ip>
 ```
 
-![Execute kubectl on master node](media/solution-deployment-guide-highly-available-kubernetes/k8s-kubectl-on-masternode.png)
+![Execute kubectl on master node](media/solution-deployment-guide-highly-available-kubernetes/k8s-kubectl-on-master-node.png)
 
 It's not recommended to use the master node as a jumpbox for administrative tasks. The `kubectl` configuration is stored in `.kube/config` on the master node(s) as well as on the AKS Engine VM. You can copy the configuration to an admin machine with connectivity to the Kubernetes cluster and use the `kubectl` command there. The `.kube/config` file is also used later to configure a service connection in Azure Pipelines.
 
@@ -175,7 +175,7 @@ The pattern [Deployment (CI/CD) considerations](pattern-highly-available-kuberne
 
 In this sample solution, the topology includes a self-hosted build agent on each Azure Stack Hub instance. The agent can access the Azure Stack Hub Management Endpoints and the Kubernetes cluster API endpoints.
 
-[![only outbound traffic](media/solution-deployment-guide-highly-available-kubernetes/azs-architecture-only-outbound-traffic.png)](media/solution-deployment-guide-highly-available-kubernetes/azs-architecture-only-outbound-traffic.png#lightbox)
+[![only outbound traffic](media/solution-deployment-guide-highly-available-kubernetes/azure-stack-architecture-only-outbound-traffic.png)](media/solution-deployment-guide-highly-available-kubernetes/azure-stack-architecture-only-outbound-traffic.png#lightbox)
 
 This design fulfills a common regulatory requirement, which is to have only outbound connections from the application solution.
 
