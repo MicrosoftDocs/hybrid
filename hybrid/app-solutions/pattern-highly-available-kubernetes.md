@@ -34,7 +34,7 @@ This pattern assumes that we have to deal with a strict set of constraints. The 
 
 The sample application shown here (based on [Azure Kubernetes Service Workshop](/learn/modules/aks-workshop/)) is designed to use Kubernetes-native solutions whenever possible. This design avoids vendor lock-in, instead of using platform-native services. As an example, the application uses a self-hosted MongoDB database backend instead of a PaaS service or external database service.
 
-[![Application Pattern Hybrid](media/pattern-ha-kubernetes/application-architecture.png)](media/pattern-ha-kubernetes/application-architecture.png#lightbox)
+[![Application Pattern Hybrid](media/pattern-highly-available-kubernetes/application-architecture.png)](media/pattern-highly-available-kubernetes/application-architecture.png#lightbox)
 
 The preceding diagram illustrates the application architecture of the sample application running on Kubernetes on Azure Stack Hub. The app consists of several components, including:
 
@@ -45,7 +45,7 @@ The preceding diagram illustrates the application architecture of the sample app
 
 The sample application is used to illustrate the application architecture. All components are examples. The architecture contains only a single application deployment. To achieve high availability (HA), we'll run the deployment at least twice on two different Azure Stack Hub instances - they can run either in the same location or in two (or more) different sites:
 
-![Infrastructure Architecture](media/pattern-ha-kubernetes/aks-azure-architecture.png)
+![Infrastructure Architecture](media/pattern-highly-available-kubernetes/aks-azure-architecture.png)
 
 Services like Azure Container Registry, Azure Monitor, and others, are hosted outside Azure Stack Hub in Azure or on-premises. This hybrid design protects the solution against outage of a single Azure Stack Hub instance.
 
@@ -164,7 +164,7 @@ Some enterprise environments might require the use of _transparent_ or _non-tran
 
 Lastly, cross-cluster traffic must flow between Azure Stack Hub instances. The sample deployment consists of individual Kubernetes clusters running on individual Azure Stack Hub instances. Traffic between them, such as the replication traffic between two databases, is "external traffic". External traffic must be routed through either a Site-to-Site VPN or Azure Stack Hub Public IP addresses to connect Kubernetes on two Azure Stack Hub instances:
 
-![inter and intra cluster traffic](media/pattern-ha-kubernetes/aks-inter-and-intra-cluster-traffic.png)
+![inter and intra cluster traffic](media/pattern-highly-available-kubernetes/aks-inter-and-intra-cluster-traffic.png)
 
 **Cluster**  
 
@@ -266,11 +266,11 @@ Azure Stack Hub infrastructure is already resilient to failures, and provides ca
 
 It's a good practice to deploy your production Kubernetes cluster as well as the workload to two (or more) clusters. These clusters should be hosted in different locations or datacenters, and use technologies like Azure Traffic Manager to route users based on cluster response time or based on geography.
 
-![Using Traffic Manager to control traffic flows](media/pattern-ha-kubernetes/aks-azure-traffic-manager.png)
+![Using Traffic Manager to control traffic flows](media/pattern-highly-available-kubernetes/aks-azure-traffic-manager.png)
 
 Customers who have a single Kubernetes cluster typically connect to the service IP or DNS name of a given application. In a multi-cluster deployment, customers should connect to a Traffic Manager DNS name that points to the services/ingress on each Kubernetes cluster.
 
-![Using Traffic Manager to route to on-premises cluster](media/pattern-ha-kubernetes/aks-azure-traffic-manager-on-premises.png)
+![Using Traffic Manager to route to on-premises cluster](media/pattern-highly-available-kubernetes/aks-azure-traffic-manager-on-premises.png)
 
 > [!NOTE]
 > This pattern is also a [best practice for (managed) AKS clusters in Azure](/azure/aks/operator-best-practices-multi-region#plan-for-multiregion-deployment).
@@ -293,7 +293,7 @@ Azure Stack Hub provides two identity provider choices. The provider you use dep
 
 The identity provider manages users and groups, including authentication and authorization for accessing resources. Access can be granted to Azure Stack Hub resources like subscriptions, resource groups, and individual resources like VMs or load balancers. To have a consistent access model, you should consider using the same groups (either direct or nested) for all Azure Stack Hubs. Here's a configuration example:
 
-![nested aad groups with azure stack hub](media/pattern-ha-kubernetes/azurestack_aad_nested_groups.png)
+![nested aad groups with azure stack hub](media/pattern-highly-available-kubernetes/azurestack_aad_nested_groups.png)
 
 The example contains a dedicated group (using AAD or ADFS) for a specific purpose. For example, to provide Contributor permissions for the Resource Group that contains our Kubernetes cluster infrastructure on a specific Azure Stack Hub instance (here "Seattle K8s Cluster Contributor"). These groups are then nested into an overall group that contains the "subgroups" for each Azure Stack Hub.
 
@@ -347,7 +347,7 @@ A self-hosted agent can run on top of Azure Stack Hub (as an IaaS VM) or in a ne
 
 The following image helps you to decide if you need a self-hosted or a Microsoft-hosted build agent:
 
-![Self-hosted Build Agents Yes or No](media/pattern-ha-kubernetes/aks-on-stack-self-hosted-build-agents-yes-or-no.png)
+![Self-hosted Build Agents Yes or No](media/pattern-highly-available-kubernetes/aks-on-stack-self-hosted-build-agents-yes-or-no.png)
 
 - Are the Azure Stack Hub management endpoints accessible via Internet?
   - Yes: We can use Azure Pipelines with Microsoft-hosted agents to connect to Azure Stack Hub.
@@ -358,11 +358,11 @@ The following image helps you to decide if you need a self-hosted or a Microsoft
 
 In scenarios where the Azure Stack Hub management endpoints and Kubernetes API are accessible via the internet, the deployment can use a Microsoft-hosted agent. This deployment will result in an application architecture as follows:
 
-[![Public architecture overview](media/pattern-ha-kubernetes/aks-azure-stack-app-pattern.png)](media/pattern-ha-kubernetes/aks-azure-stack-app-pattern.png#lightbox)
+[![Public architecture overview](media/pattern-highly-available-kubernetes/aks-azure-stack-app-pattern.png)](media/pattern-highly-available-kubernetes/aks-azure-stack-app-pattern.png#lightbox)
 
 If the Azure Resource Manager endpoints, Kubernetes API, or both aren't directly accessible via the Internet, we can leverage a self-hosted build agent to run the pipeline steps. This design needs less connectivity, and can be deployed with only on-premises network connectivity to Azure Resource Manager endpoints and the Kubernetes API:
 
-[![On-prem architecture overview](media/pattern-ha-kubernetes/aks-azure-stack-app-pattern-selfhosted.png)](media/pattern-ha-kubernetes/aks-azure-stack-app-pattern-selfhosted.png#lightbox)
+[![On-prem architecture overview](media/pattern-highly-available-kubernetes/aks-azure-stack-app-pattern-selfhosted.png)](media/pattern-highly-available-kubernetes/aks-azure-stack-app-pattern-selfhosted.png#lightbox)
 
 > [!NOTE]
 > **What About Disconnected Scenarios?** In scenarios where either Azure Stack Hub or Kubernetes or both of them do not have internet-facing management endpoints, it is still possible to use Azure DevOps for your deployments. You can either use a self-hosted Agent Pool (which is a DevOps Agent running on-premises or on Azure Stack Hub itself) or a completly self-hosted Azure DevOps Server on-premises. The self-hosted agent needs only outbound HTTPS (TCP/443) Internet connectivity.
@@ -392,4 +392,4 @@ To learn more about concepts introduced in this article:
 - [Cross-cloud scaling](pattern-cross-cloud-scale.md) and [Geo-distributed app patterns](pattern-geo-distributed.md) in Azure Stack Hub.
 - [Microservices architecture on Azure Kubernetes Service (AKS)](/azure/architecture/reference-architectures/microservices/aks).
 
-When you're ready to test the solution example, continue with the [High availability Kubernetes cluster deployment guide](solution-deployment-guide-ha-kubernetes.md). The deployment guide provides step-by-step instructions for deploying and testing its components.
+When you're ready to test the solution example, continue with the [High availability Kubernetes cluster deployment guide](solution-deployment-guide-highly-available-kubernetes.md). The deployment guide provides step-by-step instructions for deploying and testing its components.

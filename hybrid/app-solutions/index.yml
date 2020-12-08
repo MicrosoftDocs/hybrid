@@ -87,8 +87,8 @@ landingContent:
       - linkListType: architecture
         links:
           - text: Pattern
-            url: pattern-ha-kubernetes.md
+            url: pattern-highly-available-kubernetes.md
       - linkListType: tutorial
         links:
           - text: Solution deployment guide
-            url: solution-deployment-guide-ha-kubernetes.md
+            url: solution-deployment-guide-highly-available-kubernetes.md

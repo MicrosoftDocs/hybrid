@@ -41,7 +41,7 @@ In this solution deployment guide, you learn how to:
 
 Before getting started with this deployment guide, make sure you:
 
-- Review the [High availability Kubernetes cluster pattern](pattern-ha-kubernetes.md) article.
+- Review the [High availability Kubernetes cluster pattern](pattern-highly-available-kubernetes.md) article.
 - Review the contents of the [companion GitHub repository](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/tree/master/AKSe-on-AzStackHub), which contains additional assets referenced in this article.
 - Have an account that can access the [Azure Stack Hub user portal](/azure-stack/user/azure-stack-use-portal), with at least ["contributor" permissions](/azure-stack/user/azure-stack-manage-permissions).
 
@@ -67,7 +67,7 @@ The sample environment will use Terraform to automate the deployment of the AKS 
 
 The result of this step is a new resource group on Azure Stack Hub that contains the AKS Engine helper VM and related resources:
 
-![AKS Engine VM Resources in Azure Stack Hub](media/solution-deployment-guide-ha-kubernetes/aksengine-resources-on-azurestack.png)
+![AKS Engine VM Resources in Azure Stack Hub](media/solution-deployment-guide-highly-available-kubernetes/aksengine-resources-on-azurestack.png)
 
 > [!NOTE]
 > If you have to deploy AKS Engine in a disconnected air-gapped environment, review [Disconnected Azure Stack Hub Instances](https://github.com/Azure/aks-engine/blob/master/docs/topics/azure-stack.md#disconnected-azure-stack-hub-instances) to learn more.
@@ -80,7 +80,7 @@ First you must connect to the previously created AKS Engine helper VM.
 
 The VM should have a Public IP Address and should be accessible via SSH (Port 22/TCP).
 
-![AKS Engine VM Overview page](media/solution-deployment-guide-ha-kubernetes/aksengine-vm-overview.png)
+![AKS Engine VM Overview page](media/solution-deployment-guide-highly-available-kubernetes/aksengine-vm-overview.png)
 
 > [!TIP]
 > You can use a tool of your choice like MobaXterm, puTTY or PowerShell in Windows 10 to connect to a Linux VM using SSH.
@@ -91,7 +91,7 @@ ssh <username>@<ipaddress>
 
 After connecting, run the command `aks-engine`. Go to [Supported AKS Engine Versions](https://github.com/Azure/aks-engine/blob/master/docs/topics/azure-stack.md#supported-aks-engine-versions) to learn more about the AKS Engine and Kubernetes versions.
 
-![aks-engine command line example](media/solution-deployment-guide-ha-kubernetes/aksengine-cmdline-example.png)
+![aks-engine command line example](media/solution-deployment-guide-highly-available-kubernetes/aksengine-cmdline-example.png)
 
 ## Deploy a Kubernetes cluster
 
@@ -103,7 +103,7 @@ The step-by-step process is documented here:
 
 The end result of the `aks-engine deploy` command and the preparations in the previous steps is a fully featured Kubernetes cluster deployed into the tenant space of the first Azure Stack Hub instance. The cluster itself consists of Azure IaaS components like VMs, load balancers, VNets, disks, and so on.
 
-![Cluster IaaS components Azure Stack Hub portal](media/solution-deployment-guide-ha-kubernetes/aks-azure-stack-iaas-components.png)
+![Cluster IaaS components Azure Stack Hub portal](media/solution-deployment-guide-highly-available-kubernetes/aks-azure-stack-iaas-components.png)
 
 1) Azure load balancer (K8s API Endpoint)
 2) Worker Nodes (Agent Pool)
@@ -119,7 +119,7 @@ You can now connect to the previously created Kubernetes cluster, either via SSH
 ssh azureuser@<k8s-master-lb-ip>
 ```
 
-![Execute kubectl on master node](media/solution-deployment-guide-ha-kubernetes/k8s-kubectl-on-masternode.png)
+![Execute kubectl on master node](media/solution-deployment-guide-highly-available-kubernetes/k8s-kubectl-on-masternode.png)
 
 It's not recommended to use the master node as a jumpbox for administrative tasks. The `kubectl` configuration is stored in `.kube/config` on the master node(s) as well as on the AKS Engine VM. You can copy the configuration to an admin machine with connectivity to the Kubernetes cluster and use the `kubectl` command there. The `.kube/config` file is also used later to configure a service connection in Azure Pipelines.
 
@@ -169,13 +169,13 @@ When deploying self-hosted Agents for Azure Pipelines, you may deploy either on 
 
 * [Azure Pipelines agents](/azure/devops/pipelines/agents/agents) on [Windows](/azure/devops/pipelines/agents/v2-windows) or [Linux](/azure/devops/pipelines/agents/v2-linux)
 
-The pattern [Deployment (CI/CD) considerations](pattern-ha-kubernetes.md#deployment-cicd-considerations) section contains a decision flow that helps you to understand whether to use Microsoft-hosted agents or self-hosted agents:
+The pattern [Deployment (CI/CD) considerations](pattern-highly-available-kubernetes.md#deployment-cicd-considerations) section contains a decision flow that helps you to understand whether to use Microsoft-hosted agents or self-hosted agents:
 
-[![decision flow self hosted agents](media/solution-deployment-guide-ha-kubernetes/aks-on-stack-self-hosted-build-agents-yes-or-no.png)](media/solution-deployment-guide-ha-kubernetes/aks-on-stack-self-hosted-build-agents-yes-or-no.png#lightbox)
+[![decision flow self hosted agents](media/solution-deployment-guide-highly-available-kubernetes/aks-on-stack-self-hosted-build-agents-yes-or-no.png)](media/solution-deployment-guide-highly-available-kubernetes/aks-on-stack-self-hosted-build-agents-yes-or-no.png#lightbox)
 
 In this sample solution, the topology includes a self-hosted build agent on each Azure Stack Hub instance. The agent can access the Azure Stack Hub Management Endpoints and the Kubernetes cluster API endpoints.
 
-[![only outbound traffic](media/solution-deployment-guide-ha-kubernetes/azs-architecture-only-outbound-traffic.png)](media/solution-deployment-guide-ha-kubernetes/azs-architecture-only-outbound-traffic.png#lightbox)
+[![only outbound traffic](media/solution-deployment-guide-highly-available-kubernetes/azs-architecture-only-outbound-traffic.png)](media/solution-deployment-guide-highly-available-kubernetes/azs-architecture-only-outbound-traffic.png#lightbox)
 
 This design fulfills a common regulatory requirement, which is to have only outbound connections from the application solution.
 
@@ -220,9 +220,9 @@ omsagent-rs-76c45758f5-lmc4l               1/1     Running
 
 The Operations Management Suite (OMS) Agent on your Kubernetes cluster will send monitoring data to your Azure Log Analytics Workspace (using outbound HTTPS). You can now use Azure Monitor to get deeper insights about your Kubernetes clusters on Azure Stack Hub. This design is a powerful way to demonstrate the power of analytics that can be automatically deployed with your application's clusters.
 
-[![Azure Stack Hub clusters in Azure monitor](media/solution-deployment-guide-ha-kubernetes/azuremonitor_on_stack1.png)](media/solution-deployment-guide-ha-kubernetes/azuremonitor_on_stack1.png#lightbox)
+[![Azure Stack Hub clusters in Azure monitor](media/solution-deployment-guide-highly-available-kubernetes/azure-monitor-on-stack-1.png)](media/solution-deployment-guide-highly-available-kubernetes/azure-monitor-on-stack-1.png#lightbox)
 
-[![Azure Monitor cluster details](media/solution-deployment-guide-ha-kubernetes/azuremonitor_on_stack2.png)](media/solution-deployment-guide-ha-kubernetes/azuremonitor_on_stack2.png#lightbox)
+[![Azure Monitor cluster details](media/solution-deployment-guide-highly-available-kubernetes/azure-monitor-on-stack-2.png)](media/solution-deployment-guide-highly-available-kubernetes/azure-monitor-on-stack-2.png#lightbox)
 
 > [!IMPORTANT]
 > If Azure Monitor does not show any Azure Stack Hub data, please make sure that you have followed the instructions on [how to add AzureMonitor-Containers solution to a Azure Loganalytics workspace](https://github.com/Microsoft/OMS-docker/blob/ci_feature_prod/docs/solution-onboarding.md) carefully.
@@ -233,7 +233,7 @@ Before installing our sample application, there's another step to configure the 
 
 Our sample application is also packaged as a Helm Chart, like the [Azure Monitoring Agent](#configure-monitoring) in the previous step. As such, it's straightforward to deploy the application onto our Kubernetes cluster. You can find the [Helm Chart files in the companion GitHub repo](https://github.com/Azure-Samples/azure-intelligent-edge-patterns/tree/master/AKSe-on-AzStackHub/application/helm)
 
-The sample application is a three tier application, deployed onto a Kubernetes cluster on each of two Azure Stack Hub instances. The application uses a MongoDB database. You can learn more about how to get the data replicated across multiple instances in the pattern [Data and Storage considerations](pattern-ha-kubernetes.md#data-and-storage-considerations).
+The sample application is a three tier application, deployed onto a Kubernetes cluster on each of two Azure Stack Hub instances. The application uses a MongoDB database. You can learn more about how to get the data replicated across multiple instances in the pattern [Data and Storage considerations](pattern-highly-available-kubernetes.md#data-and-storage-considerations).
 
 After deploying the Helm Chart for the application, you'll see all three tiers of your application represented as deployments and stateful sets (for the database) with a single pod:
 
@@ -296,11 +296,11 @@ To distribute traffic between two (or more) deployments of the application, we'l
 
 Instead of using Azure Traffic Manager you can also use other global load-balancing solutions hosted on-premises. In the sample scenario, we'll use Azure Traffic Manager to distribute traffic between two instances of our application. They can run on Azure Stack Hub instances in the same or different locations:
 
-![on-premises traffic manager](media/solution-deployment-guide-ha-kubernetes/aks-azure-traffic-manager-on-premises.png)
+![on-premises traffic manager](media/solution-deployment-guide-highly-available-kubernetes/aks-azure-traffic-manager-on-premises.png)
 
 In Azure, we configure Traffic Manager to point to the two different instances of our application:
 
-[![TM endpoint profile](media/solution-deployment-guide-ha-kubernetes/traffic-manager-endpoint-profile-1.png)](media/solution-deployment-guide-ha-kubernetes/traffic-manager-endpoint-profile-1.png#lightbox)
+[![TM endpoint profile](media/solution-deployment-guide-highly-available-kubernetes/traffic-manager-endpoint-profile-1.png)](media/solution-deployment-guide-highly-available-kubernetes/traffic-manager-endpoint-profile-1.png#lightbox)
 
 As you can see, the two endpoints point to the two instances of the deployed application from the [previous section](#deploy-the-application).
 

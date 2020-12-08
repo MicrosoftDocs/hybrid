@@ -309,7 +309,7 @@ additionalContent:
             text: Footfall detection (retail)
           - url: ./app-solutions/pattern-geo-distributed.md
             text: Geo-distributed app
-          - url: ./app-solutions/pattern-ha-kubernetes.md
+          - url: ./app-solutions/pattern-highly-available-kubernetes.md
             text: Highly available Kubernetes cluster            
       - title: Deploy app solution examples
         links:
@@ -321,7 +321,7 @@ additionalContent:
             text: Footfall detection (retail)
           - url: ./app-solutions/solution-deployment-guide-geo-distributed.md
             text: Geo-distributed app
-          - url: ./app-solutions/solution-deployment-guide-ha-kubernetes.md
+          - url: ./app-solutions/solution-deployment-guide-highly-available-kubernetes.md
             text: Highly available Kubernetes cluster
     - title: Evaluation and learning resources
       items:
