@@ -113,7 +113,7 @@ The Azure Stack Hub infrastructure is the foundation of this implementation, bec
 The Kubernetes cluster itself consists of, and is built on top of Azure (Stack) IaaS components including compute, storage, and network resources. Kubernetes solutions involve master and worker nodes, which are deployed as VMs in Azure (and Azure Stack Hub).
 
 - [Control plane nodes](/azure/aks/concepts-clusters-workloads#control-plane) (master) provide the core Kubernetes services and orchestration of application workloads.
-- (worker) [Nodes](/azure/aks/concepts-clusters-workloads#nodes-and-node-pools) run your application workloads.
+- [Worker nodes](/azure/aks/concepts-clusters-workloads#nodes-and-node-pools) (worker) run your application workloads.
 
 When selecting VM sizes for the initial deployment, there are several considerations:  
 
@@ -214,9 +214,9 @@ Considerations when working with data across multiple locations is an even more 
 - Latency and network connectivity between Azure Stack Hubs.
 - Availability of identities for services and permissions. Each Azure Stack Hub instance integrates with an external directory. During deployment, you choose to use either Azure Active Directory (Azure AD) or Active Directory Federation Services (ADFS). As such, there's potential to use a single identity that can interact with multiple independent Azure Stack Hub instances.
 
-## Backup and disaster recovery
+## Business continuity and disaster recovery
 
-Backup and Disaster Recovery (BCDR) is an important topic in both Azure Stack Hub and Azure. The main difference is that in Azure Stack Hub, the operator must manage the whole BCDR process. In Azure, parts of BCDR are automatically managed by Microsoft.
+Business continuity and disaster recovery (BCDR) is an important topic in both Azure Stack Hub and Azure. The main difference is that in Azure Stack Hub, the operator must manage the whole BCDR process. In Azure, parts of BCDR are automatically managed by Microsoft.
 
 BCDR affects the same areas mentioned in the previous section [Data and storage considerations](#data-and-storage-considerations):
 
