@@ -317,17 +317,11 @@ There are also some post-deployment operational considerations worth discussing,
 
 ## Upgrade Kubernetes
 
-Upgrading a Kubernetes cluster is a complex Day 2 operation that can be done using AKS Engine. 
+Consider the following topics when upgrading the Kubernetes cluster:
 
-- [Upgrade a Kubernetes cluster on Azure Stack Hub](/azure-stack/user/azure-stack-kubernetes-aks-engine-upgrade)
-
-AKS Engine allows you to upgrade clusters to newer Kubernetes and base OS image versions:
-
-- [Steps to upgrade to a newer Kubernetes version](/azure-stack/user/azure-stack-kubernetes-aks-engine-upgrade#steps-to-upgrade-to-a-newer-kubernetes-version)
-
-You can also upgrade only the underlaying nodes to newer base OS image versions:
-
-- [Steps to only upgrade the OS image](/azure-stack/user/azure-stack-kubernetes-aks-engine-upgrade#steps-to-only-upgrade-the-os-image)
+- Upgrading a Kubernetes cluster is a complex Day 2 operation that can be done using AKS Engine. For more information, see [Upgrade a Kubernetes cluster on Azure Stack Hub](/azure-stack/user/azure-stack-kubernetes-aks-engine-upgrade).
+- AKS Engine allows you to upgrade clusters to newer Kubernetes and base OS image versions. For more information, see [Steps to upgrade to a newer Kubernetes version](/azure-stack/user/azure-stack-kubernetes-aks-engine-upgrade#steps-to-upgrade-to-a-newer-kubernetes-version). 
+- You can also upgrade only the underlaying nodes to newer base OS image versions. For more information, see [Steps to only upgrade the OS image](/azure-stack/user/azure-stack-kubernetes-aks-engine-upgrade#steps-to-only-upgrade-the-os-image).
 
 Newer base OS images contain security and kernel updates. It's the cluster operator's responsibility to monitor the availability of newer Kubernetes Versions and OS Images. The operator should plan and execute these upgrades using AKS Engine. The base OS images must be downloaded from the Azure Stack Hub Marketplace by the Azure Stack Hub Operator.
 
