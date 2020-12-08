@@ -80,3 +80,15 @@ landingContent:
         links:
           - text: Solution deployment guide
             url: solution-deployment-guide-cross-cloud-scaling-onprem-data.md
+
+  # Card
+  - title: Highly available Kubernetes cluster scenario
+    linkLists:
+      - linkListType: architecture
+        links:
+          - text: Pattern
+            url: pattern-highly-available-kubernetes.md
+      - linkListType: tutorial
+        links:
+          - text: Solution deployment guide
+            url: solution-deployment-guide-highly-available-kubernetes.md

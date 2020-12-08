@@ -309,6 +309,8 @@ additionalContent:
             text: Footfall detection (retail)
           - url: ./app-solutions/pattern-geo-distributed.md
             text: Geo-distributed app
+          - url: ./app-solutions/pattern-highly-available-kubernetes.md
+            text: Highly available Kubernetes cluster            
       - title: Deploy app solution examples
         links:
           - url: ./app-solutions/solution-deployment-guide-cross-cloud-scaling.md
@@ -319,7 +321,8 @@ additionalContent:
             text: Footfall detection (retail)
           - url: ./app-solutions/solution-deployment-guide-geo-distributed.md
             text: Geo-distributed app
-
+          - url: ./app-solutions/solution-deployment-guide-highly-available-kubernetes.md
+            text: Highly available Kubernetes cluster
     - title: Evaluation and learning resources
       items:
       # Cards
@@ -433,49 +436,3 @@ additionalContent:
             text: Microsoft Q&A forums
           - url: https://stackoverflow.com/
             text: Stack Overflow
-
-#   - title: Additional resources
-#     items:
-#     # Cards
-#     - title: General
-#       links:
-#         - url: /azure-stack/operator/compare-azure-azure-stack
-#           text: Azure global cloud vs Azure Stack  
-#         - url: https://azure.microsoft.com/blog/topics/hybrid/
-#           text: Azure hybrid blog 
-#         - url: https://azure.microsoft.com/overview/azure-hybrid/
-#           text: Azure hybrid capabilities
-#         - url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
-#           text: Azure hybrid virtual event
-#         - url: https://channel9.msdn.com/Search?term=%22Azure%20Stack%20Hub%20Partner%20Solutions%20Series%22
-#           text: Customer Azure Stack Hub solutions
-#         - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
-#           text: Customer hybrid cloud stories
-#         - url: /answers/products/
-#           text: Microsoft Q&A forums
-#     - title: Evaluation and learning
-#       links:
-#         - url: https://github.com/likamrat/azure_arc
-#           text: Azure Arc jumpstart guides 
-#         - url: https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator
-#           text: Azure IoT Edge AI video intelligence solution accelerator
-#         - url: https://labs.iotedge.dev/
-#           text: Azure IoT Edge hands-on-labs 
-#         - url: https://www.azureiotsolutions.com/Accelerators
-#           text: Azure IoT solution accelerators     
-#         - url: /azure-stack/asdk
-#           text: Azure Stack development kit                     
-#         - url: https://github.com/Azure/AzureStackHCI-EvalGuide
-#           text: Azure Stack HCI evaluation guide        
-#         - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
-#           text: Azure Stack hybrid apps intro
-#         - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
-#           text: Certified for Azure IoT Edge devices
-#         - url: /samples/browse/
-#           text: Code samples browser            
-#         - url: https://docs.docker.com/
-#           text: Docker docs
-#         - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
-#           text: Dynamically scale from Azure Stack Hub to Azure 
-#         - url: /learn
-#           text: Microsoft Learn
