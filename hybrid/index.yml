@@ -406,7 +406,7 @@ additionalContent:
         links:
         - url: /azure/developer/
           text: Azure developer docs and tools
-        - url: /azure/architecture/hybrid/azure-arc-hybrid-config
+        - url: /azure/architecture/browse/?azure_categories=hybrid
           text: Azure hybrid architectures
         - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
           text: Azure IoT Tools for Visual Studio Code
