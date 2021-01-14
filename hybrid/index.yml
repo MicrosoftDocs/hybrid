@@ -60,13 +60,15 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: media/index/azure-stack-hub.svg
       links:
+        - url: /azure-stack/mdc
+          text: Azure Stack HCI
         - url: /azure-stack#azure-stack-hub
           text: Azure Stack Hub 
-        - url: /azure-stack#azure-stack-hub
-          text: Azure Modular Data Center           
-        - url: /azure-stack#azure-stack-hci
-          text: Azure Stack HCI
-    # Card
+        - url: /azure-stack/mdc
+          text: Azure Stack Hub Modular          
+        - url: /azure-stack/ruggedized
+          text: Azure Stack Hub Ruggedized  
+# Card
     - title: Intelligent edge platforms for devices.
       # imageSrc should be square in ratio with no whitespace
       imageSrc: media/index/intelligent.svg
