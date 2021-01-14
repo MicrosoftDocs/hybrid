@@ -62,7 +62,7 @@ productDirectory:
       links:
         - url: /azure-stack/mdc
           text: Azure Modular Datacenter
-        - url: /azure-stack/mdc
+        - url: /azure-stack/hci
           text: Azure Stack HCI
         - url: /azure-stack#azure-stack-hub
           text: Azure Stack Hub 
