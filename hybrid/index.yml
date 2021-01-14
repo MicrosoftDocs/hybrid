@@ -61,11 +61,11 @@ productDirectory:
       imageSrc: media/index/azure-stack-hub.svg
       links:
         - url: /azure-stack/mdc
+          text: Azure Modular Datacenter
+        - url: /azure-stack/mdc
           text: Azure Stack HCI
         - url: /azure-stack#azure-stack-hub
           text: Azure Stack Hub 
-        - url: /azure-stack/mdc
-          text: Azure Stack Hub Modular          
         - url: /azure-stack/ruggedized
           text: Azure Stack Hub Ruggedized  
 # Card
