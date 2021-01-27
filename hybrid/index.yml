@@ -10,7 +10,7 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 11/16/2020
+  ms.date: 01/27/2020
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -20,7 +20,7 @@ highlightedContent:
     # Card
     - title: "Introducing the Azure Modular Datacenter"
       itemType: video
-      url: https://azure.microsoft.com/blog/introducing-the-microsoft-azure-modular-datacenter/ 
+      url: https://azure.microsoft.com/resources/videos/azure-modular-datacenter/ 
     - title: "Ignite 2020: Hybrid sessions"
       itemType: video
       url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=hybrid
