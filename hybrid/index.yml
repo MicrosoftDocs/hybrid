@@ -77,6 +77,8 @@ productDirectory:
           text: Azure IoT Edge
         - url: /azure-sphere
           text: Azure Sphere
+        - url: /azure/databox-online/
+          text: Azure Stack Edge          
         - url: /windows/iot-core/
           text: Windows for IoT
 
