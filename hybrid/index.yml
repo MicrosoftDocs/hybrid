@@ -18,7 +18,7 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: "IT Ops Talks: All Things Hybrid"
+    - title: "IT Ops Talks: All Things Hybrid featuring Mark Russinovich"
       itemType: video
       url: https://techcommunity.microsoft.com/t5/itops-talk-blog/bg-p/ITOpsTalkBlog/label-name/ITOps%20Talks?WT.mc_modinfra-12531-socuff     
     - title: "Introducing the Azure Modular Datacenter"
