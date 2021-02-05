@@ -10,7 +10,7 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 01/27/2020
+  ms.date: 02/04/2020
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -18,6 +18,9 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
+    - title: "IT Ops Talks: All Things Hybrid (featuring Mark Russinovich)"
+      itemType: video
+      url: https://techcommunity.microsoft.com/t5/itops-talk-blog/bg-p/ITOpsTalkBlog/label-name/ITOps%20Talks?WT.mc_modinfra-12531-socuff     
     - title: "Introducing the Azure Modular Datacenter"
       itemType: video
       url: https://azure.microsoft.com/resources/videos/azure-modular-datacenter/ 
@@ -35,13 +38,7 @@ highlightedContent:
       url: https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030       
     - title: "Build 2020: Hybrid sessions"
       itemType: video
-      url: https://mybuild.microsoft.com/sessions?q=hybrid&g=%255B%2522on-demand%2522%255D 
-    - title: "Build 2020: Azure Arc sessions"
-      itemType: video
-      url: https://mybuild.microsoft.com/sessions?q=%2522%2520Arc%2520%2522&g=%255B%2522on-demand%2522%255D
-    - title: "Build 2020: Intelligent Edge sessions"
-      itemType: video
-      url: https://mybuild.microsoft.com/sessions?q=%2522%2520intelligent%2520edge%2520%2522%2520%2522%2520sql%2520edge%2520%2522
+      url: https://mybuild.microsoft.com/sessions?q=hybrid%2520%2522%2520Arc%2520%2522%2520%2522%2520intelligent%2520edge%2520%2522%2520%2522%2520sql%2520edge%2520%2522&g=%255B%2522on-demand%2522%255D 
       
 # productDirectory section (optional)
 productDirectory:
@@ -360,8 +357,10 @@ additionalContent:
             text: Azure hybrid virtual event
           - url: /learn/modules/intro-to-azure-hybrid-services/
             text: Intro to Azure hybrid cloud            
+          - url: https://events.microsoft.com/
+            text: Microsoft Events Catalog
           - url: /learn
-            text: Microsoft Learn            
+            text: Microsoft Learn   
       - title: Identity and security
         links:
           - url: /learn/modules/azure-sentinel-deploy-configure/
