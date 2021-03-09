@@ -10,7 +10,7 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 03/03/2021
+  ms.date: 03/09/2021
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -18,6 +18,15 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
+    - title: "Ignite 2021: Hybrid sessions"
+      itemType: video
+      url: https://myignite.microsoft.com/sessions?t={"from":"2021-03-02T00:00:00-07:00","to":"2021-03-04T23:59:00-07:00"}&q=hybrid
+    - title: "Ignite 2021: Azure Arc sessions"
+      itemType: video
+      url: https://myignite.microsoft.com/sessions?t={"from":"2021-03-02T00:00:00-07:00","to":"2021-03-04T23:59:00-07:00"}&q=" Arc "      
+    - title: "Ignite 2021: Edge AI sessions"
+      itemType: video
+      url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=" AI edge"
     - title: "Building modern hybrid applications with Azure Arc and Azure Stack"
       itemType: video
       url: https://channel9.msdn.com/Shows/Azure-Friday/Building-modern-hybrid-applications-with-Azure-Arc-and-Azure-Stack     
@@ -27,15 +36,6 @@ highlightedContent:
     - title: "Introducing the Azure Modular Datacenter"
       itemType: video
       url: https://azure.microsoft.com/resources/videos/azure-modular-datacenter/ 
-    - title: "Ignite 2020: Hybrid sessions"
-      itemType: video
-      url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=hybrid
-    - title: "Ignite 2020: Azure Arc sessions"
-      itemType: video
-      url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=" Arc "
-    - title: "Ignite 2020: Intelligent Edge sessions"
-      itemType: video
-      url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q="intelligent edge"
     - title: "Inspire 2020: What's new for Azure Stack HCI"
       itemType: video
       url: https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030       
