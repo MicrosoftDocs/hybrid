@@ -378,14 +378,14 @@ additionalContent:
         links:
           - url: https://github.com/likamrat/azure_arc
             text: Azure Arc jumpstart guides 
+          - url: /learn/browse/?terms=%22%20Arc%20%22
+            text: Azure Arc Learn modules
           - url: /learn/modules/describe-high-availability-disaster-recovery-strategies/
             text: High availability and disaster recovery strategies 
           - url: /learn/modules/explore-iaas-paas-platform-tools-for-high-availability-disaster-recovery/
             text: IaaS and PaaS platform tools for high availability and disaster recovery 
           - url: /learn/modules/intro-to-azure-arc/
-            text: Intro to Azure Arc
-          - url: /learn/modules/manage-hybrid-workloads-azure-arc/
-            text: Manage hybrid workloads with Azure Arc
+            text: Introduction to Azure Arc
           - url: /learn/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances/
             text: Monitor Windows Server IaaS Virtual Machines and hybrid instances
           - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
