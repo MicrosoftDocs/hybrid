@@ -376,14 +376,14 @@ additionalContent:
             text: Windows Server hybrid cloud management, monitoring, and security              
       - title: Management
         links:
-          - url: https://github.com/likamrat/azure_arc
+          - url: https://azurearcjumpstart.io/
             text: Azure Arc jumpstart guides 
           - url: /learn/browse/?terms=%22%20Arc%20%22
             text: Azure Arc Learn modules
-          - url: /learn/modules/describe-high-availability-disaster-recovery-strategies/
-            text: High availability and disaster recovery strategies 
-          - url: /learn/modules/explore-iaas-paas-platform-tools-for-high-availability-disaster-recovery/
-            text: IaaS and PaaS platform tools for high availability and disaster recovery 
+          - url: /learn/browse/?terms="disaster%20recovery"
+            text: Disaster recovery Learn modules
+          - url: /learn/browse/?terms="high%20availability"
+            text: High availability Learn modules 
           - url: /learn/modules/intro-to-azure-arc/
             text: Introduction to Azure Arc
           - url: /learn/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances/
