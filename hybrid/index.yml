@@ -359,7 +359,7 @@ additionalContent:
           - url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
             text: Azure hybrid virtual event
           - url: /learn/modules/intro-to-azure-hybrid-services/
-            text: Intro to Azure hybrid cloud            
+            text: Introduction to Azure hybrid cloud services            
           - url: https://events.microsoft.com/
             text: Microsoft Events Catalog
           - url: /learn
@@ -367,7 +367,11 @@ additionalContent:
       - title: Identity and security
         links:
           - url: /learn/modules/azure-sentinel-deploy-configure/
-            text: Deploy Azure Sentinel and connect data sources 
+            text: Deploy Azure Sentinel and connect data sources
+          - url: /learn/modules/expose-hybrid-services-with-azure-relay/
+            text: Expose hybrid services securely with Azure Relay
+          - url: /learn/modules/implement-manage-hybrid-identity/
+            text: Implement and manage hybrid identity
           - url: /learn/modules/implement-hybrid-identity-windows-server/
             text: Implement hybrid identity with Windows Server
           - url: /learn/modules/intro-to-azure-sentinel/
@@ -380,6 +384,8 @@ additionalContent:
             text: Azure Arc jumpstart guides 
           - url: /learn/browse/?terms=%22%20Arc%20%22
             text: Azure Arc Learn modules
+          - url: /describe-high-availability-disaster-recovery-strategies/
+            text: Describe high availability and disaster recovery strategies
           - url: /learn/browse/?terms="disaster%20recovery"
             text: Disaster recovery Learn modules
           - url: /learn/browse/?terms="high%20availability"
