@@ -354,6 +354,8 @@ additionalContent:
         links:
           - url: /learn/modules/align-requirements-in-azure/
             text: Align requirements with cloud types and service models in Azure
+          - url: /azure/architecture/browse/?azure_categories=hybrid
+            text: Azure hybrid architectures            
           - url: https://azure.microsoft.com/overview/azure-hybrid/
             text: Azure hybrid capabilities
           - url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
@@ -414,20 +416,6 @@ additionalContent:
     - title: Additional resources
       items:
       # Cards
-      - title: Developer
-        links:
-        - url: /azure/developer/
-          text: Azure developer docs and tools
-        - url: /azure/architecture/browse/?azure_categories=hybrid
-          text: Azure hybrid architectures
-        - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
-          text: Azure IoT Tools for Visual Studio Code
-        - url: /samples/browse/
-          text: Code samples browser
-        - url: https://azure.github.io/Vision-AI-DevKit-Pages/
-          text: Vision AI Developer Kit   
-        - url: /visualstudio/azure/
-          text: Visual Studio Azure development
       - title: General
         links:
           - url: https://azure.microsoft.com/blog/topics/hybrid/
@@ -438,7 +426,7 @@ additionalContent:
             text: Customer Azure Stack Hub solutions
           - url: https://customers.microsoft.com/en-us/search?sq="hybrid cloud"
             text: Customer hybrid cloud stories
-      - title: Help + Support
+      - title: Support
         links:
           - url: https://azure.microsoft.com/support/options/
             text: Azure support
@@ -448,3 +436,15 @@ additionalContent:
             text: Microsoft Q&A forums
           - url: https://stackoverflow.com/
             text: Stack Overflow
+      - title: Technical
+        links:
+        - url: /azure/developer/
+          text: Azure developer docs and tools
+        - url: https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tools
+          text: Azure IoT Tools for Visual Studio Code
+        - url: /samples/browse/
+          text: Code samples browser
+        - url: https://azure.github.io/Vision-AI-DevKit-Pages/
+          text: Vision AI Developer Kit   
+        - url: /visualstudio/azure/
+          text: Visual Studio Azure development
