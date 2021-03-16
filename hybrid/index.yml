@@ -360,6 +360,8 @@ additionalContent:
             text: Azure hybrid capabilities
           - url: https://www.youtube.com/playlist?list=PLLasX02E8BPDY8lteNSno4etuLx-6bALf
             text: Azure hybrid virtual event
+          - url: /azure/cloud-adoption-framework/scenarios/hybrid/scenario-overview
+            text: Cloud Adoption Framework - Hybrid and multicloud scenario
           - url: /learn/modules/intro-to-azure-hybrid-services/
             text: Introduction to Azure hybrid cloud services            
           - url: https://events.microsoft.com/
