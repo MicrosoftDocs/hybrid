@@ -24,7 +24,7 @@ In this solution, you'll build a sample environment to:
 > - Maintain a legacy system while using cloud-scaled app deployment and resources in global Azure.
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![Hybrid pillars diagram](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub is an extension of Azure. Azure Stack Hub brings the agility and innovation of cloud computing to your on-premises environment, enabling the only hybrid cloud that allows you to build and deploy hybrid apps anywhere.  
 > 
 > The article [Hybrid app design considerations](overview-app-design-considerations.md) reviews pillars of software quality (placement, scalability, availability, resiliency, manageability, and security) for designing, deploying, and operating hybrid apps. The design considerations assist in optimizing hybrid app design, minimizing challenges in production environments.
@@ -36,7 +36,7 @@ A few components are required to build a hybrid connectivity deployment. Some of
 ### Azure
 
 - If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before you begin.
-- Create a [web app](/vsts/build-release/apps/cd/azure/aspnet-core-to-azure-webapp?tabs=vsts&view=vsts) in Azure. Make note of the web app URL because you'll need it in the solution.
+- Create a [web app](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs) in Azure. Make note of the web app URL because you'll need it in the solution.
 
 ### Azure Stack Hub
 

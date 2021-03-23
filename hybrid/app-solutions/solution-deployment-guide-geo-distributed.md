@@ -60,7 +60,7 @@ Before building out a distributed app footprint, it helps to know the following 
 - **Naming convention for the apps:** Since multiple instances of the app will be deployed, a name is needed for each instance of the deployed app. With App Service Environment for Power Apps, the same app name can be used across multiple environments. Since each App Service environment has a unique domain suffix, developers can choose to reuse the exact same app name in each environment. For example, a developer could have apps named as follows: *myapp.foo1.p.azurewebsites.net*, *myapp.foo2.p.azurewebsites.net*, *myapp.foo3.p.azurewebsites.net*, and so on. For the app used here, each app instance has a unique name. The app instance names used are *webfrontend1*, *webfrontend2*, and *webfrontend3*.
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![Hybrid pillars diagram](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub is an extension of Azure. Azure Stack Hub brings the agility and innovation of cloud computing to your on-premises environment, enabling the only hybrid cloud that allows you to build and deploy hybrid apps anywhere.  
 > 
 > The article [Hybrid app design considerations](overview-app-design-considerations.md) reviews pillars of software quality (placement, scalability, availability, resiliency, manageability, and security) for designing, deploying, and operating hybrid apps. The design considerations assist in optimizing hybrid app design, minimizing challenges in production environments.
@@ -172,7 +172,7 @@ Azure DevOps Services provide a highly configurable and manageable pipeline for 
   
       ![Select package or folder for Azure App Service environment in Azure DevOps Services](media/solution-deployment-guide-geo-distributed/image12.png)
 
-      ![Select package or folder for Azure App Service environment in Azure DevOps Services](media/solution-deployment-guide-geo-distributed/image13.png)
+      ![Folder picker dialog](media/solution-deployment-guide-geo-distributed/image13.png)
 
 9. Save all changes and go back to **release pipeline**.
 
@@ -211,7 +211,7 @@ Azure DevOps Services provide a highly configurable and manageable pipeline for 
 
     ![Select folder for Azure App Service Deployment in Azure DevOps Services](media/solution-deployment-guide-geo-distributed/image22.png)
 
-    ![Select folder for Azure App Service Deployment in Azure DevOps Services](media/solution-deployment-guide-geo-distributed/image23.png)
+    ![Folder picker dialog](media/solution-deployment-guide-geo-distributed/image23.png)
 
 18. Under Variable tab add a variable named `VSTS\_ARM\_REST\_IGNORE\_SSL\_ERRORS`, set its value as **true**, and scope to Azure Stack Hub.
 
@@ -228,7 +228,7 @@ Azure DevOps Services provide a highly configurable and manageable pipeline for 
 21. Save all changes.
 
 > [!Note]  
-> Some settings for the tasks may have been automatically defined as [environment variables](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables) when creating a release definition from a template. These settings can't be modified in the task settings; instead, the parent environment item must be selected to edit these settings.
+> Some settings for the tasks may have been automatically defined as [environment variables](/azure/devops/pipelines/release/variables?tabs=batch#custom-variables) when creating a release definition from a template. These settings can't be modified in the task settings; instead, the parent environment item must be selected to edit these settings.
 
 ## Part 2: Update web app options
 

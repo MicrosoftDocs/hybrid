@@ -29,7 +29,7 @@ In this solution, you'll build a sample environment to:
 > - Learn to monitor and track your deployments.
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![hybrid pillars diagram](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub is an extension of Azure. Azure Stack Hub brings the agility and innovation of cloud computing to your on-premises environment, enabling the only hybrid cloud that lets you build and deploy hybrid apps anywhere.  
 > 
 > The article [Hybrid app design considerations](overview-app-design-considerations.md) reviews pillars of software quality (placement, scalability, availability, resiliency, manageability, and security) for designing, deploying, and operating hybrid apps. The design considerations assist in optimizing hybrid app design, minimizing challenges in production environments.
@@ -156,7 +156,7 @@ Azure Pipelines and Azure DevOps Services provide a highly configurable and mana
   
       ![Select package or folder for Azure App Service environment](media/solution-deployment-guide-cross-cloud-scaling/image12.png)
 
-      ![Select package or folder for Azure App Service environment](media/solution-deployment-guide-cross-cloud-scaling/image13.png)
+      ![Folder picker dialog](media/solution-deployment-guide-cross-cloud-scaling/image13.png)
 
 9. Save all changes and go back to **release pipeline**.
 
@@ -193,7 +193,7 @@ Azure Pipelines and Azure DevOps Services provide a highly configurable and mana
 
     ![Select folder for Azure App Service Deployment](media/solution-deployment-guide-cross-cloud-scaling/image22.png)
 
-    ![Select folder for Azure App Service Deployment](media/solution-deployment-guide-cross-cloud-scaling/image23.png)
+    ![Folder picker dialog](media/solution-deployment-guide-cross-cloud-scaling/image23.png)
 
 18. Under Variable tab add a variable named `VSTS\_ARM\_REST\_IGNORE\_SSL\_ERRORS`, set its value as **true**, and scope to Azure Stack.
 
@@ -210,7 +210,7 @@ Azure Pipelines and Azure DevOps Services provide a highly configurable and mana
 21. Save all changes.
 
 > [!Note]  
-> Some settings for the tasks may have been automatically defined as [environment variables](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables) when creating a release definition from a template. These settings can't be modified in the task settings; instead, the parent environment item must be selected to edit these settings.
+> Some settings for the tasks may have been automatically defined as [environment variables](/azure/devops/pipelines/release/variables?tabs=batch#custom-variables) when creating a release definition from a template. These settings can't be modified in the task settings; instead, the parent environment item must be selected to edit these settings.
 
 ## Publish to Azure Stack Hub via Visual Studio
 
@@ -328,7 +328,7 @@ Creating a release definition is the final step in the app build process. This r
 23. Save all changes.
 
 > [!Note]  
-> Some settings for release tasks are automatically defined as [environment variables](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables) when creating a release definition from a template. These settings can't be modified in the task settings but can be modified in the parent environment items.
+> Some settings for release tasks are automatically defined as [environment variables](/azure/devops/pipelines/release/variables?tabs=batch#custom-variables) when creating a release definition from a template. These settings can't be modified in the task settings but can be modified in the parent environment items.
 
 ## Create a release
 
