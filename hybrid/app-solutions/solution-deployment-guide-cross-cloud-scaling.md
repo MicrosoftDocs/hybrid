@@ -29,7 +29,7 @@ In this solution, you'll build a sample environment to:
 > - Learn to monitor and track your deployments.
 
 > [!Tip]  
-> ![hybrid-pillars.png](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
+> ![hybrid pillars diagram](./media/solution-deployment-guide-cross-cloud-scaling/hybrid-pillars.png)  
 > Microsoft Azure Stack Hub is an extension of Azure. Azure Stack Hub brings the agility and innovation of cloud computing to your on-premises environment, enabling the only hybrid cloud that lets you build and deploy hybrid apps anywhere.  
 > 
 > The article [Hybrid app design considerations](overview-app-design-considerations.md) reviews pillars of software quality (placement, scalability, availability, resiliency, manageability, and security) for designing, deploying, and operating hybrid apps. The design considerations assist in optimizing hybrid app design, minimizing challenges in production environments.
@@ -38,16 +38,16 @@ In this solution, you'll build a sample environment to:
 
 - Azure subscription. If needed, create a [free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) before beginning.
 - An Azure Stack Hub integrated system or deployment of Azure Stack Development Kit (ASDK).
-  - For instructions on installing Azure Stack Hub, see [Install the ASDK](/azure-stack/asdk/asdk-install.md).
+  - For instructions on installing Azure Stack Hub, see [Install the ASDK](/azure-stack/asdk/asdk-install).
   - For an ASDK post-deployment automation script, go to: [https://github.com/mattmcspirit/azurestack](https://github.com/mattmcspirit/azurestack)
   - This installation may require a few hours to complete.
-- Deploy [App Service](/azure-stack/operator/azure-stack-app-service-deploy.md) PaaS services to Azure Stack Hub.
-- [Create plans/offers](/azure-stack/operator/service-plan-offer-subscription-overview.md) within the Azure Stack Hub environment.
-- [Create tenant subscription](/azure-stack/operator/azure-stack-subscribe-plan-provision-vm.md) within the Azure Stack Hub environment.
+- Deploy [App Service](/azure-stack/operator/azure-stack-app-service-deploy) PaaS services to Azure Stack Hub.
+- [Create plans/offers](/azure-stack/operator/service-plan-offer-subscription-overview) within the Azure Stack Hub environment.
+- [Create tenant subscription](/azure-stack/operator/azure-stack-subscribe-plan-provision-vm) within the Azure Stack Hub environment.
 - Create a web app within the tenant subscription. Make note of the new web app URL for later use.
 - Deploy Azure Pipelines virtual machine (VM) within the tenant subscription.
 - Windows Server 2016 VM with .NET 3.5 is required. This VM will be built in the tenant subscription on Azure Stack Hub as the private build agent.
-- [Windows Server 2016 with SQL 2017 VM image](/azure-stack/operator/azure-stack-add-vm-image.md) is available in the Azure Stack Hub Marketplace. If this image isn't available, work with an Azure Stack Hub Operator to ensure it's added to the environment.
+- [Windows Server 2016 with SQL 2017 VM image](/azure-stack/operator/azure-stack-add-vm-image) is available in the Azure Stack Hub Marketplace. If this image isn't available, work with an Azure Stack Hub Operator to ensure it's added to the environment.
 
 ## Issues and considerations
 
@@ -78,7 +78,7 @@ Update the DNS zone file for the domain. Azure AD will verify ownership of the c
 Set up hybrid continuous integration and continuous deployment (CI/CD) to deploy web apps to Azure and Azure Stack Hub and to autopush changes to both clouds.
 
 > [!Note]  
-> Azure Stack Hub with proper images syndicated to run (Windows Server and SQL) and App Service deployment are required. For more information, review the App Service documentation [Prerequisites for deploying App Service on Azure Stack Hub](/azure-stack/operator/azure-stack-app-service-before-you-get-started.md).
+> Azure Stack Hub with proper images syndicated to run (Windows Server and SQL) and App Service deployment are required. For more information, review the App Service documentation [Prerequisites for deploying App Service on Azure Stack Hub](/azure-stack/operator/azure-stack-app-service-before-you-get-started).
 
 ### Add Code to Azure Repos
 
@@ -156,7 +156,7 @@ Azure Pipelines and Azure DevOps Services provide a highly configurable and mana
   
       ![Select package or folder for Azure App Service environment](media/solution-deployment-guide-cross-cloud-scaling/image12.png)
 
-      ![Select package or folder for Azure App Service environment](media/solution-deployment-guide-cross-cloud-scaling/image13.png)
+      ![Folder picker dialog 1](media/solution-deployment-guide-cross-cloud-scaling/image13.png)
 
 9. Save all changes and go back to **release pipeline**.
 
@@ -193,7 +193,7 @@ Azure Pipelines and Azure DevOps Services provide a highly configurable and mana
 
     ![Select folder for Azure App Service Deployment](media/solution-deployment-guide-cross-cloud-scaling/image22.png)
 
-    ![Select folder for Azure App Service Deployment](media/solution-deployment-guide-cross-cloud-scaling/image23.png)
+    ![Folder picker dialog 2](media/solution-deployment-guide-cross-cloud-scaling/image23.png)
 
 18. Under Variable tab add a variable named `VSTS\_ARM\_REST\_IGNORE\_SSL\_ERRORS`, set its value as **true**, and scope to Azure Stack.
 
@@ -210,7 +210,7 @@ Azure Pipelines and Azure DevOps Services provide a highly configurable and mana
 21. Save all changes.
 
 > [!Note]  
-> Some settings for the tasks may have been automatically defined as [environment variables](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables) when creating a release definition from a template. These settings can't be modified in the task settings; instead, the parent environment item must be selected to edit these settings.
+> Some settings for the tasks may have been automatically defined as [environment variables](/azure/devops/pipelines/release/variables?tabs=batch#custom-variables) when creating a release definition from a template. These settings can't be modified in the task settings; instead, the parent environment item must be selected to edit these settings.
 
 ## Publish to Azure Stack Hub via Visual Studio
 
@@ -241,7 +241,7 @@ Now that the endpoint information exists, the Azure Pipelines to Azure Stack Hub
 ## Develop the app build
 
 > [!Note]  
-> Azure Stack Hub with proper images syndicated to run (Windows Server and SQL) and App Service deployment are required. For more information, see [Prerequisites for deploying App Service on Azure Stack Hub](/azure-stack/operator/azure-stack-app-service-before-you-get-started.md).
+> Azure Stack Hub with proper images syndicated to run (Windows Server and SQL) and App Service deployment are required. For more information, see [Prerequisites for deploying App Service on Azure Stack Hub](/azure-stack/operator/azure-stack-app-service-before-you-get-started).
 
 Use [Azure Resource Manager templates](https://azure.microsoft.com/resources/templates/) like web app code from Azure Repos to deploy to both clouds.
 
@@ -328,7 +328,7 @@ Creating a release definition is the final step in the app build process. This r
 23. Save all changes.
 
 > [!Note]  
-> Some settings for release tasks are automatically defined as [environment variables](/azure/devops/pipelines/release/variables?tabs=batch&view=vsts#custom-variables) when creating a release definition from a template. These settings can't be modified in the task settings but can be modified in the parent environment items.
+> Some settings for release tasks are automatically defined as [environment variables](/azure/devops/pipelines/release/variables?tabs=batch#custom-variables) when creating a release definition from a template. These settings can't be modified in the task settings but can be modified in the parent environment items.
 
 ## Create a release
 
