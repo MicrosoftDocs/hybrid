@@ -48,4 +48,4 @@ Step-by-step deployment guides assist in deploying a solution example. The guide
 - See the [Azure Stack family of products and solutions](/azure-stack) to learn more about the entire portfolio of products and solutions.
 - Explore the "Patterns" and the "Solution deployment guides" sections of the TOC to learn more about each.
 - Read about [Hybrid app design considerations](overview-app-design-considerations.md) to review pillars of software quality for designing, deploying, and operating hybrid apps.
-- [Set up a development environment on Azure Stack](/azure-stack/user/azure-stack-dev-start.md) and [deploy your first app](/azure-stack/user/azure-stack-dev-start-deploy-app.md) on Azure Stack.
+- [Set up a development environment on Azure Stack](/azure-stack/user/azure-stack-dev-start) and [deploy your first app](/azure-stack/user/azure-stack-dev-start-deploy-app) on Azure Stack.
