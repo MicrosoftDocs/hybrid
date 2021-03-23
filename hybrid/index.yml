@@ -229,7 +229,7 @@ conceptualContent:
       - url: /azure/storage/files/
         itemType: overview
         text: Azure Files
-      - url: /azure-monitor
+      - url: /azure/azure-monitor
         itemType: overview
         text: Azure Monitor 
       - url: /azure/site-recovery/
@@ -388,7 +388,7 @@ additionalContent:
             text: Azure Arc jumpstart guides 
           - url: /learn/browse/?terms=%22%20Arc%20%22
             text: Azure Arc Learn modules
-          - url: /describe-high-availability-disaster-recovery-strategies/
+          - url: /learn/modules/describe-high-availability-disaster-recovery-strategies/
             text: Describe high availability and disaster recovery strategies
           - url: /learn/browse/?terms="disaster%20recovery"
             text: Disaster recovery Learn modules
