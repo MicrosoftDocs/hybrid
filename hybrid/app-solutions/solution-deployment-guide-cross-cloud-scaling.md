@@ -156,7 +156,7 @@ Azure Pipelines and Azure DevOps Services provide a highly configurable and mana
   
       ![Select package or folder for Azure App Service environment](media/solution-deployment-guide-cross-cloud-scaling/image12.png)
 
-      ![Folder picker dialog](media/solution-deployment-guide-cross-cloud-scaling/image13.png)
+      ![Folder picker dialog 1](media/solution-deployment-guide-cross-cloud-scaling/image13.png)
 
 9. Save all changes and go back to **release pipeline**.
 
@@ -193,7 +193,7 @@ Azure Pipelines and Azure DevOps Services provide a highly configurable and mana
 
     ![Select folder for Azure App Service Deployment](media/solution-deployment-guide-cross-cloud-scaling/image22.png)
 
-    ![Folder picker dialog](media/solution-deployment-guide-cross-cloud-scaling/image23.png)
+    ![Folder picker dialog 2](media/solution-deployment-guide-cross-cloud-scaling/image23.png)
 
 18. Under Variable tab add a variable named `VSTS\_ARM\_REST\_IGNORE\_SSL\_ERRORS`, set its value as **true**, and scope to Azure Stack.
 
