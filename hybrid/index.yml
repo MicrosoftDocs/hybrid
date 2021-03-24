@@ -414,6 +414,18 @@ additionalContent:
             text: Implement a hybrid file server infrastructure 
           - url: /learn/modules/implement-hybrid-backup-recovery-windows-server-iaas/
             text: Implement hybrid backup and recovery with Windows Server IaaS  
+      - title: Windows Server
+        links:
+          - url: /learn/paths/implement-windows-server-hybrid-cloud-infrastructure/
+            text: Implement a Windows Server hybrid cloud infrastructure
+          - url: /learn/modules/implement-hybrid-backup-recovery-windows-server-iaas/
+            text: Implement hybrid backup and recovery with Windows Server IaaS              
+          - url: /learn/modules/implement-hybrid-identity-windows-server/
+            text: Implement hybrid identity with Windows Server
+          - url: /learn/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances/
+            text: Monitor Windows Server IaaS Virtual Machines and hybrid instances
+          - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
+            text: Windows Server hybrid cloud management, monitoring, and security              
 
     - title: Additional resources
       items:
