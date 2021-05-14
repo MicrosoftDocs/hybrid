@@ -52,7 +52,7 @@ productDirectory:
     # Card
     - title: Azure global public/sovereign cloud platform.
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: media/index/logo_azure.svg
+      imageSrc: https://static.docs.com/ui/media/product/azure/azure.svg
       links:
         - url: /azure
           text: Azure services
