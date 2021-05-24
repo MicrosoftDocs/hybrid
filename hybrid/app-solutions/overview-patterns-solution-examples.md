@@ -3,17 +3,17 @@ title: Hybrid patterns and solution examples for Azure and Azure Stack Hub
 description: An overview of hybrid patterns and solution examples for learning and building hybrid solutions on Azure and Azure Stack Hub.
 author: BryanLa
 ms.topic: overview
-ms.date: 11/05/2019
+ms.date: 05/24/2021
 ms.author: bryanla
 ms.reviewer: anajod
-ms.lastreviewed: 11/05/2019
+ms.lastreviewed: 05/24/2021
 
 # Intent: As an Azure Stack user, I want an overview of hybrid patterns and solution examples so I can learn about building hybrid solutions on Azure and Azure Stack.
 # Keyword: azure stack hybrid patterns solution examples
 
 ---
 
-# Hybrid patterns and solution examples for Azure and Azure Stack
+# Hybrid solution patterns and examples for Azure and Azure Stack
 
 Microsoft provides Azure and Azure Stack products and solutions as one consistent Azure ecosystem. The Microsoft Azure Stack family is an extension of Azure.
 
@@ -28,11 +28,11 @@ Azure Stack brings the agility of cloud computing to your on-premises environmen
 
 Apps that span clouds are also referred to as *hybrid apps*. You can build hybrid cloud apps in Azure and deploy them to your connected or disconnected datacenter located anywhere.
 
-Hybrid app scenarios vary greatly with the resources that are available for development. They also span considerations such as geography, security, internet access, and others. Although the patterns and solutions described here may not address all requirements, they provide guidelines and examples to explore and reuse while implementing hybrid solutions.
+Hybrid app scenarios vary greatly with the resources that are available for development. They also span considerations such as geography, security, internet access, and others. Although the solution patterns and examples described here may not address all requirements, they provide guidelines and examples to explore and reuse while implementing hybrid solutions.
 
-## Design patterns
+## Solution patterns
 
-Design patterns cull generalized repeatable design guidance, from real world customer scenarios and experiences. A pattern is abstract, allowing it to be applicable to different types of scenarios or vertical industries. Each pattern documents the context and problem, and provides an overview of a solution example. The solution example is meant as a possible implementation of the pattern.
+Solution patterns cull generalized repeatable design guidance, from real world customer scenarios and experiences. A pattern is abstract, allowing it to be applicable to different types of scenarios or vertical industries. Each pattern documents the context and problem, and provides an overview of a solution example. The solution example is meant as a possible implementation of the pattern.
 
 There are two types of pattern articles:
 
