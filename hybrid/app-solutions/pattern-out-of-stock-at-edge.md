@@ -3,10 +3,10 @@ title: Out of stock detection using Azure and Azure Stack Edge
 description: Learn how to use Azure and Azure Stack Edge services to implement out of stock detection.
 author: BryanLa
 ms.topic: article
-ms.date: 11/05/2019
+ms.date: 05/24/2021
 ms.author: bryanla
 ms.reviewer: anajod
-ms.lastreviewed: 11/05/2019
+ms.lastreviewed: 05/24/2021
 
 # Intent: As an Azure Stack Edge user, I want to learn how to use Azure and Azure Stack Edge services to implement out of stock detection.
 # Keyword: azure stack edge stock detection
@@ -80,4 +80,4 @@ To learn more about topics introduced in this article:
 - See [Hybrid app design considerations](overview-app-design-considerations.md) to learn more about best practices and to get answers to any additional questions.
 - See the [Azure Stack family of products and solutions](/azure-stack) to learn more about the entire portfolio of products and solutions.
 
-When you're ready to test the solution example, continue with the [Tiered data for analytics solution deployment guide](https://aka.ms/edgeinferencingdeploy). The deployment guide provides step-by-step instructions for deploying and testing its components.
+When you're ready to test the solution example, continue with the [Edge ML inferencing solution deployment guide](https://aka.ms/edgeinferencingdeploy). The deployment guide provides step-by-step instructions for deploying and testing its components.
