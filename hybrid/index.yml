@@ -19,6 +19,12 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
+    - title: "Build 2021: Hybrid sessions"
+      itemType: video
+      url: https://mybuild.microsoft.com/sessions?t={"from":"2021-05-25T00:00:00-07:00","to":"2021-05-27T23:59:00-07:00"}&q=hybrid 
+    - title: "Build 2021: Arc sessions"
+      itemType: video
+      url: https://mybuild.microsoft.com/sessions?t={"from":"2021-05-25T00:00:00-07:00","to":"2021-05-27T23:59:00-07:00"}&q=" Arc "          
     - title: "Ignite 2021: Hybrid sessions"
       itemType: video
       url: https://myignite.microsoft.com/sessions?t={"from":"2021-03-02T00:00:00-07:00","to":"2021-03-04T23:59:00-07:00"}&q=hybrid
@@ -40,9 +46,6 @@ highlightedContent:
     - title: "Inspire 2020: What's new for Azure Stack HCI"
       itemType: video
       url: https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030       
-    - title: "Build 2020: Hybrid sessions"
-      itemType: video
-      url: https://mybuild.microsoft.com/sessions?q=hybrid%2520%2522%2520Arc%2520%2522%2520%2522%2520intelligent%2520edge%2520%2522%2520%2522%2520sql%2520edge%2520%2522&g=%255B%2522on-demand%2522%255D 
       
 # productDirectory section (optional)
 productDirectory:
