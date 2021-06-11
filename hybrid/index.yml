@@ -10,7 +10,7 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 03/09/2021
+  ms.date: 06/11/2021
   ms.custom: e2e-hybrid
 
 # highlightedContent section (optional)
@@ -343,6 +343,14 @@ additionalContent:
             text: Dynamically scale from Azure Stack Hub to Azure 
           - url: https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030
             text: What's new for Azure Stack HCI 
+      - title: Development and integration
+        links:
+          - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
+            text: Azure Stack hybrid apps intro        
+          - url: https://mybuild.microsoft.com/sessions/2debfc2e-f0b3-4adf-bcec-d126930f806f
+            text: Build cloud-native applications that run anywhere
+          - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
+            text: Dynamically scale from Azure Stack Hub to Azure             
       - title: Edge
         links:
           - url: https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator
