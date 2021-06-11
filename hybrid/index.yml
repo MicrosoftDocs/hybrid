@@ -354,7 +354,7 @@ additionalContent:
           - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
             text: Dynamically scale from Azure Stack Hub to Azure
           - url: https://mybuild.microsoft.com/sessions/92bd3e12-fbf4-4278-b68f-fe776b02adfa
-            text: Logic Apps: Powering the future of Integration
+            text: Logic Apps - Powering the future of Integration
           - url: https://mybuild.microsoft.com/sessions/76ebac39-517d-44da-a58e-df4193b5efa9
             text: The future of modern application development with .NET
       - title: Edge
