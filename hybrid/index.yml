@@ -349,6 +349,8 @@ additionalContent:
             text: Azure Stack hybrid apps intro        
           - url: https://mybuild.microsoft.com/sessions/2debfc2e-f0b3-4adf-bcec-d126930f806f
             text: Build cloud-native applications that run anywhere
+          - url: https://mybuild.microsoft.com/sessions/9f56bc10-30bd-42e2-afc8-b61b22260c49
+            text: Build consistent hybrid and multicloud applications with Azure Arc (Ask the Experts)
           - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
             text: Dynamically scale from Azure Stack Hub to Azure             
       - title: Edge
