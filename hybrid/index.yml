@@ -384,7 +384,7 @@ additionalContent:
           - url: /learn/modules/intro-to-azure-hybrid-services/
             text: Introduction to Azure hybrid cloud services
           - url: https://techcommunity.microsoft.com/t5/itops-talk-blog/bg-p/ITOpsTalkBlog/label-name/ITOps%20Talks?WT.mc_modinfra-12531-socuff
-            text: IT Ops Talks: All Things Hybrid (featuring Mark Russinovich)
+            text: IT Ops Talks - All Things Hybrid (featuring Mark Russinovich)
           - url: https://events.microsoft.com/
             text: Microsoft Events Catalog
           - url: /learn
