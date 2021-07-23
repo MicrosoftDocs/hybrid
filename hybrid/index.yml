@@ -10,7 +10,7 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 06/11/2021
+  ms.date: 07/23/2021
   ms.custom: e2e-hybrid
 
 # highlightedContent section (optional)
@@ -19,6 +19,12 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
+    - title: "Inspire 2021: Hybrid sessions"
+      itemType: video
+      url: https://myinspire.microsoft.com/sessions?q=hybrid&f=%255B%257B%2522name%2522%253A%2522Azure%255CtAzure%2522%252C%2522facetName%2522%253A%2522solutionArea%2522%257D%255D&s=%257B%2522name%2522%253A%2522translate.refine.label.sort.relevance%2522%252C%2522type%2522%253A0%257D&t=%257B%2522from%2522%253A%25222021-07-14T00%253A00%253A00-07%253A00%2522%252C%2522to%2522%253A%25222021-07-16T23%253A59%253A00-07%253A00%2522%257D
+    - title: "Inspire 2021: Arc sessions"
+      itemType: video
+      url: https://myinspire.microsoft.com/sessions?q=%2522%2520arc%2520%2522&f=%255B%257B%2522name%2522%253A%2522Azure%255CtAzure%2522%252C%2522facetName%2522%253A%2522solutionArea%2522%257D%255D&s=%257B%2522name%2522%253A%2522translate.refine.label.sort.relevance%2522%252C%2522type%2522%253A0%257D&t=%257B%2522from%2522%253A%25222021-07-14T00%253A00%253A00-07%253A00%2522%252C%2522to%2522%253A%25222021-07-16T23%253A59%253A00-07%253A00%2522%257D
     - title: "Build 2021: Hybrid sessions"
       itemType: video
       url: https://mybuild.microsoft.com/sessions?t={"from":"2021-05-25T00:00:00-07:00","to":"2021-05-27T23:59:00-07:00"}&q=hybrid 
@@ -37,12 +43,6 @@ highlightedContent:
     - title: "Building modern hybrid applications with Azure Arc and Azure Stack"
       itemType: video
       url: https://channel9.msdn.com/Shows/Azure-Friday/Building-modern-hybrid-applications-with-Azure-Arc-and-Azure-Stack     
-    - title: "IT Ops Talks: All Things Hybrid (featuring Mark Russinovich)"
-      itemType: video
-      url: https://techcommunity.microsoft.com/t5/itops-talk-blog/bg-p/ITOpsTalkBlog/label-name/ITOps%20Talks?WT.mc_modinfra-12531-socuff   
-    - title: "Introducing the Azure Modular Datacenter"
-      itemType: video
-      url: https://azure.microsoft.com/resources/videos/azure-modular-datacenter/ 
       
 # productDirectory section (optional)
 productDirectory:
@@ -341,8 +341,10 @@ additionalContent:
             text: Azure Stack hybrid apps intro
           - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
             text: Dynamically scale from Azure Stack Hub to Azure 
-          - url: https://myinspire.microsoft.com/sessions/4a50e354-b3a8-4d54-9d2a-9dc723ac1030
-            text: What's new for Azure Stack HCI 
+          - url: https://azure.microsoft.com/resources/videos/azure-modular-datacenter/             
+            text: Introducing the Azure Modular Datacenter
+          - url: https://www.youtube.com/watch?v=DPG7wGhh3sA
+            text: What's new for Azure Stack HCI
       - title: Development and integration
         links:
           - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
@@ -380,7 +382,9 @@ additionalContent:
           - url: /azure/cloud-adoption-framework/scenarios/hybrid/scenario-overview
             text: Cloud Adoption Framework - Hybrid and multicloud scenario
           - url: /learn/modules/intro-to-azure-hybrid-services/
-            text: Introduction to Azure hybrid cloud services            
+            text: Introduction to Azure hybrid cloud services
+          - url: https://techcommunity.microsoft.com/t5/itops-talk-blog/bg-p/ITOpsTalkBlog/label-name/ITOps%20Talks?WT.mc_modinfra-12531-socuff
+            text: IT Ops Talks - All Things Hybrid (featuring Mark Russinovich)
           - url: https://events.microsoft.com/
             text: Microsoft Events Catalog
           - url: /learn
