@@ -1,4 +1,49 @@
 {
-  "redirections": [
-  ]
+	"redirections": [
+		{
+			"source_path": "hybrid/app-solutions/solution-deployment-guide-connectivity.md",
+			"redirect_url": "/azure/architecture/hybrid/deployments/solution-deployment-guide-connectivity",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "hybrid/app-solutions/solution-deployment-guide-cross-cloud-scaling-onprem-data.md",
+			"redirect_url": "/azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling-onprem-data",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "hybrid/app-solutions/solution-deployment-guide-cross-cloud-scaling.md",
+			"redirect_url": "/azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "hybrid/app-solutions/solution-deployment-guide-geo-distributed.md",
+			"redirect_url": "/azure/architecture/hybrid/deployments/solution-deployment-guide-geo-distributed",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "hybrid/app-solutions/solution-deployment-guide-highly-available-kubernetes.md",
+			"redirect_url": "/azure/architecture/hybrid/deployments/solution-deployment-guide-highly-available-kubernetes",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "hybrid/app-solutions/solution-deployment-guide-identity.md",
+			"redirect_url": "/azure/architecture/hybrid/deployments/solution-deployment-guide-identity",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "hybrid/app-solutions/solution-deployment-guide-mongodb-ha.md",
+			"redirect_url": "/azure/architecture/hybrid/deployments/solution-deployment-guide-mongodb-ha",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "hybrid/app-solutions/solution-deployment-guide-retail-footfall-detection.md",
+			"redirect_url": "/azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "hybrid/app-solutions/solution-deployment-guide-sql-ha.md",
+			"redirect_url": "/azure/architecture/hybrid/deployments/solution-deployment-guide-sql-ha",
+			"redirect_document_id": false
+		}
+	]
 }
