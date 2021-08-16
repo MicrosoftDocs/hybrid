@@ -49,13 +49,13 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Cross-cloud scaling
-            url: solution-deployment-guide-cross-cloud-scaling.md
+            url: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling
           - text: DevOps hybrid CI/CD
             url: https://aka.ms/hybriddevopsdeploy 
           - text: Footfall detection (retail)
-            url: solution-deployment-guide-retail-footfall-detection.md
+            url: /azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection
           - text: Geo-distributed app
-            url: solution-deployment-guide-geo-distributed.md
+            url: /azure/architecture/hybrid/deployments/solution-deployment-guide-geo-distributed
 
   # Card
   - title: Retail footfall detection scenario
@@ -67,7 +67,7 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Solution deployment guide
-            url: solution-deployment-guide-retail-footfall-detection.md
+            url: /azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection
 
   # Card
   - title: Cross-cloud scaling using on-premises data scenario
@@ -79,7 +79,7 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Solution deployment guide
-            url: solution-deployment-guide-cross-cloud-scaling-onprem-data.md
+            url: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling-onprem-data
 
   # Card
   - title: Highly available Kubernetes cluster scenario

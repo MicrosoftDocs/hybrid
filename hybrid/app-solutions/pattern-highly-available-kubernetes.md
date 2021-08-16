@@ -392,4 +392,4 @@ To learn more about concepts introduced in this article:
 - [Cross-cloud scaling](pattern-cross-cloud-scale.md) and [Geo-distributed app patterns](pattern-geo-distributed.md) in Azure Stack Hub.
 - [Microservices architecture on Azure Kubernetes Service (AKS)](/azure/architecture/reference-architectures/microservices/aks).
 
-When you're ready to test the solution example, continue with the [High availability Kubernetes cluster deployment guide](solution-deployment-guide-highly-available-kubernetes.md). The deployment guide provides step-by-step instructions for deploying and testing its components.
+When you're ready to test the solution example, continue with the [High availability Kubernetes cluster deployment guide](/azure/architecture/hybrid/deployments/solution-deployment-guide-highly-available-kubernetes). The deployment guide provides step-by-step instructions for deploying and testing its components.
