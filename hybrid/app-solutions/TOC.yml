@@ -33,29 +33,29 @@
 - name: Solution deployment guides
   items:
   - name: Cross-cloud scaling 
-    href: solution-deployment-guide-cross-cloud-scaling.md
+    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling
   - name: Cross-cloud scaling (on-premises data)
-    href: solution-deployment-guide-cross-cloud-scaling-onprem-data.md
+    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling-onprem-data
   - name: DevOps hybrid CI/CD 
     href: https://aka.ms/hybriddevopsdeploy
   - name: Footfall detection (retail)
-    href: solution-deployment-guide-retail-footfall-detection.md
+    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection
   - name: Geo-distributed app
-    href: solution-deployment-guide-geo-distributed.md
+    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-geo-distributed
   - name: High availability Kubernetes cluster
-    href: solution-deployment-guide-highly-available-kubernetes.md   
+    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-highly-available-kubernetes
   - name: Hybrid connectivity
-    href: solution-deployment-guide-connectivity.md
+    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-connectivity
   - name: Hybrid identity
-    href: solution-deployment-guide-identity.md
+    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-identity
   - name: Hybrid relay
     href: https://aka.ms/hybridrelaydeployment
   - name: Tiered data
     href: https://aka.ms/tiereddatadeploy
   - name: High-availability MongoDB
-    href: solution-deployment-guide-mongodb-ha.md
+    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-mongodb-ha
   - name: High-availability SQL Server 2016
-    href: solution-deployment-guide-sql-ha.md
+    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-sql-ha
   - name: Out-of-stock at the edge
     href: https://aka.ms/edgeinferencingdeploy
   - name: Training ML models at the edge

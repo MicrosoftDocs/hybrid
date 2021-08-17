@@ -136,4 +136,4 @@ To learn more about topics introduced in this article:
 - See [Hybrid app design considerations](overview-app-design-considerations.md) to learn more about best practices and to answer additional questions you might have.
 - This pattern uses the Azure Stack family of products, including Azure Stack Hub. See the [Azure Stack family of products and solutions](/azure-stack) to learn more about the entire portfolio of products and solutions.
 
-When you're ready to test the solution example, continue with the [cross-cloud scaling (on-premises data) solution deployment guide](solution-deployment-guide-cross-cloud-scaling-onprem-data.md). The deployment guide provides step-by-step instructions for deploying and testing its components.
+When you're ready to test the solution example, continue with the [cross-cloud scaling (on-premises data) solution deployment guide](/azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling-onprem-data). The deployment guide provides step-by-step instructions for deploying and testing its components.
