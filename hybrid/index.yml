@@ -10,7 +10,7 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 07/23/2021
+  ms.date: 11/04/2021
   ms.custom: e2e-hybrid
 
 # highlightedContent section (optional)
@@ -19,6 +19,9 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
+    - title: "Ignite 2021: Session catalog"
+      itemType: video
+      url: https://myignite.microsoft.com/sessions
     - title: "Inspire 2021: Hybrid sessions"
       itemType: video
       url: https://myinspire.microsoft.com/sessions?q=hybrid&f=%255B%257B%2522name%2522%253A%2522Azure%255CtAzure%2522%252C%2522facetName%2522%253A%2522solutionArea%2522%257D%255D&s=%257B%2522name%2522%253A%2522translate.refine.label.sort.relevance%2522%252C%2522type%2522%253A0%257D&t=%257B%2522from%2522%253A%25222021-07-14T00%253A00%253A00-07%253A00%2522%252C%2522to%2522%253A%25222021-07-16T23%253A59%253A00-07%253A00%2522%257D
@@ -31,33 +34,21 @@ highlightedContent:
     - title: "Build 2021: Arc sessions"
       itemType: video
       url: https://mybuild.microsoft.com/sessions?t={"from":"2021-05-25T00:00:00-07:00","to":"2021-05-27T23:59:00-07:00"}&q=" Arc "          
-    - title: "Ignite 2021: Hybrid sessions"
-      itemType: video
-      url: https://myignite.microsoft.com/sessions?t={"from":"2021-03-02T00:00:00-07:00","to":"2021-03-04T23:59:00-07:00"}&q=hybrid
-    - title: "Ignite 2021: Azure Arc sessions"
-      itemType: video
-      url: https://myignite.microsoft.com/sessions?t={"from":"2021-03-02T00:00:00-07:00","to":"2021-03-04T23:59:00-07:00"}&q=" Arc "      
-    - title: "Ignite 2021: Edge AI sessions"
-      itemType: video
-      url: https://myignite.microsoft.com/sessions?t={"from":"2020-09-22T00:00:00-07:00","to":"2020-09-25T23:59:00-07:00"}&q=" AI edge"
-    - title: "Building modern hybrid applications with Azure Arc and Azure Stack"
-      itemType: video
-      url: https://channel9.msdn.com/Shows/Azure-Friday/Building-modern-hybrid-applications-with-Azure-Arc-and-Azure-Stack     
-      
+     
 # productDirectory section (optional)
 productDirectory:
   title: Azure hybrid and multicloud platform # < 60 chars (optional)
   summary: Platforms used to build and operate hybrid and multicloud solutions. # < 160 chars (optional)
   items:
     # Card
-    - title: Azure global public/sovereign cloud platform.
+    - title: Azure global public/sovereign cloud platform
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://static.docs.com/ui/media/product/azure/azure.svg
       links:
         - url: /azure
           text: Azure services
     # Card
-    - title: Private cloud platforms for hosted, on-prem, and mobile data centers.
+    - title: Private cloud platforms for hosted, on-prem, and mobile data centers
       # imageSrc should be square in ratio with no whitespace
       imageSrc: media/index/azure-stack-hub.svg
       links:
@@ -70,7 +61,7 @@ productDirectory:
         - url: /azure-stack/ruggedized
           text: Azure Stack Hub Ruggedized  
 # Card
-    - title: Intelligent edge platforms for devices.
+    - title: Intelligent edge platforms for devices
       # imageSrc should be square in ratio with no whitespace
       imageSrc: media/index/intelligent.svg
       links:
@@ -108,7 +99,7 @@ conceptualContent:
      links:
      - url: /azure/azure-arc/kubernetes/
        itemType: overview      
-       text: Azure Arc enabled Kubernetes (preview)      
+       text: Azure Arc-enabled Kubernetes     
      - url: /azure/container-instances/
        itemType: overview
        text: Azure Container Instances        
@@ -131,13 +122,13 @@ conceptualContent:
      links:
       - url: /azure/azure-arc/data/overview
         itemType: overview
-        text: Azure Arc enabled data services (preview)
+        text: Azure Arc-enabled data services
       - url: /sql/sql-server/azure-arc/overview
         itemType: overview
-        text: Azure Arc enabled SQL Server (preview)
+        text: SQL Server on Azure Arc-enabled servers (preview)
       - url: /azure/azure-sql-edge/overview
         itemType: overview      
-        text: Azure SQL Edge (preview)          
+        text: Azure SQL Edge       
    - title: Development and integration
      links:
       - url: /azure-stack/operator/azure-stack-app-service-overview
@@ -192,7 +183,7 @@ conceptualContent:
         text: Azure Stack Edge     
       - url: /azure/azure-sql-edge/overview
         itemType: overview      
-        text: Azure SQL Edge (preview)  
+        text: Azure SQL Edge  
       - url: /windows/iot-core/
         itemType: overview      
         text: Windows for IoT
@@ -214,16 +205,16 @@ conceptualContent:
      links:
       - url: /azure/azure-arc/data/overview
         itemType: overview
-        text: Azure Arc enabled data services (preview)
+        text: Azure Arc-enabled data services
       - url: /azure/azure-arc/kubernetes/
         itemType: overview
-        text: Azure Arc enabled Kubernetes (preview)
+        text: Azure Arc-enabled Kubernetes
       - url: /azure/azure-arc/servers
         itemType: overview
-        text: Azure Arc enabled servers
+        text: Azure Arc-enabled servers
       - url: /sql/sql-server/azure-arc/overview
         itemType: overview
-        text: Azure Arc enabled SQL Server (preview)
+        text: SQL Server on Azure Arc-enabled servers (preview)
       - url: /azure/automation/
         itemType: overview
         text: Azure Automation
@@ -339,6 +330,8 @@ additionalContent:
             text: Azure Stack HCI evaluation guide
           - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
             text: Azure Stack hybrid apps intro
+          - url: https://channel9.msdn.com/Shows/Azure-Friday/Building-modern-hybrid-applications-with-Azure-Arc-and-Azure-Stack 
+            text: Building modern hybrid applications with Azure Arc and Azure Stack
           - url: https://www.youtube.com/watch?v=2lw8zOpJTn0
             text: Dynamically scale from Azure Stack Hub to Azure 
           - url: https://azure.microsoft.com/resources/videos/azure-modular-datacenter/             
