@@ -33,7 +33,7 @@
 - name: Solution deployment guides
   items:
   - name: Cross-cloud scaling 
-    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling
+    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling?toc=/hybrid/app-solutions/toc.json&bc=/hybrid/breadcrumb/toc.json
   - name: Cross-cloud scaling (on-premises data)
     href: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling-onprem-data
   - name: DevOps hybrid CI/CD 
