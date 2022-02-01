@@ -33,29 +33,29 @@
 - name: Solution deployment guides
   items:
   - name: Cross-cloud scaling 
-    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling
+    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling?toc=/hybrid/app-solutions/toc.json&bc=/hybrid/breadcrumb/toc.json
   - name: Cross-cloud scaling (on-premises data)
-    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling-onprem-data
+    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling-onprem-data?toc=/hybrid/app-solutions/toc.json&bc=/hybrid/breadcrumb/toc.json
   - name: DevOps hybrid CI/CD 
     href: https://aka.ms/hybriddevopsdeploy
   - name: Footfall detection (retail)
-    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection
+    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection?toc=/hybrid/app-solutions/toc.json&bc=/hybrid/breadcrumb/toc.json
   - name: Geo-distributed app
-    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-geo-distributed
+    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-geo-distributed?toc=/hybrid/app-solutions/toc.json&bc=/hybrid/breadcrumb/toc.json
   - name: High availability Kubernetes cluster
-    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-highly-available-kubernetes
+    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-highly-available-kubernetes?toc=/hybrid/app-solutions/toc.json&bc=/hybrid/breadcrumb/toc.json
   - name: Hybrid connectivity
-    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-connectivity
+    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-connectivity?toc=/hybrid/app-solutions/toc.json&bc=/hybrid/breadcrumb/toc.json
   - name: Hybrid identity
-    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-identity
+    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-identity?toc=/hybrid/app-solutions/toc.json&bc=/hybrid/breadcrumb/toc.json
   - name: Hybrid relay
     href: https://aka.ms/hybridrelaydeployment
   - name: Tiered data
     href: https://aka.ms/tiereddatadeploy
   - name: High-availability MongoDB
-    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-mongodb-ha
+    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-mongodb-ha?toc=/hybrid/app-solutions/toc.json&bc=/hybrid/breadcrumb/toc.json
   - name: High-availability SQL Server 2016
-    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-sql-ha
+    href: /azure/architecture/hybrid/deployments/solution-deployment-guide-sql-ha?toc=/hybrid/app-solutions/toc.json&bc=/hybrid/breadcrumb/toc.json
   - name: Out-of-stock at the edge
     href: https://aka.ms/edgeinferencingdeploy
   - name: Training ML models at the edge
