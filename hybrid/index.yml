@@ -10,7 +10,7 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 11/04/2021
+  ms.date: 02/16/2022
   ms.custom: e2e-hybrid
 
 # highlightedContent section (optional)
@@ -194,10 +194,10 @@ conceptualContent:
         text: Azure AD hybrid identity  
       - url: /azure/security-center/
         itemType: overview
-        text: Azure Security Center
+        text: Microsoft Defender for Cloud
       - url: /azure/sentinel/
         itemType: overview
-        text: Azure Sentinel
+        text: Microsoft Sentinel
       - url: /azure/active-directory/devices/concept-azure-ad-join-hybrid
         itemType: overview
         text: Hybrid Azure AD joined devices
@@ -385,7 +385,7 @@ additionalContent:
       - title: Identity and security
         links:
           - url: /learn/modules/azure-sentinel-deploy-configure/
-            text: Deploy Azure Sentinel and connect data sources
+            text: Deploy Microsoft Sentinel and connect data sources
           - url: /learn/modules/expose-hybrid-services-with-azure-relay/
             text: Expose hybrid services securely with Azure Relay
           - url: /learn/modules/implement-manage-hybrid-identity/
@@ -393,7 +393,7 @@ additionalContent:
           - url: /learn/modules/implement-hybrid-identity-windows-server/
             text: Implement hybrid identity with Windows Server
           - url: /learn/modules/intro-to-azure-sentinel/
-            text: Intro to Azure Sentinel
+            text: Intro to Microsoft Sentinel
           - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
             text: Windows Server hybrid cloud management, monitoring, and security              
       - title: Management
