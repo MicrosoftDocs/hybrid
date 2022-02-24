@@ -44,8 +44,8 @@ This solution uses the following components:
 | Azure Stack Hub | IaaS Compute | Azure Stack Hub allows you to use the same app model, self-service portal, and APIs enabled by Azure. Azure Stack Hub IaaS allows a broad range of open-source technologies for consistent hybrid cloud deployments. The solution example uses a Windows Server VM to SQL Server, for example.|
 | | Azure App Service | Just like the Azure web app, the solution uses [Azure App Service on Azure Stack Hub](/azure-stack/operator/azure-stack-app-service-overview) to host the web app. |
 | | Networking | The Azure Stack Hub Virtual Network works exactly like the Azure Virtual Network. It uses many of the same networking components, including custom hostnames.
-| Azure DevOps Services | Sign up | Quickly set up continuous integration for build, test, and deployment. For more information, see [Sign up, sign in to Azure DevOps](/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops). |
-| | Azure Pipelines | Use [Azure Pipelines](/azure/devops/pipelines/agents/agents?view=azure-devops) for Continuous Integration/Continuous delivery. Azure Pipelines allows you to manage hosted build and release agents and definitions. |
+| Azure DevOps Services | Sign up | Quickly set up continuous integration for build, test, and deployment. For more information, see [Sign up, sign in to Azure DevOps](/azure/devops/user-guide/sign-up-invite-teammates?view=azure-devops&preserve-view=true). |
+| | Azure Pipelines | Use [Azure Pipelines](/azure/devops/pipelines/agents/agents?view=azure-devops&preserve-view=true) for Continuous Integration/Continuous delivery. Azure Pipelines allows you to manage hosted build and release agents and definitions. |
 | | Code repository | Leverage multiple code repositories to streamline your development pipeline. Use existing code repositories in GitHub, Bitbucket, Dropbox, OneDrive, and Azure Repos. |
 
 ## Issues and considerations
