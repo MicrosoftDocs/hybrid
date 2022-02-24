@@ -309,15 +309,15 @@ additionalContent:
             text: Highly available Kubernetes cluster            
       - title: Deploy app solution examples
         links:
-          - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling
+          - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling?toc=/hybrid/app-solutions/toc.json&bc=/hybrid/breadcrumb/toc.json
             text: Cross-cloud scaling
           - url: https://aka.ms/hybriddevopsdeploy 
             text: DevOps hybrid CI/CD
-          - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection
+          - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection?toc=/hybrid/app-solutions/toc.json&bc=/hybrid/breadcrumb/toc.json
             text: Footfall detection (retail)
-          - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-geo-distributed
+          - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-geo-distributed?toc=/hybrid/app-solutions/toc.json&bc=/hybrid/breadcrumb/toc.json
             text: Geo-distributed app
-          - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-highly-available-kubernetes
+          - url: /azure/architecture/hybrid/deployments/solution-deployment-guide-highly-available-kubernetes?toc=/hybrid/app-solutions/toc.json&bc=/hybrid/breadcrumb/toc.json
             text: Highly available Kubernetes cluster
     - title: Evaluation and learning resources
       items:
