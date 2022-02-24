@@ -49,13 +49,13 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Cross-cloud scaling
-            url: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling
+            url: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling?toc=/hybrid/app-solutions/toc.json&bc=/hybrid/breadcrumb/toc.json
           - text: DevOps hybrid CI/CD
             url: https://aka.ms/hybriddevopsdeploy 
           - text: Footfall detection (retail)
-            url: /azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection
+            url: /azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection?toc=/hybrid/app-solutions/toc.json&bc=/hybrid/breadcrumb/toc.json
           - text: Geo-distributed app
-            url: /azure/architecture/hybrid/deployments/solution-deployment-guide-geo-distributed
+            url: /azure/architecture/hybrid/deployments/solution-deployment-guide-geo-distributed?toc=/hybrid/app-solutions/toc.json&bc=/hybrid/breadcrumb/toc.json
 
   # Card
   - title: Retail footfall detection scenario
@@ -67,7 +67,7 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Solution deployment guide
-            url: /azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection
+            url: /azure/architecture/hybrid/deployments/solution-deployment-guide-retail-footfall-detection?toc=/hybrid/app-solutions/toc.json&bc=/hybrid/breadcrumb/toc.json
 
   # Card
   - title: Cross-cloud scaling using on-premises data scenario
@@ -79,7 +79,7 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Solution deployment guide
-            url: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling-onprem-data
+            url: /azure/architecture/hybrid/deployments/solution-deployment-guide-cross-cloud-scaling-onprem-data?toc=/hybrid/app-solutions/toc.json&bc=/hybrid/breadcrumb/toc.json
 
   # Card
   - title: Highly available Kubernetes cluster scenario
@@ -91,4 +91,4 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Solution deployment guide
-            url: solution-deployment-guide-highly-available-kubernetes.md
+            url: /azure/architecture/hybrid/deployments/solution-deployment-guide-highly-available-kubernetes?toc=/hybrid/app-solutions/toc.json&bc=/hybrid/breadcrumb/toc.json
