@@ -91,4 +91,4 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Solution deployment guide
-            url: solution-deployment-guide-highly-available-kubernetes?toc=/hybrid/app-solutions/toc.json&bc=/hybrid/breadcrumb/toc.json
+            url: /azure/architecture/hybrid/deployments/solution-deployment-guide-highly-available-kubernetes?toc=/hybrid/app-solutions/toc.json&bc=/hybrid/breadcrumb/toc.json
