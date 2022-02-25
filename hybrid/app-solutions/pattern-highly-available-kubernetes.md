@@ -206,8 +206,8 @@ Data is the most important consideration in most application designs. Applicatio
 
 Achieving this design depends heavily on technology choices. Here are some solution examples for implementing a database in a highly available fashion on Azure Stack Hub:
 
-- [Deploy a SQL Server 2016 availability group to Azure and Azure Stack Hub](/azure-stack/hybrid/solution-deployment-guide-sql-ha)
-- [Deploy a highly available MongoDB solution to Azure and Azure Stack Hub](/azure-stack/hybrid/solution-deployment-guide-mongodb-ha)
+- [Deploy a SQL Server 2016 availability group to Azure and Azure Stack Hub](/azure/architecture/hybrid/deployments/solution-deployment-guide-sql-ha?toc=/hybrid/app-solutions/toc.json&bc=/hybrid/breadcrumb/toc.json)
+- [Deploy a highly available MongoDB solution to Azure and Azure Stack Hub](/azure/architecture/hybrid/deployments/solution-deployment-guide-mongodb-ha?toc=/hybrid/app-solutions/toc.json&bc=/hybrid/breadcrumb/toc.json)
 
 Considerations when working with data across multiple locations is an even more complex consideration for a highly available and resilient solution. Consider:
 
@@ -392,4 +392,4 @@ To learn more about concepts introduced in this article:
 - [Cross-cloud scaling](pattern-cross-cloud-scale.md) and [Geo-distributed app patterns](pattern-geo-distributed.md) in Azure Stack Hub.
 - [Microservices architecture on Azure Kubernetes Service (AKS)](/azure/architecture/reference-architectures/microservices/aks).
 
-When you're ready to test the solution example, continue with the [High availability Kubernetes cluster deployment guide](/azure/architecture/hybrid/deployments/solution-deployment-guide-highly-available-kubernetes). The deployment guide provides step-by-step instructions for deploying and testing its components.
+When you're ready to test the solution example, continue with the [High availability Kubernetes cluster deployment guide](/azure/architecture/hybrid/deployments/solution-deployment-guide-highly-available-kubernetes?toc=/hybrid/app-solutions/toc.json&bc=/hybrid/breadcrumb/toc.json). The deployment guide provides step-by-step instructions for deploying and testing its components.
