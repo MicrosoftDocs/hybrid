@@ -19,6 +19,9 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
+    - title: "Build 2022: Session catalog"
+      itemType: video
+      url: https://mybuild.microsoft.com/en-US/sessions    
     - title: "Ignite 2021: Session catalog"
       itemType: video
       url: https://myignite.microsoft.com/sessions
