@@ -24,7 +24,7 @@ highlightedContent:
       url: https://mybuild.microsoft.com/en-US/sessions   
     - title: "Build 2022: post-event live sessions (Jun/Jul 2022)"
       itemType: video
-      url: https://docs.microsoft.com/events/build-2022-post/          
+      url: /events/build-2022-post/
     - title: "Ignite 2021: Session catalog"
       itemType: video
       url: https://myignite.microsoft.com/sessions
