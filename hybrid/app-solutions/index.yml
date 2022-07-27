@@ -22,7 +22,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: What are patterns and solution examples?
+          - text: What are solution patterns and examples?
             url: overview-patterns-solution-examples.md
       - linkListType: concept
         links:
