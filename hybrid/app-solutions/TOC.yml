@@ -2,7 +2,7 @@
   href: index.yml
 - name: Overview
   items:
-  - name: Patterns and solution examples
+  - name: Solution patterns and examples
     href: overview-patterns-solution-examples.md
 - name: Patterns
   items:
