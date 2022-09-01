@@ -54,7 +54,7 @@
         }
       },
       "manager":"femila",
-      "ms.service": "multiple"
+      "ms.service": "azure-stack"
     },
       "fileMetadata": {
         "titleSuffix": {
