@@ -32,7 +32,7 @@ Azure, in combination with Azure Stack Hub, addresses most of these concerns. A 
 
 This pattern assumes that we have to deal with a strict set of constraints. The application must run on-premises and all personal data must not reach public cloud services. Monitoring and other non-PII data can be sent to Azure and be processed there. External services like a public Container Registry or others can be accessed but might be filtered through a firewall or proxy server.
 
-The sample application shown here is designed to use Kubernetes-native solutions whenever possible. This design avoids vendor lock-in, instead of using platform-native services. As an example, the application uses a self-hosted MongoDB database backend instead of a PaaS service or external database service. For more information see the [Introduction to Kubernetes on Azure learning path](/learn/paths/intro-to-kubernetes-on-azure).
+The sample application shown here is designed to use Kubernetes-native solutions whenever possible. This design avoids vendor lock-in, instead of using platform-native services. As an example, the application uses a self-hosted MongoDB database backend instead of a PaaS service or external database service. For more information see the [Introduction to Kubernetes on Azure learning path](/training/paths/intro-to-kubernetes-on-azure).
 
 [![Application Pattern Hybrid](media/pattern-highly-available-kubernetes/application-architecture.png)](media/pattern-highly-available-kubernetes/application-architecture.png#lightbox)
 
