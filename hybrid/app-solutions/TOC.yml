@@ -72,7 +72,7 @@
     href: /azure-stack
 - name: Resources
   items:
-  - name: Microsoft Learn
-    href: /learn
+  - name: Microsoft Learn training
+    href: /training
   - name: Microsoft Q&A
     href: /answers/products/

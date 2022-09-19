@@ -373,7 +373,7 @@ additionalContent:
             text: Certified for Azure IoT Edge devices            
       - title: General
         links:
-          - url: /learn/modules/align-requirements-in-azure/
+          - url: /training/modules/align-requirements-in-azure/
             text: Align requirements with cloud types and service models in Azure
           - url: /azure/architecture/browse/?azure_categories=hybrid
             text: Azure hybrid architectures            
@@ -383,71 +383,71 @@ additionalContent:
             text: Azure hybrid virtual event
           - url: /azure/cloud-adoption-framework/scenarios/hybrid/scenario-overview
             text: Cloud Adoption Framework - Hybrid and multicloud scenario
-          - url: /learn/modules/intro-to-azure-hybrid-services/
+          - url: /training/modules/intro-to-azure-hybrid-services/
             text: Introduction to Azure hybrid cloud services
           - url: https://techcommunity.microsoft.com/t5/itops-talk-blog/bg-p/ITOpsTalkBlog/label-name/ITOps%20Talks?WT.mc_modinfra-12531-socuff
             text: IT Ops Talks - All Things Hybrid (featuring Mark Russinovich)
           - url: https://events.microsoft.com/
             text: Microsoft Events Catalog
-          - url: /learn
+          - url: /training
             text: Microsoft Learn   
       - title: Identity and security
         links:
-          - url: /learn/modules/azure-sentinel-deploy-configure/
+          - url: /training/modules/azure-sentinel-deploy-configure/
             text: Deploy Microsoft Sentinel and connect data sources
-          - url: /learn/modules/expose-hybrid-services-with-azure-relay/
+          - url: /training/modules/expose-hybrid-services-with-azure-relay/
             text: Expose hybrid services securely with Azure Relay
-          - url: /learn/modules/implement-manage-hybrid-identity/
+          - url: /training/modules/implement-manage-hybrid-identity/
             text: Implement and manage hybrid identity
-          - url: /learn/modules/implement-hybrid-identity-windows-server/
+          - url: /training/modules/implement-hybrid-identity-windows-server/
             text: Implement hybrid identity with Windows Server
-          - url: /learn/modules/intro-to-azure-sentinel/
+          - url: /training/modules/intro-to-azure-sentinel/
             text: Intro to Microsoft Sentinel
-          - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
+          - url: /training/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
             text: Windows Server hybrid cloud management, monitoring, and security              
       - title: Management
         links:
           - url: https://azurearcjumpstart.io/
             text: Azure Arc jumpstart guides 
-          - url: /learn/browse/?terms=%22%20Arc%20%22
+          - url: /training/browse/?terms=%22%20Arc%20%22
             text: Azure Arc Learn modules
-          - url: /learn/modules/describe-high-availability-disaster-recovery-strategies/
+          - url: /training/modules/describe-high-availability-disaster-recovery-strategies/
             text: Describe high availability and disaster recovery strategies
-          - url: /learn/browse/?terms="disaster%20recovery"
+          - url: /training/browse/?terms="disaster%20recovery"
             text: Disaster recovery Learn modules
-          - url: /learn/browse/?terms="high%20availability"
+          - url: /training/browse/?terms="high%20availability"
             text: High availability Learn modules 
-          - url: /learn/modules/intro-to-azure-arc/
+          - url: /training/modules/intro-to-azure-arc/
             text: Introduction to Azure Arc
-          - url: /learn/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances/
+          - url: /training/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances/
             text: Monitor Windows Server IaaS Virtual Machines and hybrid instances
-          - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
+          - url: /training/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
             text: Windows Server hybrid cloud management, monitoring, and security    
       - title: Networking
         links:
-          - url: /learn/modules/design-a-hybrid-network-architecture/
+          - url: /training/modules/design-a-hybrid-network-architecture/
             text: Design a hybrid network architecture on Azure 
-          - url: /learn/modules/expose-hybrid-services-with-azure-relay/
+          - url: /training/modules/expose-hybrid-services-with-azure-relay/
             text: Expose hybrid services securely with Azure Relay 
-          - url: /learn/modules/implement-hybrid-network-infrastructure/
+          - url: /training/modules/implement-hybrid-network-infrastructure/
             text: Implement hybrid network infrastructure             
       - title: Storage
         links:
-          - url: /learn/modules/implement-hybrid-file-server-infrastructure/
+          - url: /training/modules/implement-hybrid-file-server-infrastructure/
             text: Implement a hybrid file server infrastructure 
-          - url: /learn/modules/implement-hybrid-backup-recovery-windows-server-iaas/
+          - url: /training/modules/implement-hybrid-backup-recovery-windows-server-iaas/
             text: Implement hybrid backup and recovery with Windows Server IaaS  
       - title: Windows Server
         links:
-          - url: /learn/paths/implement-windows-server-hybrid-cloud-infrastructure/
+          - url: /training/paths/implement-windows-server-hybrid-cloud-infrastructure/
             text: Implement a Windows Server hybrid cloud infrastructure
-          - url: /learn/modules/implement-hybrid-backup-recovery-windows-server-iaas/
+          - url: /training/modules/implement-hybrid-backup-recovery-windows-server-iaas/
             text: Implement hybrid backup and recovery with Windows Server IaaS              
-          - url: /learn/modules/implement-hybrid-identity-windows-server/
+          - url: /training/modules/implement-hybrid-identity-windows-server/
             text: Implement hybrid identity with Windows Server
-          - url: /learn/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances/
+          - url: /training/modules/monitor-windows-server-iaas-virtual-machines-hybrid-instances/
             text: Monitor Windows Server IaaS Virtual Machines and hybrid instances
-          - url: /learn/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
+          - url: /training/paths/implement-windows-server-hybrid-cloud-management-monitoring-security/
             text: Windows Server hybrid cloud management, monitoring, and security              
 
     - title: Additional resources
