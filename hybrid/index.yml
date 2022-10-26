@@ -326,7 +326,7 @@ additionalContent:
         links:
           - url: /azure-stack/asdk
             text: Azure Stack development kit
-          - url: https://github.com/Azure/AzureStackHCI-EvalGuide
+          - url: /azure-stack/hci/guided-quick-deploy-eval
             text: Azure Stack HCI evaluation guide
           - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
             text: Azure Stack hybrid apps intro
