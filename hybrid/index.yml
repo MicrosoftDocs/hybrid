@@ -10,7 +10,7 @@ metadata:
   ms.topic: hub-page
   author: BryanLa
   ms.author: bryanla
-  ms.date: 07/21/2022
+  ms.date: 10/26/2022
   ms.custom: e2e-hybrid
 
 # highlightedContent section (optional)
@@ -19,30 +19,21 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
+    - title: "Ignite 2022: Session catalog"
+      itemType: video
+      url: https://ignite.microsoft.com/sessions     
+    - title: "Ignite 2022: post-event sessions (Oct/Nov 2022)"
+      itemType: video
+      url: https://learn.microsoft.com/events/learn-events/learnlive-post-ignite-22/       
     - title: "Inspire 2022: Session catalog"
       itemType: video
       url: https://inspire.microsoft.com/sessions       
     - title: "Build 2022: Session catalog"
       itemType: video
       url: https://mybuild.microsoft.com/sessions   
-    - title: "Build 2022: post-event live sessions (Jun/Jul 2022)"
+    - title: "Build 2022: post-event sessions (Jun/Jul 2022)"
       itemType: video
       url: /events/build-2022-post/
-    - title: "Ignite 2021: Session catalog"
-      itemType: video
-      url: https://myignite.microsoft.com/sessions
-    - title: "Inspire 2021: Hybrid sessions"
-      itemType: video
-      url: https://myinspire.microsoft.com/sessions?q=hybrid&f=%255B%257B%2522name%2522%253A%2522Azure%255CtAzure%2522%252C%2522facetName%2522%253A%2522solutionArea%2522%257D%255D&s=%257B%2522name%2522%253A%2522translate.refine.label.sort.relevance%2522%252C%2522type%2522%253A0%257D&t=%257B%2522from%2522%253A%25222021-07-14T00%253A00%253A00-07%253A00%2522%252C%2522to%2522%253A%25222021-07-16T23%253A59%253A00-07%253A00%2522%257D
-    - title: "Inspire 2021: Arc sessions"
-      itemType: video
-      url: https://myinspire.microsoft.com/sessions?q=%2522%2520arc%2520%2522&f=%255B%257B%2522name%2522%253A%2522Azure%255CtAzure%2522%252C%2522facetName%2522%253A%2522solutionArea%2522%257D%255D&s=%257B%2522name%2522%253A%2522translate.refine.label.sort.relevance%2522%252C%2522type%2522%253A0%257D&t=%257B%2522from%2522%253A%25222021-07-14T00%253A00%253A00-07%253A00%2522%252C%2522to%2522%253A%25222021-07-16T23%253A59%253A00-07%253A00%2522%257D
-    - title: "Build 2021: Hybrid sessions"
-      itemType: video
-      url: https://mybuild.microsoft.com/sessions?t={"from":"2021-05-25T00:00:00-07:00","to":"2021-05-27T23:59:00-07:00"}&q=hybrid 
-    - title: "Build 2021: Arc sessions"
-      itemType: video
-      url: https://mybuild.microsoft.com/sessions?t={"from":"2021-05-25T00:00:00-07:00","to":"2021-05-27T23:59:00-07:00"}&q=" Arc "          
      
 # productDirectory section (optional)
 productDirectory:
@@ -335,7 +326,7 @@ additionalContent:
         links:
           - url: /azure-stack/asdk
             text: Azure Stack development kit
-          - url: https://github.com/Azure/AzureStackHCI-EvalGuide
+          - url: /azure-stack/hci/guided-quick-deploy-eval
             text: Azure Stack HCI evaluation guide
           - url: https://www.youtube.com/watch?v=to8D7Xl9SU8
             text: Azure Stack hybrid apps intro
