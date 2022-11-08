@@ -1,10 +1,10 @@
 ---
 title: Hybrid relay pattern in Azure and Azure Stack Hub
 description: Use the hybrid relay pattern in Azure and Azure Stack Hub to connect to edge resources protected by firewalls.
-author: BryanLa
+author: ronmiab 
 ms.topic: article
 ms.date: 11/05/2019
-ms.author: bryanla
+ms.author: robess
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
 
