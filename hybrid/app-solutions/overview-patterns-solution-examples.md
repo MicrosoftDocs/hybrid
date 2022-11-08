@@ -1,10 +1,10 @@
 ---
 title: Hybrid patterns and solution examples for Azure and Azure Stack Hub
 description: An overview of hybrid patterns and solution examples for learning and building hybrid solutions on Azure and Azure Stack Hub.
-author: BryanLa
+author: ronmiab 
 ms.topic: overview
 ms.date: 05/24/2021
-ms.author: bryanla
+ms.author: robess
 ms.reviewer: anajod
 ms.lastreviewed: 05/24/2021
 
