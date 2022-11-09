@@ -8,8 +8,8 @@ metadata:
   description: Learn how to leverage hybrid and multicloud patterns and solution examples in your app development, built on a suite of intelligent cloud and intelligent edge services. 
   ms.service: azure-stack 
   ms.topic: landing-page 
-  author: BryanLa
-  ms.author: bryanla
+  author: ronmiab 
+  ms.author: robess
   ms.date: 10/31/2019
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new

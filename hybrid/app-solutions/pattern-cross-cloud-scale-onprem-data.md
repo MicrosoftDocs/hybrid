@@ -1,10 +1,10 @@
 ---
 title: Cross-cloud scaling (on-premises data) pattern in Azure Stack Hub
 description: Learn how to build a scalable cross-cloud app that uses on-prem data in Azure and Azure Stack Hub.
-author: BryanLa
+author: ronmiab 
 ms.topic: article
 ms.date: 11/05/2019
-ms.author: bryanla
+ms.author: robess
 ms.reviewer: anajod
 ms.lastreviewed: 11/05/2019
 
