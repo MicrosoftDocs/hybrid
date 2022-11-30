@@ -154,7 +154,7 @@ conceptualContent:
         text: Azure Logic Apps
       - url: /azure/azure-monitor/app/app-insights-overview
         itemType: overview
-        text: Azure Monitor - Application Insights
+        text: Azure Monitor Application Insights
       - url: /azure/service-fabric/
         itemType: overview
         text: Azure Service Fabric     
