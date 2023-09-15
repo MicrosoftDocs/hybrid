@@ -109,6 +109,9 @@ conceptualContent:
      - url: /azure-stack/user/azure-stack-kubernetes-aks-engine-overview
        itemType: overview
        text: Azure Kubernetes Services on Azure Stack Hub
+     - url: /azure/aks-hybrid
+       itemType: overview
+       text: Azure Kubernetes Services on Azure Stack HCI/AKS hybrid
      - url: /azure/docker/
        itemType: overview
        text: Docker on Azure
