@@ -19,21 +19,18 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     # Card
-    - title: "Ignite 2022: Session catalog"
+    - title: "Ignite 2023: Session catalog"
       itemType: video
       url: https://ignite.microsoft.com/sessions     
     - title: "Ignite 2022: post-event sessions (Oct/Nov 2022)"
       itemType: video
       url: https://learn.microsoft.com/events/learn-events/learnlive-post-ignite-22/       
-    - title: "Inspire 2022: Session catalog"
+    - title: "Inspire 2023: Session catalog"
       itemType: video
       url: https://inspire.microsoft.com/sessions       
-    - title: "Build 2022: Session catalog"
+    - title: "Build 2023: post-event sessions (May/June 2023)"
       itemType: video
-      url: https://mybuild.microsoft.com/sessions   
-    - title: "Build 2022: post-event sessions (Jun/Jul 2022)"
-      itemType: video
-      url: /events/build-2022-post/
+      url: https://build.microsoft.com/en-US/home
      
 # productDirectory section (optional)
 productDirectory:
