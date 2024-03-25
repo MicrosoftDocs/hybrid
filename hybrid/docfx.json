@@ -41,8 +41,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/hybrid",
+      "feedback_system": "Standard",
       "feedback_product_url": "https://feedback.azure.com/forums/34192--general-feedback",
       "breadcrumb_path": "/hybrid/breadcrumb/toc.json",
       "extendBreadcrumb": true,
