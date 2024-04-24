@@ -356,12 +356,8 @@ additionalContent:
         links:
           - url: https://github.com/Azure-Samples/AI-Video-Intelligence-Solution-Accelerator
             text: Azure IoT Edge AI video intelligence solution accelerator
-          - url: https://labs.iotedge.dev/
-            text: Azure IoT Edge hands-on-labs 
           - url: https://www.azureiotsolutions.com/Accelerators
             text: Azure IoT solution accelerators
-          - url: https://catalog.azureiotsolutions.com/alldevices?filters={%2218%22:[%221%22]}
-            text: Certified for Azure IoT Edge devices            
       - title: General
         links:
           - url: /training/modules/align-requirements-in-azure/
