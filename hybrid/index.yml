@@ -125,7 +125,7 @@ conceptualContent:
         text: Azure Arc-enabled data services
       - url: /sql/sql-server/azure-arc/overview
         itemType: overview
-        text: SQL Server on Azure Arc-enabled servers
+        text: SQL Server enabled by Azure Arc
       - url: /azure/azure-sql-edge/overview
         itemType: overview      
         text: Azure SQL Edge       
@@ -214,7 +214,7 @@ conceptualContent:
         text: Azure Arc-enabled servers
       - url: /sql/sql-server/azure-arc/overview
         itemType: overview
-        text: SQL Server on Azure Arc-enabled servers (preview)
+        text: SQL Server enabled by Azure Arc
       - url: /azure/automation/
         itemType: overview
         text: Azure Automation
