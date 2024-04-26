@@ -10,7 +10,7 @@ metadata:
   ms.topic: hub-page
   author: ronmiab 
   ms.author: robess
-  ms.date: 10/26/2022
+  ms.date: 04/19/2024
   ms.custom: e2e-hybrid
 
 # highlightedContent section (optional)
@@ -45,7 +45,7 @@ productDirectory:
         - url: /azure
           text: Azure services
     # Card
-    - title: Private cloud platforms for hosted, on-prem, and mobile data centers
+    - title: Private cloud platforms for hosted, on-premises, and mobile data centers
       # imageSrc should be square in ratio with no whitespace
       imageSrc: media/index/azure-stack-hub.svg
       links:
@@ -212,6 +212,12 @@ conceptualContent:
       - url: /azure/azure-arc/servers
         itemType: overview
         text: Azure Arc-enabled servers
+      - url: /azure/azure-arc/system-center-virtual-machine-manager
+        itemType: overview
+        text: Azure Arc-enabled System Center Virtual Machine Manager
+      - url: /azure/azure-arc/vmware-vsphere
+        itemType: overview
+        text: Azure Arc-enabled VMware vSphere
       - url: /sql/sql-server/azure-arc/overview
         itemType: overview
         text: SQL Server enabled by Azure Arc
