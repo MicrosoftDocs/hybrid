@@ -45,7 +45,7 @@ productDirectory:
         - url: /azure
           text: Azure services
     # Card
-    - title: Private cloud platforms for hosted, on-prem, and mobile data centers
+    - title: Private cloud platforms for hosted, on-premises, and mobile data centers
       # imageSrc should be square in ratio with no whitespace
       imageSrc: media/index/azure-stack-hub.svg
       links:
