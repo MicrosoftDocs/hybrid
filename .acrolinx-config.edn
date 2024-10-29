@@ -1,2 +1,2 @@
 {:allowed-branchname-matches ["main" "master" "release-.*"]
- :allowed-filename-matches ["^..*"]}
+ :allowed-filename-matches ["hybrid/"]}
