@@ -41,14 +41,14 @@ productDirectory:
       links:
         - url: /azure
           text: Azure services
-        - url: azure/azure-arc/
+        - url: /azure/azure-arc/
           text: Azure Arc
     # Card
     - title: Hybrid cloud infrastructure for hosted, on-premises, and mobile data centers
       # imageSrc should be square in ratio with no whitespace
       imageSrc: media/index/azure-stack-hub.svg
       links:
-        - url: /azure-local/
+        - url: /azure/azure-local/
           text: Azure Local
         - url: /azure-stack#azure-stack-hub
           text: Azure Stack Hub 
